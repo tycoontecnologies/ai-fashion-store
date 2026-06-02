@@ -1,4 +1,7 @@
 "use client";
+import {
+  saveStyleProfile,
+} from "@/lib/firestoreStyleProfile";
 
 import { useState } from "react";
 
@@ -228,22 +231,61 @@ export default function StyleQuizPage() {
           </div>
 
           <button
-            onClick={() =>
-              setShowResults(true)
-            }
-            className="
-              h-16
-              px-10
-              rounded-full
-              bg-black
-              text-white
-              text-lg
-              font-semibold
-            "
-          >
-            Generate AI Recommendations
-          </button>
+  onClick={async () => {
 
+    if (
+      !style &&
+      !occasion &&
+      !color
+    ) {
+
+      alert(
+        "Please select at least one preference."
+      );
+
+      return;
+
+    }
+
+    try {
+
+      await saveStyleProfile({
+
+        style,
+
+        occasion,
+
+        color,
+
+      });
+
+      setShowResults(true);
+
+    } catch (error) {
+
+      console.error(error);
+
+      alert(
+        "Failed to save style profile."
+      );
+
+    }
+
+  }}
+  className="
+    h-16
+    px-10
+    rounded-full
+    bg-black
+    text-white
+    text-lg
+    font-semibold
+    hover:opacity-90
+    transition-all
+  "
+>
+  Generate AI Recommendations
+</button>
         </div>
 
         {/* RESULTS */}
