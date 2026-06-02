@@ -7,6 +7,8 @@ import Image from "next/image";
 
 import { getProducts } from "@/lib/firestoreProducts";
 
+import AIMatchScore from "./AIMatchScore";
+
 export default function RelatedProducts({
   currentProduct,
 }: any) {
@@ -48,32 +50,38 @@ export default function RelatedProducts({
 
       <div className="mb-10">
 
-        <p className="
-          uppercase
-          tracking-[6px]
-          text-sm
-          text-gray-500
-          mb-3
-        ">
-          You May Also Like
+        <p
+          className="
+            uppercase
+            tracking-[6px]
+            text-sm
+            text-gray-500
+            mb-3
+          "
+        >
+          AI Powered Suggestions
         </p>
 
-        <h2 className="
-          text-5xl
-          font-black
-          text-black
-        ">
+        <h2
+          className="
+            text-5xl
+            font-black
+            text-black
+          "
+        >
           Related Products
         </h2>
 
       </div>
 
-      <div className="
-        grid
-        md:grid-cols-2
-        lg:grid-cols-4
-        gap-6
-      ">
+      <div
+        className="
+          grid
+          md:grid-cols-2
+          lg:grid-cols-4
+          gap-6
+        "
+      >
 
         {relatedProducts.map(
           (product) => (
@@ -104,30 +112,45 @@ export default function RelatedProducts({
 
               <div className="p-4">
 
-                <p className="
-                  text-xs
-                  uppercase
-                  tracking-[3px]
-                  text-gray-500
-                  mb-2
-                ">
+                <AIMatchScore
+                  currentProduct={
+                    currentProduct
+                  }
+                  comparedProduct={
+                    product
+                  }
+                />
+
+                <p
+                  className="
+                    text-xs
+                    uppercase
+                    tracking-[3px]
+                    text-gray-500
+                    mb-2
+                  "
+                >
                   {product.category}
                 </p>
 
-                <h3 className="
-                  text-lg
-                  font-bold
-                  text-black
-                  mb-2
-                ">
+                <h3
+                  className="
+                    text-lg
+                    font-bold
+                    text-black
+                    mb-2
+                  "
+                >
                   {product.name}
                 </h3>
 
-                <p className="
-                  text-xl
-                  font-black
-                  text-black
-                ">
+                <p
+                  className="
+                    text-xl
+                    font-black
+                    text-black
+                  "
+                >
                   Rs. {product.price}
                 </p>
 
