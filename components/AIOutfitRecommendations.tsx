@@ -1,122 +1,218 @@
 "use client";
 
+import {
+  useEffect,
+  useState,
+} from "react";
+
+import Link from "next/link";
+import Image from "next/image";
+
+import { getProducts }
+from "@/lib/firestoreProducts";
+
 export default function AIOutfitRecommendations({
   product,
 }: any) {
 
-  const recommendations = {
+  const [
+    recommendations,
+    setRecommendations,
+  ] = useState<any[]>([]);
 
-    Black: [
-      "White Sneakers",
-      "Black Cargo Pants",
-      "Silver Watch",
-      "Minimal Backpack",
-    ],
+  useEffect(() => {
 
-    White: [
-      "Blue Denim Jeans",
-      "White Sneakers",
-      "Black Watch",
-      "Grey Hoodie",
-    ],
+    async function loadRecommendations() {
 
-    Olive: [
-      "Beige Chinos",
-      "Brown Boots",
-      "Canvas Backpack",
-      "Minimal Watch",
-    ],
+      const products =
+        await getProducts();
 
-    Grey: [
-      "Black Jeans",
-      "White Sneakers",
-      "Leather Jacket",
-      "Silver Accessories",
-    ],
+      const filtered =
+        products
+          .filter(
+            (item: any) =>
+              item.id !== product.id
+          )
+          .filter(
+            (item: any) => {
 
-  };
+              if (
+                product.category ===
+                "T-Shirt"
+              ) {
 
-  const items =
-    recommendations[
-      product.color as keyof typeof recommendations
-    ] || [
-      "White Sneakers",
-      "Slim Fit Jeans",
-      "Minimal Watch",
-      "Crossbody Bag",
-    ];
+                return (
+                  item.category ===
+                    "Shirt" ||
+                  item.category ===
+                    "Streetwear"
+                );
+
+              }
+
+              if (
+                product.category ===
+                "Shirt"
+              ) {
+
+                return (
+                  item.category ===
+                    "T-Shirt" ||
+                  item.category ===
+                    "Streetwear"
+                );
+
+              }
+
+              if (
+                product.category ===
+                "Streetwear"
+              ) {
+
+                return (
+                  item.category ===
+                    "T-Shirt" ||
+                  item.category ===
+                    "Shirt"
+                );
+
+              }
+
+              return true;
+
+            }
+          )
+          .slice(0, 4);
+
+      setRecommendations(
+        filtered
+      );
+
+    }
+
+    loadRecommendations();
+
+  }, [product]);
 
   return (
 
-    <section className="
-      mt-24
-      bg-white
-      rounded-[32px]
-      p-8
-    ">
+    <section
+      className="
+        mt-24
+        bg-white
+        rounded-[32px]
+        p-8
+      "
+    >
 
-      <p className="
-        uppercase
-        tracking-[6px]
-        text-sm
-        text-gray-500
-        mb-3
-      ">
+      <p
+        className="
+          uppercase
+          tracking-[6px]
+          text-sm
+          text-gray-500
+          mb-3
+        "
+      >
         AI Fashion Assistant
       </p>
 
-      <h2 className="
-        text-5xl
-        font-black
-        text-black
-        mb-8
-      ">
-        Outfit Recommendations
+      <h2
+        className="
+          text-5xl
+          font-black
+          text-black
+          mb-8
+        "
+      >
+        AI Styled With
       </h2>
 
-      <div className="
-        grid
-        md:grid-cols-2
-        gap-4
-      ">
+      <div
+        className="
+          grid
+          md:grid-cols-2
+          gap-6
+        "
+      >
 
-        {items.map(
+        {recommendations.map(
           (item) => (
 
-            <div
-              key={item}
+            <Link
+              key={item.id}
+              href={`/products/${item.id}`}
               className="
                 flex
-                items-center
                 gap-4
                 bg-[#f5f5f5]
-                rounded-2xl
-                p-5
+                rounded-[24px]
+                p-4
+                hover:shadow-lg
+                transition-all
               "
             >
 
-              <div className="
-                w-10
-                h-10
-                rounded-full
-                bg-black
-                text-white
-                flex
-                items-center
-                justify-center
-                font-bold
-              ">
-                ✓
+              <Image
+                src={item.image}
+                alt={item.name}
+                width={120}
+                height={120}
+                className="
+                  w-24
+                  h-24
+                  rounded-xl
+                  object-cover
+                "
+              />
+
+              <div>
+
+                <p
+                  className="
+                    text-xs
+                    uppercase
+                    tracking-[2px]
+                    text-gray-500
+                    mb-1
+                  "
+                >
+                  {item.category}
+                </p>
+
+                <h3
+                  className="
+                    text-lg
+                    font-bold
+                    text-black
+                    mb-2
+                  "
+                >
+                  {item.name}
+                </h3>
+
+                <p
+                  className="
+                    text-gray-500
+                    mb-2
+                  "
+                >
+                  {item.color}
+                </p>
+
+                <p
+                  className="
+                    text-xl
+                    font-black
+                    text-black
+                  "
+                >
+                  Rs. {item.price}
+                </p>
+
               </div>
 
-              <span className="
-                text-black
-                font-medium
-              ">
-                {item}
-              </span>
-
-            </div>
+            </Link>
 
           )
         )}
@@ -126,4 +222,5 @@ export default function AIOutfitRecommendations({
     </section>
 
   );
+
 }
