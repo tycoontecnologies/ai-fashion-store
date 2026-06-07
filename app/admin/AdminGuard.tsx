@@ -27,7 +27,7 @@ export default function AdminGuard({
   } = useAuth();
 
   const adminEmail =
-    "kashifajmalik@gmail.com";
+    "admin@guess360.com.pk";
 
   useEffect(() => {
 
