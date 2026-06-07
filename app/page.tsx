@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import TrendingSection from "@/components/TrendingSection";
 
@@ -15,7 +16,21 @@ import FilterBar from "@/components/FilterBar";
 
 import { getProducts } from "@/lib/firestoreProducts";
 
+const MAINTENANCE_MODE = false;
+
 export default function Home() {
+
+  const router = useRouter();
+
+  useEffect(() => {
+
+    if (MAINTENANCE_MODE) {
+
+      router.push("/maintenance");
+
+    }
+
+  }, [router]);
 
   const [search, setSearch] =
     useState("");
@@ -93,6 +108,12 @@ export default function Home() {
       );
 
     });
+
+  if (MAINTENANCE_MODE) {
+
+    return null;
+
+  }
 
   return (
 
