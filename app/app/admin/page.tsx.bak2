@@ -184,17 +184,7 @@ export default function AdminPage() {
         color: productColor,
         price: Number(productPrice),
         description: productDescription,
-        image: preview || "",
-
-        gallery: [],
-        variants: [],
-
-        featured: false,
-        trending: false,
-        bestseller: false,
-        newArrival: true,
-
-        active: true
+        image: preview || ""
 
       });
 
@@ -361,4 +351,3 @@ export default function AdminPage() {
   );
 
 }
-

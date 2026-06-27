@@ -51,7 +51,7 @@ export default function TrendingSection() {
 
             <Link
               key={product.id}
-              href={`/product/${product.id}`}
+              href={`/products/${product.id}`}
               className="
                 bg-white
                 rounded-[24px]

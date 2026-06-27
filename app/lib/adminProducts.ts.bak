@@ -47,8 +47,6 @@ export interface AdminProduct {
 
   brand?: string;
 
-  color?: string;
-
 gender?: string;
 
 tags?: string[];

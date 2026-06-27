@@ -55,7 +55,7 @@ export default function ProductCard({
         <div className="relative">
 
             <Link
-              href={`/product/${product.id}`}
+              href={`/products/${product.id}`}
             >
 
             <Image

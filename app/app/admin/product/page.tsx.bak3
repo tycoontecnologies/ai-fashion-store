@@ -44,6 +44,7 @@ seoDescription:"",
 comparePrice:0,
 
 sku:"",
+bestseller:false,
 newArrival:false
 });
 
@@ -319,4 +320,3 @@ className="bg-black text-white p-4 rounded-xl hover:bg-gray-800"
 </div>
 );
 }
-
