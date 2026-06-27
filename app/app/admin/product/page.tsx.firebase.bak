@@ -4,8 +4,8 @@ import { useEffect,useState } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { saveProduct,updateProduct,getProduct } from "@/lib/adminProducts";
-
-
+import { storage } from "@/lib/firebase";
+import { ref,uploadBytes,getDownloadURL } from "firebase/storage";
 
 export default function ProductEditor(){
 
@@ -58,39 +58,24 @@ useEffect(()=>{
 
 async function uploadImage(file:any){
 
-  setUploading(true);
+ setUploading(true);
 
-  const formData=new FormData();
+ const storageRef=ref(
+   storage,
+   `products/${Date.now()}-${file.name}`
+ );
 
-  formData.append("file",file);
+ await uploadBytes(storageRef,file);
 
-  const response=await fetch("/api/admin/upload",{
-    method:"POST",
-    body:formData
-  });
+ const url=
+   await getDownloadURL(storageRef);
 
-  const result=await response.json();
+ setProduct({
+   ...product,
+   image:url
+ });
 
-  if(!result.success){
-
-    alert("Upload failed");
-
-    setUploading(false);
-
-    return;
-
-  }
-
-  setProduct({
-
-    ...product,
-
-    image: result.url
-
-  });
-
-  setUploading(false);
-
+ setUploading(false);
 }
 
 async function save(){
@@ -334,6 +319,4 @@ className="bg-black text-white p-4 rounded-xl hover:bg-gray-800"
 </div>
 );
 }
-
-
 

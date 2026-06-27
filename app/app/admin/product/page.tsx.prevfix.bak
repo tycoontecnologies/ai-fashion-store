@@ -81,13 +81,13 @@ async function uploadImage(file:any){
 
   }
 
-  setProduct({
+  setProduct(prev=>({
 
-    ...product,
+    ...prev,
 
-    image: result.url
+    image:result.url
 
-  });
+  }));
 
   setUploading(false);
 
@@ -334,6 +334,5 @@ className="bg-black text-white p-4 rounded-xl hover:bg-gray-800"
 </div>
 );
 }
-
 
 
