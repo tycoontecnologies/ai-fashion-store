@@ -1,0 +1,55 @@
+"use client";
+
+import Link from "next/link";
+
+const categories = [
+  "Men",
+  "Women",
+  "T-Shirts",
+  "Shirts",
+  "Polo",
+  "Streetwear",
+  "Jeans",
+  "Shoes",
+  "Accessories",
+  "New Arrivals",
+  "Trending",
+  "Featured"
+];
+
+export default function HomeCategories() {
+  return (
+    <section className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+
+      <div className="flex flex-wrap gap-3 justify-center">
+
+        {categories.map((category) => (
+
+          <Link
+            key={category}
+            href={`/collections/${category.toLowerCase().replace(/\s+/g,"-")}`}
+            className="
+              px-5
+              py-2.5
+              rounded-full
+              bg-white
+              border
+              border-[#d6aa5a]
+              text-black
+              font-medium
+              text-sm
+              hover:bg-[#d6aa5a]
+              hover:text-black
+              transition-all
+            "
+          >
+            {category}
+          </Link>
+
+        ))}
+
+      </div>
+
+    </section>
+  );
+}

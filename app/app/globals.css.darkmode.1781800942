@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root{
+  --gold:#d6aa5a;
+  --gold-hover:#c99a43;
+  --gold-dark:#b88431;
+
+  --bg:#f8f9fb;
+  --surface:#ffffff;
+  --text:#111111;
+  --border:#e5e7eb;
+}
+
+html,
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+a:hover{
+  color:var(--gold);
+}
+
+button{
+  cursor:pointer;
+  transition:.25s;
+}
+
+.card,
+.product-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+}
+
+.price{
+  color:var(--gold);
+}
+
+.btn-primary{
+  background:var(--gold);
+  color:#111;
+}
+
+.btn-secondary{
+  border:1px solid var(--gold);
+  color:var(--gold);
+}
+
+footer{
+  background:#111;
+  color:white;
+}

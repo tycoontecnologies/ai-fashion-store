@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root{
+  --background:#ffffff;
+  --foreground:#111111;
+}
+
+@theme inline{
+  --color-background:var(--background);
+  --color-foreground:var(--foreground);
+  --font-sans:var(--font-geist-sans);
+  --font-mono:var(--font-geist-mono);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  background:#ffffff;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background:#ffffff;
+  color:#111111;
+}
+
+/* ADMIN */
+
+.app-admin,
+.app-admin *{
+  color:#111111;
+}
+
+.app-admin aside,
+.app-admin aside *{
+  color:#ffffff;
+}
+
+.app-admin input,
+.app-admin textarea,
+.app-admin select{
+  color:#111111;
+}
+
+.app-admin table,
+.app-admin th,
+.app-admin td{
+  color:#111111;
+}
+
+.app-admin button{
+  cursor:pointer;
+}
+
+.app-admin .bg-white{
+  color:#111111;
+}
+
+.app-admin a{
+  text-decoration:none;
+}
+
+/* STOREFRONT */
+
+main{
+  color:inherit;
+}

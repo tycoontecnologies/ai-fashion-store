@@ -1,0 +1,38 @@
+[
+{
+"id":"1",
+"name":"Premium Linen Shirt",
+"slug":"premium-linen-shirt",
+"category":"Men",
+"price":4990,
+"description":"Premium breathable linen shirt for everyday luxury wear.",
+"image":"/products/product_0059.png"
+},
+{
+"id":"2",
+"name":"Classic Stripe Tee",
+"slug":"classic-stripe-tee",
+"category":"Men",
+"price":2990,
+"description":"Minimal striped cotton t-shirt.",
+"image":"/products/product_0107.png"
+},
+{
+"id":"3",
+"name":"Urban Street Polo",
+"slug":"urban-street-polo",
+"category":"Men",
+"price":3490,
+"description":"Modern street inspired polo shirt.",
+"image":"/products/product_0156.png"
+},
+{
+"id":"4",
+"name":"Summer Cuban Shirt",
+"slug":"summer-cuban-shirt",
+"category":"Men",
+"price":3990,
+"description":"Relaxed fit summer cuban collar shirt.",
+"image":"/products/product_0056.png"
+}
+]

@@ -1,0 +1,108 @@
+import {
+  collection,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  doc,
+  getDoc
+} from "firebase/firestore";
+
+import { db } from "./firebase";
+
+const COLLECTION = "products";
+
+export interface ProductVariant {
+  id?: string;
+  color: string;
+  size: string;
+  price: number;
+  stock: number;
+  image?: string;
+}
+
+export interface AdminProduct {
+  id?: string;
+  name: string;
+  category: string;
+  color: string;
+  price: number;
+  description?: string;
+  image: string;
+  gallery?: string[];
+  featured?: boolean;
+  trending?: boolean;
+  bestseller?: boolean;
+  newArrival?: boolean;
+  variants?: ProductVariant[];
+}
+
+export async function getProducts() {
+
+  const snap = await getDocs(
+    collection(db, COLLECTION)
+  );
+
+  return snap.docs.map(docu => ({
+    id: docu.id,
+    ...docu.data()
+  }));
+
+}
+
+export async function getProduct(id:string) {
+
+  const ref = doc(db, COLLECTION, id);
+
+  const snap = await getDoc(ref);
+
+  if (!snap.exists()) return null;
+
+  return {
+    id: snap.id,
+    ...snap.data()
+  };
+
+}
+
+export async function saveProduct(
+  product: AdminProduct
+) {
+
+  const ref = await addDoc(
+    collection(db, COLLECTION),
+    product
+  );
+
+  return {
+    id: ref.id,
+    ...product
+  };
+
+}
+
+export async function updateProduct(
+  id:string,
+  data:any
+) {
+
+  await updateDoc(
+    doc(db, COLLECTION, id),
+    data
+  );
+
+  return true;
+
+}
+
+export async function deleteProduct(
+  id:string
+) {
+
+  await deleteDoc(
+    doc(db, COLLECTION, id)
+  );
+
+  return true;
+
+}

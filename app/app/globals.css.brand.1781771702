@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root{
+  --brand-gold:#cfa44d;
+  --brand-gold-dark:#b78d3f;
+  --brand-black:#0f0f12;
+  --brand-bg:#141418;
+  --brand-text:#f5f5f5;
+}
+
+html{
+  background:var(--brand-bg);
+}
+
+body{
+  background:var(--brand-bg);
+  color:var(--brand-text);
+}
+
+button{
+  cursor:pointer;
+}
+
+.brand-gold{
+  color:var(--brand-gold);
+}
+
+.brand-bg{
+  background:var(--brand-bg);
+}
+
+.brand-card{
+  background:#1b1b20;
+  border:1px solid rgba(207,164,77,.25);
+}
+
+.brand-btn{
+  background:var(--brand-gold);
+  color:#111;
+  font-weight:700;
+}
+
+.brand-btn:hover{
+  background:var(--brand-gold-dark);
+}

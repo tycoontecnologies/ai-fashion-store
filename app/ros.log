@@ -1,0 +1,61 @@
+
+> ai-fashion-store@0.1.0 start
+> next start
+
+▲ Next.js 16.2.6
+- Local:         http://localhost:3001
+- Network:       http://153.92.4.27:3001
+✓ Ready in 294ms
+
+  #  Node.js[10349]: void node::ResetStdio() at ../src/node.cc:751
+  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
+
+----- Native stack trace -----
+
+ 1: 0xcb5167 node::Assert(node::AssertionInfo const&) [next-server (v16.2.6)]
+ 2: 0xc61934  [next-server (v16.2.6)]
+ 3: 0x7f8c49509495  [/lib/x86_64-linux-gnu/libc.so.6]
+ 4: 0x7f8c49509610 on_exit [/lib/x86_64-linux-gnu/libc.so.6]
+ 5: 0xbc162f node::DefaultProcessExitHandlerInternal(node::Environment*, node::ExitCode) [next-server (v16.2.6)]
+ 6: 0xc20f1f node::Environment::Exit(node::ExitCode) [next-server (v16.2.6)]
+ 7: 0xf50bdf v8::internal::FunctionCallbackArguments::Call(v8::internal::CallHandlerInfo) [next-server (v16.2.6)]
+ 8: 0xf5144d  [next-server (v16.2.6)]
+ 9: 0xf51915 v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*) [next-server (v16.2.6)]
+10: 0x195e376  [next-server (v16.2.6)]
+
+  #  Node.js[10349]: void node::ResetStdio() at ../src/node.cc:751
+  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
+
+----- Native stack trace -----
+
+ 1: 0xcb5167 node::Assert(node::AssertionInfo const&) [next-server (v16.2.6)]
+ 2: 0xc61934  [next-server (v16.2.6)]
+ 3: 0xc61f4d node::TrapWebAssemblyOrContinue(int, siginfo_t*, void*) [next-server (v16.2.6)]
+ 4: 0x7f8c49506520  [/lib/x86_64-linux-gnu/libc.so.6]
+Aborted (core dumped)
+
+  #  Node.js[10325]: void node::ResetStdio() at ../src/node.cc:751
+  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
+
+----- Native stack trace -----
+
+ 1: 0xcb5167 node::Assert(node::AssertionInfo const&) [npm run start]
+ 2: 0xc61934  [npm run start]
+ 3: 0x7f972ad13495  [/lib/x86_64-linux-gnu/libc.so.6]
+ 4: 0x7f972ad13610 on_exit [/lib/x86_64-linux-gnu/libc.so.6]
+ 5: 0xbc162f node::DefaultProcessExitHandlerInternal(node::Environment*, node::ExitCode) [npm run start]
+ 6: 0xc20f1f node::Environment::Exit(node::ExitCode) [npm run start]
+ 7: 0xf50bdf v8::internal::FunctionCallbackArguments::Call(v8::internal::CallHandlerInfo) [npm run start]
+ 8: 0xf5144d  [npm run start]
+ 9: 0xf51915 v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*) [npm run start]
+10: 0x195e376  [npm run start]
+
+  #  Node.js[10325]: void node::ResetStdio() at ../src/node.cc:751
+  #  Assertion failed: !(err != 0) || (err == -1 && (*__errno_location ()) == 1)
+
+----- Native stack trace -----
+
+ 1: 0xcb5167 node::Assert(node::AssertionInfo const&) [npm run start]
+ 2: 0xc61934  [npm run start]
+ 3: 0xc61f4d node::TrapWebAssemblyOrContinue(int, siginfo_t*, void*) [npm run start]
+ 4: 0x7f972ad10520  [/lib/x86_64-linux-gnu/libc.so.6]

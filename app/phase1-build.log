@@ -1,0 +1,57 @@
+
+> ai-fashion-store@0.1.0 build
+> next build
+
+▲ Next.js 16.2.6 (Turbopack)
+- Environments: .env.local
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 9.4min
+  Running TypeScript ...
+  Finished TypeScript in 2.9min ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/29) ...
+  Generating static pages using 1 worker (7/29) 
+  Generating static pages using 1 worker (14/29) 
+  Generating static pages using 1 worker (21/29) 
+✓ Generating static pages using 1 worker (29/29) in 17.4s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /admin
+├ ○ /admin/categories
+├ ○ /admin/dashboard
+├ ○ /admin/homepage
+├ ○ /admin/media
+├ ○ /admin/orders
+├ ○ /admin/product
+├ ○ /admin/products
+├ ○ /admin/variants
+├ ƒ /api/analyze
+├ ƒ /api/stylist
+├ ○ /cart
+├ ○ /checkout
+├ ƒ /collections/[type]
+├ ○ /icon.png
+├ ○ /login
+├ ○ /maintenance
+├ ○ /order-success
+├ ○ /orders
+├ ƒ /product/[id]
+├ ○ /profile
+├ ○ /robots.txt
+├ ○ /search
+├ ○ /signup
+├ ○ /sitemap.xml
+├ ○ /style-quiz
+└ ○ /wishlist
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

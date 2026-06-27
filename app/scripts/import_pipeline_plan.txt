@@ -1,0 +1,45 @@
+PHASE 1
+✓ Maintenance mode enabled
+
+PHASE 2
+✓ Bulk image folder uploaded
+✓ Product images available on server
+
+PHASE 3
+Build automated importer
+
+Importer responsibilities:
+
+1. Scan /root/import_products
+
+2. Rename files:
+   shirt1 (1).png
+   ->
+   product_0001.png
+
+3. Upload image to Firebase Storage
+
+4. Call AI analyzer
+
+5. Detect:
+   - category
+   - color
+   - style
+   - gender
+   - title
+   - description
+
+6. Save product to Firestore
+
+7. Log success/failure
+
+8. Resume from interruption
+
+9. Generate:
+   imports/import_report.csv
+
+10. Generate:
+   imports/imported.json
+
+TARGET:
+200+ products imported automatically
