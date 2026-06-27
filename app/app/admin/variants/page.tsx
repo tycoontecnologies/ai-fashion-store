@@ -130,7 +130,7 @@ export default function VariantsAdmin(){
           mb-8
         "
       >
-        Product Variants
+        Variant & Duplicate Product Manager
       </h1>
 
       <div
@@ -445,7 +445,92 @@ export default function VariantsAdmin(){
 
       </div>
 
-      <button
+      <hr className="my-10"/>
+
+<div className="bg-yellow-50 border border-yellow-300 rounded-2xl p-6 mb-8">
+
+<h2 className="text-2xl font-bold mb-2">
+Duplicate Product Merge Center
+</h2>
+
+<p className="text-gray-600 mb-4">
+Products having the same name should be merged into one parent product with multiple variants.
+</p>
+
+<div className="overflow-auto rounded-xl border bg-white">
+
+<table className="w-full">
+
+<thead className="bg-gray-100">
+
+<tr>
+
+<th className="p-3 text-left">
+Product
+</th>
+
+<th className="p-3">
+Variants
+</th>
+
+<th className="p-3">
+Merge
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{products
+.filter((p:any)=>
+products.filter((x:any)=>
+(x.name||"").trim().toLowerCase()===
+(p.name||"").trim().toLowerCase()
+).length>1
+)
+.map((p:any)=>(
+
+<tr key={p.id} className="border-t">
+
+<td className="p-3">
+{p.name}
+</td>
+
+<td className="text-center">
+{products.filter((x:any)=>
+(x.name||"").trim().toLowerCase()===
+(p.name||"").trim().toLowerCase()
+).length}
+</td>
+
+<td className="text-center">
+
+<button
+className="bg-indigo-600 text-white px-4 py-2 rounded-lg"
+onClick={()=>{
+alert("Merge Wizard coming in next patch.")
+}}
+>
+Merge
+</button>
+
+</td>
+
+</tr>
+
+))}
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<button
         onClick={save}
         className="
           bg-green-600
@@ -464,3 +549,4 @@ export default function VariantsAdmin(){
   );
 
 }
+
