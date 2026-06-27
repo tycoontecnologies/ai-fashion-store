@@ -15,14 +15,27 @@ import { db } from "./firebase";
 
 const COLLECTION = "products";
 
-export interface ProductVariant {
-  id: string;
-  sku: string;
-  color: string;
-  size: string;
-  price: number;
-  stock: number;
-  image: string;
+export interface VariantAttribute{
+  key:string;
+  value:string;
+}
+
+export interface ProductVariant{
+  id:string;
+
+  name?:string;
+
+  sku:string;
+
+  price:number;
+
+  stock:number;
+
+  image:string;
+
+  images?:string[];
+
+  attributes?:VariantAttribute[];
 }
 
 export interface AdminProduct {
@@ -109,7 +122,11 @@ function normalize(product: any): AdminProduct {
       : [],
 
     variants: Array.isArray(product.variants)
-      ? product.variants
+      ? product.variants.map((v:any)=>({
+          images:[],
+          attributes:[],
+          ...v
+        }))
       : [],
 
     featured: !!product.featured,
@@ -281,3 +298,4 @@ product.updatedAt = serverTimestamp();
 
 return saveProduct(product);
 }
+

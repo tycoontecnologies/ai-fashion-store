@@ -322,6 +322,153 @@ Best Seller
 
 </div>
 
+<hr className="my-8"/>
+
+<div className="space-y-4">
+
+<div className="flex items-center justify-between">
+
+<h2 className="text-2xl font-bold">
+Variants
+</h2>
+
+<button
+type="button"
+className="bg-green-600 text-white px-4 py-2 rounded-xl"
+onClick={()=>
+setProduct({
+...product,
+variants:[
+...(product.variants||[]),
+{
+id:Date.now().toString(),
+color:"",
+size:"",
+sku:"",
+price:product.price,
+stock:0,
+image:""
+}
+]
+})
+}
+>
++ Add Variant
+</button>
+
+</div>
+
+{(product.variants||[]).map((v:any,index:number)=>(
+
+<div
+key={v.id}
+className="border rounded-xl p-4 space-y-3"
+>
+
+<div className="grid grid-cols-5 gap-3">
+
+<input
+className="border p-2 rounded"
+placeholder="Color"
+value={v.color}
+onChange={e=>{
+
+const variants=[...(product.variants||[])]
+
+variants[index].color=e.target.value
+
+setProduct({...product,variants})
+
+}}
+/>
+
+<input
+className="border p-2 rounded"
+placeholder="Size"
+value={v.size}
+onChange={e=>{
+
+const variants=[...(product.variants||[])]
+
+variants[index].size=e.target.value
+
+setProduct({...product,variants})
+
+}}
+/>
+
+<input
+className="border p-2 rounded"
+placeholder="SKU"
+value={v.sku}
+onChange={e=>{
+
+const variants=[...(product.variants||[])]
+
+variants[index].sku=e.target.value
+
+setProduct({...product,variants})
+
+}}
+/>
+
+<input
+className="border p-2 rounded"
+type="number"
+placeholder="Price"
+value={v.price}
+onChange={e=>{
+
+const variants=[...(product.variants||[])]
+
+variants[index].price=Number(e.target.value)
+
+setProduct({...product,variants})
+
+}}
+/>
+
+<input
+className="border p-2 rounded"
+type="number"
+placeholder="Stock"
+value={v.stock}
+onChange={e=>{
+
+const variants=[...(product.variants||[])]
+
+variants[index].stock=Number(e.target.value)
+
+setProduct({...product,variants})
+
+}}
+/>
+
+</div>
+
+<button
+type="button"
+className="bg-red-600 text-white px-3 py-2 rounded"
+onClick={()=>{
+
+const variants=(product.variants||[]).filter((_:any,i:number)=>i!==index)
+
+setProduct({...product,variants})
+
+}}
+>
+
+Delete Variant
+
+</button>
+
+</div>
+
+))}
+
+</div>
+
+
 <button
 disabled={uploading}
 onClick={save}
@@ -334,6 +481,11 @@ className="bg-black text-white p-4 rounded-xl hover:bg-gray-800"
 </div>
 );
 }
+
+
+
+
+
 
 
 
