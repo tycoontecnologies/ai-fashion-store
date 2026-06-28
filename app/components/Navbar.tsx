@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -53,8 +54,9 @@ export default function Navbar() {
   }
 
   return (
+  <>
 
-    <>
+
 
       <header className="
         w-full
@@ -79,15 +81,28 @@ export default function Navbar() {
 
           <Link
             href="/"
-            className="
-              text-3xl
-              lg:text-5xl
-              font-light
-              tracking-[8px]
-              text-black
-            "
+            className="flex items-center gap-4"
           >
-            GUESS360
+            <Image
+              src="/brand/logo.png"
+              alt="GUESS360"
+              width={48}
+              height={48}
+              className="w-12 h-12 object-contain"
+              priority
+            />
+
+            <span
+              className="
+                text-3xl
+                lg:text-5xl
+                font-light
+                tracking-[8px]
+                text-black
+              "
+            >
+              GUESS360
+            </span>
           </Link>
 
           <nav className="
