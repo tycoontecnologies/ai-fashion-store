@@ -1,43 +1,32 @@
-import {
-  collection,
-  addDoc,
-  getDocs,
-} from "firebase/firestore";
+export async function saveOrder(order: any) {
 
-import { db } from "./firebase";
-
-export async function saveOrder(
-  order: any
-) {
-
-  await addDoc(
-    collection(
-      db,
-      "orders"
-    ),
-    order
+  const res = await fetch(
+    "/api/admin/orders/save",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(order),
+    }
   );
 
+  if (!res.ok) {
+    throw new Error("Failed to save order");
+  }
+
+  return res.json();
 }
 
 export async function getOrders() {
 
-  const snapshot =
-    await getDocs(
-      collection(
-        db,
-        "orders"
-      )
-    );
-
-  return snapshot.docs.map(
-    (docItem) => ({
-
-      id: docItem.id,
-
-      ...docItem.data(),
-
-    })
+  const res = await fetch(
+    "/api/admin/orders"
   );
 
+  if (!res.ok) {
+    throw new Error("Failed to load orders");
+  }
+
+  return res.json();
 }
