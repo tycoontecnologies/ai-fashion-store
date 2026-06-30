@@ -59,20 +59,25 @@ export default function ProductCard({
             >
 
             <Image
-              src={product.image}
-              alt={product.name}
-              width={800}
-              height={1000}
-              loading="eager"
-              className="
-                w-full
-                h-[360px]
-                object-cover
-                transition-all
-                duration-500
-                group-hover:scale-105
-              "
-            />
+  src={
+    product?.image &&
+    String(product.image).trim() !== ""
+      ? product.image
+      : "/products/product_0001.png"
+  }
+  alt={product?.name || "Product"}
+  width={800}
+  height={1000}
+  loading="eager"
+  className="
+    w-full
+    h-[360px]
+    object-cover
+    transition-all
+    duration-500
+    group-hover:scale-105
+  "
+/>
 
           </Link>
 

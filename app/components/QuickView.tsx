@@ -80,16 +80,21 @@ export default function QuickView({
         ">
 
           <Image
-            src={product.image}
-            alt={product.name}
-            width={900}
-            height={1200}
-            className="
-              w-full
-              h-full
-              object-cover
-            "
-          />
+  src={
+    product?.image &&
+    String(product.image).trim() !== ""
+      ? product.image
+      : "/products/product_0001.png"
+  }
+  alt={product?.name || "Product"}
+  width={900}
+  height={1200}
+  className="
+    w-full
+    h-full
+    object-cover
+  "
+/>
 
         </div>
 
