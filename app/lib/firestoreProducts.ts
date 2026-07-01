@@ -1,50 +1,13 @@
-import {
-  collection,
-  getDocs,
-  getDoc,
-  doc
-} from "firebase/firestore";
-
-import { db } from "./firebase";
+import products from "@/data/cms/products.json";
 
 export async function getProducts() {
-
-  const snapshot =
-    await getDocs(
-      collection(
-        db,
-        "products"
-      )
-    );
-
-  return snapshot.docs.map(
-    d => ({
-      id:d.id,
-      ...d.data()
-    })
-  );
-
+  return products;
 }
 
-export async function getProductById(
-  id:string
-) {
-
-  const snap =
-    await getDoc(
-      doc(
-        db,
-        "products",
-        id
-      )
-    );
-
-  if(!snap.exists())
-    return null;
-
-  return {
-    id:snap.id,
-    ...snap.data()
-  };
-
+export async function getProductById(id: string) {
+  return (
+    (products as any[]).find(
+      p => String(p.id) === String(id)
+    ) || null
+  );
 }

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import products from "@/lib/products.local.json";
+import products from "@/data/cms/products.json";
 
 let data: any[] = (products as any[]).map((p) => ({
   ...p,

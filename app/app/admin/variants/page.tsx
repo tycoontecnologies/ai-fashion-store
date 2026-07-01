@@ -508,14 +508,38 @@ products.filter((x:any)=>
 <td className="text-center">
 
 <button
-className="bg-indigo-600 text-white px-4 py-2 rounded-lg"
-onClick={()=>{
-alert("Merge Wizard coming in next patch.")
-}}
->
-Merge
-</button>
+  className="bg-indigo-600 text-white px-4 py-2 rounded-lg"
+  onClick={async () => {
 
+    const duplicates = products.filter(
+      (x: any) =>
+        (x.name || "").trim().toLowerCase() ===
+        (p.name || "").trim().toLowerCase()
+    );
+
+    if (duplicates.length < 2) return;
+
+    const parent = duplicates[0];
+
+    const variants = duplicates.map(
+      (item: any, index: number) => ({
+        id: item.id,
+        color: item.color || `Variant ${index + 1}`,
+        size: "Free",
+        price: item.price,
+        stock: 100,
+        image: item.image,
+      })
+    );
+
+    await saveVariants(parent.id, variants);
+
+    alert("Merged Successfully");
+
+  }}
+>
+  Merge
+</button>
 </td>
 
 </tr>
