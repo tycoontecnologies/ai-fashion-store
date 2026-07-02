@@ -1,38 +1,24 @@
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "./firebase";
+import { getProducts as getAdminProducts } from "./adminProducts";
 
 export async function getProducts() {
-
-  const snap = await getDocs(collection(db,"products"));
-
-  return snap.docs.map(doc=>({
-
-    id:doc.id,
-
-    ...doc.data()
-
-  }));
-
+  return await getAdminProducts();
 }
 
-export async function getProductById(id:string){
-
-  const products=await getProducts();
-
-  return products.find(p=>p.id===id) || null;
-
+export async function getProductsForStore() {
+  return await getAdminProducts();
 }
 
-export async function getVariantGroup(group:string){
+export async function getProductById(id: string) {
+  const products = await getAdminProducts();
+  return products.find((p: any) => p.id === id) || null;
+}
 
-  if(!group) return [];
+export async function getVariantGroup(group: string) {
+  if (!group) return [];
 
-  const products=await getProducts();
+  const products = await getAdminProducts();
 
   return products.filter(
-
-    (p:any)=>p.variantGroup===group
-
+    (p: any) => p.variantGroup === group
   );
-
 }
