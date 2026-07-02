@@ -1,5 +1,5 @@
 "use client";
-
+import { getVariantGroup } from "@/lib/firestoreProducts";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 
@@ -17,25 +17,48 @@ export default function ProductPage() {
 
   const [product, setProduct] = useState<any>(null);
 
-  const [selectedImage, setSelectedImage] =
-    useState("");
+  const [selectedVariant,setSelectedVariant]=useState<any>(null);
+  const [variantProducts,setVariantProducts]=useState<any[]>([]);
+
+const [selectedImage,setSelectedImage]=useState("");
 
   useEffect(() => {
 
     if (!params.id) return;
 
     getProductById(params.id as string)
-      .then((p: any) => {
+      .then(async (p:any)=>{
 
-        setProduct(p);
 
-        setSelectedImage(
-          p?.gallery?.length
-            ? p.gallery[0]
-            : p?.image || ""
-        );
+setProduct(p);
+if(p?.variantGroup){
 
-      })
+const group=await getVariantGroup(p.variantGroup);
+
+setVariantProducts(group);
+
+}
+
+console.log("PRODUCT",p);
+console.log("VARIANTS",p?.variants);
+
+if(p?.variants?.length){
+
+setSelectedVariant(p.variants[0]);
+
+setSelectedImage(
+p.variants[0].image || p.image
+);
+
+}else{
+
+setSelectedImage(
+p?.gallery?.[0] || p?.image || ""
+);
+
+}
+
+})
       .catch(console.error);
 
   }, [params.id]);
@@ -62,13 +85,19 @@ export default function ProductPage() {
 
   }
 
-  const gallery =
-
-    product.gallery?.length
-
-      ? product.gallery
-
-      : [product.image];
+  const gallery=
+selectedVariant?.image
+?[
+selectedVariant.image,
+...(product.gallery||[])
+.filter((x:string)=>x!==selectedVariant.image)
+]
+:
+(
+product.gallery?.length
+?product.gallery
+:[product.image]
+);
 
   return (
 
@@ -169,10 +198,63 @@ export default function ProductPage() {
               {product.description}
 
             </p>
+            {Array.isArray(product.variants) && product.variants.length > 0 && (
 
-            <ProductActions
-              product={product}
-            />
+<div className="mb-8">
+
+<p className="font-bold mb-3">
+
+Color
+
+</p>
+
+<div className="flex gap-3 flex-wrap">
+
+{variantProducts.map((v:any,index:number)=>(
+
+<button
+key={v.id || index}
+onClick={()=>{
+
+setSelectedVariant(v);
+
+setSelectedImage(v.image);
+
+setProduct(v);
+
+}}
+className={`border rounded-xl p-2 ${
+selectedVariant?.id===v.id
+?"border-black"
+:"border-gray-300"
+}`}
+>
+
+<img
+src={v.image || product.image}
+className="w-16 h-16 object-cover rounded-lg"
+/>
+
+<div className="text-xs mt-2 text-center">
+{v.color || `Variant ${index+1}`}
+</div>
+
+</button>
+
+))}
+
+</div>
+
+</div>
+
+)}
+<ProductActions
+  product={{
+    ...product,
+    image:selectedImage,
+    selectedVariant
+  }}
+/>
 
           </div>
 
@@ -195,3 +277,6 @@ export default function ProductPage() {
   );
 
 }
+
+
+

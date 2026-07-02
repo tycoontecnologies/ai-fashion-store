@@ -1,848 +1,5108 @@
 [
-    {
-        "id":  "02ltbtF2iIXht2nHiRVG",
-        "name":  "Premium Oxford Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0059.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0059.png",
-                        "/products/product_0080.png",
-                        "/products/product_0015.png",
-                        "/products/product_0101.png",
-                        "/products/product_0126.png",
-                        "/products/product_0082.png",
-                        "/products/product_0196.png",
-                        "/products/product_0159.png",
-                        "/products/product_0192.png",
-                        "/products/product_0103.png",
-                        "/products/product_0079.png",
-                        "/products/product_0028.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "02ltbtF2iIXht2nHiRVG",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Premium Oxford Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "0L7pK3MStQCr907tlD3C",
-        "name":  "Classic Stripe Tee",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0107.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0107.png",
-                        "/products/product_0072.png",
-                        "/products/product_0010.png",
-                        "/products/product_0181.png",
-                        "/products/product_0042.png",
-                        "/products/product_0048.png",
-                        "/products/product_0149.png",
-                        "/products/product_0053.png",
-                        "/products/product_0199.png",
-                        "/products/product_0022.png",
-                        "/products/product_0155.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "0L7pK3MStQCr907tlD3C",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Classic Stripe Tee crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "0Qa0TgvvTsTEqbIm7W36",
-        "name":  "Urban Polo Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0156.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0156.png",
-                        "/products/product_0130.png",
-                        "/products/product_0143.png",
-                        "/products/product_0154.png",
-                        "/products/product_0119.png",
-                        "/products/product_0110.png",
-                        "/products/product_0171.png",
-                        "/products/product_0004.png",
-                        "/products/product_0024.png",
-                        "/products/product_0152.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "0Qa0TgvvTsTEqbIm7W36",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Urban Polo Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "0R5X6IxXCWJxaXtS3lsP",
-        "name":  "Linen Summer Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0056.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0056.png",
-                        "/products/product_0051.png",
-                        "/products/product_0113.png",
-                        "/products/product_0189.png",
-                        "/products/product_0114.png",
-                        "/products/product_0100.png",
-                        "/products/product_0070.png",
-                        "/products/product_0144.png",
-                        "/products/product_0147.png",
-                        "/products/product_0017.png",
-                        "/products/product_0060.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "0R5X6IxXCWJxaXtS3lsP",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Linen Summer Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "0UczrcX2nV3F69hV18p6",
-        "name":  "Modern Olive Tee",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0068.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0068.png",
-                        "/products/product_0091.png",
-                        "/products/product_0142.png",
-                        "/products/product_0214.png",
-                        "/products/product_0090.png",
-                        "/products/product_0184.png",
-                        "/products/product_0179.png",
-                        "/products/product_0127.png",
-                        "/products/product_0139.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "0UczrcX2nV3F69hV18p6",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Modern Olive Tee crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "0g4EmNDSxukCTQOSW5Es",
-        "name":  "Luxury Knit Polo",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0003.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0003.png",
-                        "/products/product_0133.png",
-                        "/products/product_0034.png",
-                        "/products/product_0112.png",
-                        "/products/product_0141.png",
-                        "/products/product_0039.png",
-                        "/products/product_0081.png",
-                        "/products/product_0088.png",
-                        "/products/product_0071.png",
-                        "/products/product_0169.png",
-                        "/products/product_0120.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "0g4EmNDSxukCTQOSW5Es",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Luxury Knit Polo crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "0piiuMKsIYgE60C9hdYF",
-        "name":  "Executive Formal Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0129.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0129.png",
-                        "/products/product_0069.png",
-                        "/products/product_0206.png",
-                        "/products/product_0073.png",
-                        "/products/product_0006.png",
-                        "/products/product_0099.png",
-                        "/products/product_0200.png",
-                        "/products/product_0208.png",
-                        "/products/product_0063.png",
-                        "/products/product_0057.png",
-                        "/products/product_0087.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "0piiuMKsIYgE60C9hdYF",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Executive Formal Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "18f5gP1KrHHB2mqhv6tl",
-        "name":  "Streetwear Graphic Tee",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0001.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0001.png",
-                        "/products/product_0128.png",
-                        "/products/product_0165.png",
-                        "/products/product_0102.png",
-                        "/products/product_0138.png",
-                        "/products/product_0078.png",
-                        "/products/product_0002.png",
-                        "/products/product_0074.png",
-                        "/products/product_0106.png",
-                        "/products/product_0007.png",
-                        "/products/product_0008.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "18f5gP1KrHHB2mqhv6tl",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Streetwear Graphic Tee crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "1Xh2SilDJOzc0dXhGpmm",
-        "name":  "Relaxed Fit Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0207.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0207.png",
-                        "/products/product_0050.png",
-                        "/products/product_0153.png",
-                        "/products/product_0108.png",
-                        "/products/product_0047.png",
-                        "/products/product_0038.png",
-                        "/products/product_0203.png",
-                        "/products/product_0174.png",
-                        "/products/product_0117.png",
-                        "/products/product_0030.png",
-                        "/products/product_0132.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "1Xh2SilDJOzc0dXhGpmm",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Relaxed Fit Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "2CCrftfvqszYvZAORNOe",
-        "name":  "Smart Casual Polo",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0077.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0077.png",
-                        "/products/product_0095.png",
-                        "/products/product_0011.png",
-                        "/products/product_0123.png",
-                        "/products/product_0009.png",
-                        "/products/product_0027.png",
-                        "/products/product_0191.png",
-                        "/products/product_0213.png",
-                        "/products/product_0122.png",
-                        "/products/product_0135.png",
-                        "/products/product_0183.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "2CCrftfvqszYvZAORNOe",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Smart Casual Polo crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "2KDY1sNg4tlNHdJdDKJJ",
-        "name":  "Signature Crew Neck",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0193.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0193.png",
-                        "/products/product_0180.png",
-                        "/products/product_0097.png",
-                        "/products/product_0031.png",
-                        "/products/product_0049.png",
-                        "/products/product_0121.png",
-                        "/products/product_0105.png",
-                        "/products/product_0204.png",
-                        "/products/product_0161.png",
-                        "/products/product_0043.png",
-                        "/products/product_0148.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "2KDY1sNg4tlNHdJdDKJJ",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Signature Crew Neck crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "2s4C0DtBcvOAxilIcF4E",
-        "name":  "Weekend Resort Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0089.png",
-        "featured":  true,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0089.png",
-                        "/products/product_0125.png",
-                        "/products/product_0012.png",
-                        "/products/product_0065.png",
-                        "/products/product_0158.png",
-                        "/products/product_0146.png",
-                        "/products/product_0035.png",
-                        "/products/product_0032.png",
-                        "/products/product_0020.png",
-                        "/products/product_0086.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "2s4C0DtBcvOAxilIcF4E",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Weekend Resort Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "3KDbr0lUyipmrAyuIIYp",
-        "name":  "Premium Denim Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0066.png",
-        "featured":  false,
-        "trending":  true,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0066.png",
-                        "/products/product_0075.png",
-                        "/products/product_0166.png",
-                        "/products/product_0098.png",
-                        "/products/product_0197.png",
-                        "/products/product_0052.png",
-                        "/products/product_0040.png",
-                        "/products/product_0025.png",
-                        "/products/product_0084.png",
-                        "/products/product_0076.png",
-                        "/products/product_0170.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "3KDbr0lUyipmrAyuIIYp",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Premium Denim Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "3NL3h0mih6KD8bRutlzW",
-        "name":  "Minimal Black Tee",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0124.png",
-        "featured":  false,
-        "trending":  true,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0124.png",
-                        "/products/product_0136.png",
-                        "/products/product_0044.png",
-                        "/products/product_0046.png",
-                        "/products/product_0036.png",
-                        "/products/product_0176.png",
-                        "/products/product_0211.png",
-                        "/products/product_0013.png",
-                        "/products/product_0054.png",
-                        "/products/product_0061.png",
-                        "/products/product_0055.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "3NL3h0mih6KD8bRutlzW",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Minimal Black Tee crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "3b2w1SIz9MwSBQzIYpTx",
-        "name":  "Elite Cotton Polo",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0118.png",
-        "featured":  false,
-        "trending":  true,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0118.png",
-                        "/products/product_0175.png",
-                        "/products/product_0005.png",
-                        "/products/product_0186.png",
-                        "/products/product_0167.png",
-                        "/products/product_0140.png",
-                        "/products/product_0045.png",
-                        "/products/product_0021.png",
-                        "/products/product_0177.png",
-                        "/products/product_0212.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "3b2w1SIz9MwSBQzIYpTx",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Elite Cotton Polo crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "3pw6KjypfOfmJLBLgLLM",
-        "name":  "Modern Check Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0188.png",
-        "featured":  false,
-        "trending":  true,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0188.png",
-                        "/products/product_0137.png",
-                        "/products/product_0058.png",
-                        "/products/product_0041.png",
-                        "/products/product_0026.png",
-                        "/products/product_0160.png",
-                        "/products/product_0109.png",
-                        "/products/product_0115.png",
-                        "/products/product_0205.png",
-                        "/products/product_0163.png",
-                        "/products/product_0185.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "3pw6KjypfOfmJLBLgLLM",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Modern Check Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "43fHH85gnCEwgFVRU4pM",
-        "name":  "Luxury Summer Tee",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0064.png",
-        "featured":  false,
-        "trending":  true,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0064.png",
-                        "/products/product_0209.png",
-                        "/products/product_0162.png",
-                        "/products/product_0198.png",
-                        "/products/product_0093.png",
-                        "/products/product_0172.png",
-                        "/products/product_0164.png",
-                        "/products/product_0111.png",
-                        "/products/product_0202.png",
-                        "/products/product_0187.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "43fHH85gnCEwgFVRU4pM",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Luxury Summer Tee crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "4btsvDFLoLBLTNwCfwOT",
-        "name":  "Tailored Casual Shirt",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0094.png",
-        "featured":  false,
-        "trending":  true,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0094.png",
-                        "/products/product_0014.png",
-                        "/products/product_0116.png",
-                        "/products/product_0178.png",
-                        "/products/product_0033.png",
-                        "/products/product_0067.png",
-                        "/products/product_0018.png",
-                        "/products/product_0062.png",
-                        "/products/product_0085.png",
-                        "/products/product_0150.png",
-                        "/products/product_0029.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "4btsvDFLoLBLTNwCfwOT",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Tailored Casual Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "4snrUXbJsXch05nuR54d",
-        "name":  "Urban Essential Tee",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0134.png",
-        "featured":  false,
-        "trending":  true,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0134.png",
-                        "/products/product_0083.png",
-                        "/products/product_0096.png",
-                        "/products/product_0092.png",
-                        "/products/product_0201.png",
-                        "/products/product_0151.png",
-                        "/products/product_0194.png",
-                        "/products/product_0210.png",
-                        "/products/product_0016.png",
-                        "/products/product_0182.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "4snrUXbJsXch05nuR54d",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Urban Essential Tee crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "51mgN416RGjdFu85730w",
-        "name":  "Classic Fit Polo",
-        "category":  "Fashion",
-        "color":  "Unknown",
-        "price":  2990,
-        "image":  "/products/product_0131.png",
-        "featured":  false,
-        "trending":  true,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/product_0131.png",
-                        "/products/product_0157.png",
-                        "/products/product_0145.png",
-                        "/products/product_0104.png",
-                        "/products/product_0037.png",
-                        "/products/product_0023.png",
-                        "/products/product_0173.png",
-                        "/products/product_0168.png",
-                        "/products/product_0019.png",
-                        "/products/product_0190.png",
-                        "/products/product_0195.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "51mgN416RGjdFu85730w",
-                             "stock":  100,
-                             "price":  2990
-                         }
-                     ],
-        "description":  "Classic Fit Polo crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "9EmesXI7mtoZflP8e7Vc",
-        "name":  "Navy Blue Streetwear",
-        "category":  "Streetwear",
-        "color":  "Navy Blue",
-        "price":  4000,
-        "image":  "/products/4.png",
-        "featured":  false,
-        "trending":  false,
-        "bestSeller":  true,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/4.png",
-                        "/products/6.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "9EmesXI7mtoZflP8e7Vc",
-                             "stock":  100,
-                             "price":  4000
-                         }
-                     ],
-        "description":  "Navy Blue Streetwear crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "YCafCZW5HihVl5mjJy6N",
-        "name":  "Navy Blue Shirt",
-        "category":  "Shirt",
-        "color":  "Navy Blue",
-        "price":  5000,
-        "image":  "/products/5.png",
-        "featured":  false,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/5.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "YCafCZW5HihVl5mjJy6N",
-                             "stock":  100,
-                             "price":  5000
-                         }
-                     ],
-        "description":  "Navy Blue Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "keg2QLYh6fep253qOsgI",
-        "name":  "Black T-Shirt",
-        "category":  "T-Shirt",
-        "color":  "Black",
-        "price":  6000,
-        "image":  "/products/6.png",
-        "featured":  false,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/6.png",
-                        "/products/2.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "keg2QLYh6fep253qOsgI",
-                             "stock":  100,
-                             "price":  6000
-                         }
-                     ],
-        "description":  "Black T-Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "nEoyjvoIDcsBDw5yVvtB",
-        "name":  "Grey T-Shirt",
-        "category":  "T-Shirt",
-        "color":  "Grey",
-        "price":  7000,
-        "image":  "/products/7.png",
-        "featured":  false,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/7.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "nEoyjvoIDcsBDw5yVvtB",
-                             "stock":  100,
-                             "price":  7000
-                         }
-                     ],
-        "description":  "Grey T-Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "rUNzmcHFucv6fk7DCXEt",
-        "name":  "Grey Shirt",
-        "category":  "Shirt",
-        "color":  "Grey",
-        "price":  3000,
-        "image":  "/products/3.png",
-        "featured":  false,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/3.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "rUNzmcHFucv6fk7DCXEt",
-                             "stock":  100,
-                             "price":  3000
-                         }
-                     ],
-        "description":  "Grey Shirt crafted for everyday comfort and premium style."
-    },
-    {
-        "id":  "v1QEPtoJcFLANsOF0hqG",
-        "name":  "Olive Green T-Shirt",
-        "category":  "T-Shirt",
-        "color":  "Olive Green",
-        "price":  1000,
-        "image":  "/products/1.png",
-        "featured":  false,
-        "trending":  false,
-        "bestSeller":  false,
-        "newArrival":  false,
-        "gallery":  [
-                        "/products/1.png"
-                    ],
-        "variants":  [
-                         {
-                             "size":  "M",
-                             "color":  "Default",
-                             "sku":  "v1QEPtoJcFLANsOF0hqG",
-                             "stock":  100,
-                             "price":  1000
-                         }
-                     ],
-        "description":  "Olive Green T-Shirt crafted for everyday comfort and premium style."
-    }
+  {
+    "id": "02ltbtF2iIXht2nHiRVG",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0059.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "02ltbtF2iIXht2nHiRVG",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "0L7pK3MStQCr907tlD3C",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0107.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "0L7pK3MStQCr907tlD3C",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "0Qa0TgvvTsTEqbIm7W36",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0156.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "0Qa0TgvvTsTEqbIm7W36",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "0R5X6IxXCWJxaXtS3lsP",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0056.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "0R5X6IxXCWJxaXtS3lsP",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "0UczrcX2nV3F69hV18p6",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0068.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "0UczrcX2nV3F69hV18p6",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "0g4EmNDSxukCTQOSW5Es",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0003.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "0g4EmNDSxukCTQOSW5Es",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "0piiuMKsIYgE60C9hdYF",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0129.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "0piiuMKsIYgE60C9hdYF",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "18f5gP1KrHHB2mqhv6tl",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0001.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "18f5gP1KrHHB2mqhv6tl",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "1Xh2SilDJOzc0dXhGpmm",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0207.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "1Xh2SilDJOzc0dXhGpmm",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "2CCrftfvqszYvZAORNOe",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0077.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "2CCrftfvqszYvZAORNOe",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "2KDY1sNg4tlNHdJdDKJJ",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0193.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "2KDY1sNg4tlNHdJdDKJJ",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "2s4C0DtBcvOAxilIcF4E",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0089.png",
+    "featured": true,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "2s4C0DtBcvOAxilIcF4E",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "3KDbr0lUyipmrAyuIIYp",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0066.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "3KDbr0lUyipmrAyuIIYp",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "3NL3h0mih6KD8bRutlzW",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0124.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "3NL3h0mih6KD8bRutlzW",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "3b2w1SIz9MwSBQzIYpTx",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0118.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "3b2w1SIz9MwSBQzIYpTx",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "3pw6KjypfOfmJLBLgLLM",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0188.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "3pw6KjypfOfmJLBLgLLM",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "43fHH85gnCEwgFVRU4pM",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0064.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "43fHH85gnCEwgFVRU4pM",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "4btsvDFLoLBLTNwCfwOT",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0094.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "4btsvDFLoLBLTNwCfwOT",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "4snrUXbJsXch05nuR54d",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0134.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "4snrUXbJsXch05nuR54d",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "51mgN416RGjdFu85730w",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0131.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "51mgN416RGjdFu85730w",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "5JNefx6B2JHyyFW23et3",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0080.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "5JNefx6B2JHyyFW23et3",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "5SY0U9Rm6haypveX9MaT",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0072.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "5SY0U9Rm6haypveX9MaT",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "5nU35vJCtRTFvXSbqyxG",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0130.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "5nU35vJCtRTFvXSbqyxG",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "6UvQ4ypbyOjMiXfiDYu0",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0051.png",
+    "featured": false,
+    "trending": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "6UvQ4ypbyOjMiXfiDYu0",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "6XtWA0cg6Vz3L0HmVGpN",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0091.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "6XtWA0cg6Vz3L0HmVGpN",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "6r8oVf1x1ANoPmKUyQqP",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0133.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "6r8oVf1x1ANoPmKUyQqP",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "707YpzSaWqW96fnk05ne",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0069.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "707YpzSaWqW96fnk05ne",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "7IOVL70dTfmiMYvcHgSx",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0128.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "7IOVL70dTfmiMYvcHgSx",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "7OEwPBaSTZCJRD6BRtqU",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0050.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "7OEwPBaSTZCJRD6BRtqU",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "7bftwdfUeZ7Dr18azxoB",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0095.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "7bftwdfUeZ7Dr18azxoB",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "7btGD2NONhkEr0XdHdA8",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0180.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "7btGD2NONhkEr0XdHdA8",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "84dLfnB7TvOAvH7aQYfu",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0125.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "84dLfnB7TvOAvH7aQYfu",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "8J3UEKdwfDOeFObsmBdK",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0075.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "8J3UEKdwfDOeFObsmBdK",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "8oP9itXCQoFtBaF7iEdb",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0136.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "8oP9itXCQoFtBaF7iEdb",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "9EmesXI7mtoZflP8e7Vc",
+    "name": "Navy Blue Streetwear",
+    "category": "Streetwear",
+    "color": "Navy Blue",
+    "price": 4000,
+    "image": "/products/4.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "9EmesXI7mtoZflP8e7Vc",
+        "stock": 100,
+        "price": 4000
+      }
+    ],
+    "description": "Navy Blue Streetwear crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "AFZIRGbbKfuDhfChJZ2j",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0137.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "AFZIRGbbKfuDhfChJZ2j",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "ALmJUAa1kcXCD48WozFc",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0209.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "ALmJUAa1kcXCD48WozFc",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "AZMANKjYBXWcj2A4nbuz",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0014.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "AZMANKjYBXWcj2A4nbuz",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "AxssUjyOEwM5pJUUSvbR",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0083.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "AxssUjyOEwM5pJUUSvbR",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "BRp9cTw88rHGeIJ65KMA",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0157.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "BRp9cTw88rHGeIJ65KMA",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "BVqswVRmhWedg87pe1BA",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0015.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "BVqswVRmhWedg87pe1BA",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "C2ok1NbF4k6cj9u496n6",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0010.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "C2ok1NbF4k6cj9u496n6",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "CG97q0yS4uOEETdYLisY",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0143.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "CG97q0yS4uOEETdYLisY",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "CGfWbvtnf2kv8KedCzbL",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0113.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "CGfWbvtnf2kv8KedCzbL",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "CROFBqDlklmj6K1GrkUt",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0142.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "CROFBqDlklmj6K1GrkUt",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "CViwLYU1i8sGPQqDFn6T",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0034.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "CViwLYU1i8sGPQqDFn6T",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "D1Q22EL5z97KkRYTcQLb",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0206.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "D1Q22EL5z97KkRYTcQLb",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "D6g7t4BplANc6ajfCY3d",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0165.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "D6g7t4BplANc6ajfCY3d",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "DIOUyMPu8rTUM4IViRsZ",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0153.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "DIOUyMPu8rTUM4IViRsZ",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "DUFB6wmTRnmbPqFryu9B",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0011.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "DUFB6wmTRnmbPqFryu9B",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "DkkEUa3cnZWRS3dHQYC4",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0097.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "DkkEUa3cnZWRS3dHQYC4",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "E7Nfl0zgRwDtqyfeqR5e",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0012.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "E7Nfl0zgRwDtqyfeqR5e",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "EFbhmJehkcfZzrdlZ8UL",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0166.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "EFbhmJehkcfZzrdlZ8UL",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "EN0BX18oo7Loge4sn0en",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0044.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "EN0BX18oo7Loge4sn0en",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "Edn5vay061y9ElsBM3sC",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0175.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "Edn5vay061y9ElsBM3sC",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "EwadUE0k0eTz9ZwvAUig",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0058.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "EwadUE0k0eTz9ZwvAUig",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "FEIIWoIerTPrnXxp6PLE",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0162.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "FEIIWoIerTPrnXxp6PLE",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "FUxBoIbpZJor8yPmURdN",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0116.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "FUxBoIbpZJor8yPmURdN",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "FjNXzBG2SB6yQ7OiOkWF",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0096.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "FjNXzBG2SB6yQ7OiOkWF",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "GLFTwI5fisQWghYFJdwE",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0145.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "GLFTwI5fisQWghYFJdwE",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "GLSBFMOPtyHqgybYAKNo",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0101.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "GLSBFMOPtyHqgybYAKNo",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "GMaMIlj76pBdhU1Mtfo6",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0181.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "GMaMIlj76pBdhU1Mtfo6",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "GlkXfZQWlj9m8znaD8cu",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0154.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "GlkXfZQWlj9m8znaD8cu",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "GyOiRuQcfU8QeYHWAmub",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0189.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "GyOiRuQcfU8QeYHWAmub",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "HDM2Ch5E3tdS1s7wQD6A",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0214.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "HDM2Ch5E3tdS1s7wQD6A",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "HWoj3sUriTtL5K935T04",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0112.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "HWoj3sUriTtL5K935T04",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "Hm0EiP9FohkZXrJgRl43",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0073.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "Hm0EiP9FohkZXrJgRl43",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "HqXmjnH9ZN0OawPUfsRK",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0102.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "HqXmjnH9ZN0OawPUfsRK",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "HrgAAV2fIagUlOEEyzMr",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0108.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "HrgAAV2fIagUlOEEyzMr",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "I7NI1jvLq99ZBGSWKxgB",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0123.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "I7NI1jvLq99ZBGSWKxgB",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "IX3yIz9QsGU7qRYSZ5Yo",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0031.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "IX3yIz9QsGU7qRYSZ5Yo",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "JichGxnmNc0RPLBxsgMM",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0065.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "JichGxnmNc0RPLBxsgMM",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "JsSQJJ74Iu1TRdIoHcxA",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0098.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "JsSQJJ74Iu1TRdIoHcxA",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "JtI0RoTIKYLWnar4NDcq",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0046.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "JtI0RoTIKYLWnar4NDcq",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "JwNwv7nhxmdSES2bIiqZ",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0005.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "JwNwv7nhxmdSES2bIiqZ",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "K1AkqVm9RkEX1AesWiAg",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0041.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "K1AkqVm9RkEX1AesWiAg",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "K5GWWaCJaEXLzWfz7SUi",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0198.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "K5GWWaCJaEXLzWfz7SUi",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "KJX6NgA5HYiSpn6qW4a4",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0178.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "KJX6NgA5HYiSpn6qW4a4",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "KQY48YGUiIeVCaImkBxj",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0092.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "KQY48YGUiIeVCaImkBxj",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "KaxW55npMLjfGJDEFgGn",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0104.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "KaxW55npMLjfGJDEFgGn",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "KvNfXnJ1CUU6U1clbaqj",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0126.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "KvNfXnJ1CUU6U1clbaqj",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "L36F6ac3Ok0nUTI2OUkt",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0042.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "L36F6ac3Ok0nUTI2OUkt",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "L7xsXYpfdAdbGysOAeKE",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0119.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "L7xsXYpfdAdbGysOAeKE",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "LJdKSm9QltdgOMCu04Y0",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0114.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "LJdKSm9QltdgOMCu04Y0",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "LYY0RCh4AIuRAD9NwWIj",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0090.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "LYY0RCh4AIuRAD9NwWIj",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "LdgVCPXCRWLfHh2IHUjO",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0141.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "LdgVCPXCRWLfHh2IHUjO",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "LsItfrE9GT1GqDdEvQBw",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0006.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "LsItfrE9GT1GqDdEvQBw",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "MggMxQMtVmUj5y05Z1ZY",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0138.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "MggMxQMtVmUj5y05Z1ZY",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "MkeXTQixtaddczCLrYsJ",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0047.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "MkeXTQixtaddczCLrYsJ",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "MwWfSZJpzEOQrRaMYu1h",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0009.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "MwWfSZJpzEOQrRaMYu1h",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "NCFxVMZEoWuyEAoamdni",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0049.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "NCFxVMZEoWuyEAoamdni",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "NCjFBbBQ9WQ7prUPyfa4",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0158.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "NCjFBbBQ9WQ7prUPyfa4",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "QKk4pZu6lQ2xaKTZ9i8G",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0197.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "QKk4pZu6lQ2xaKTZ9i8G",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "RMHkLXq9KahiZpLiXjba",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0036.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "RMHkLXq9KahiZpLiXjba",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "RSmwl3PqqokUdKmoAjSd",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0186.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "RSmwl3PqqokUdKmoAjSd",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "RSwSxrDYQOaH7rYe2oaO",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0026.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "RSwSxrDYQOaH7rYe2oaO",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "Rg5fPRn9XUzkWpRb4j4Y",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0093.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "Rg5fPRn9XUzkWpRb4j4Y",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "RzRLAsisksUd9a4nI4M7",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0033.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "RzRLAsisksUd9a4nI4M7",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "SPgD4OJl984qqFUIdpDH",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0201.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "SPgD4OJl984qqFUIdpDH",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "T4LHcQFBl00SrCx2S90R",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0037.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "T4LHcQFBl00SrCx2S90R",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "T9GSsGm0CDDG3T67BfKG",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0082.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "T9GSsGm0CDDG3T67BfKG",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "TJIdqClffR6RiFOnuWT3",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0048.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "TJIdqClffR6RiFOnuWT3",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "TeQ2ItA8A14phC13nnWa",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0110.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "TeQ2ItA8A14phC13nnWa",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "TkDuwK50XkmWvbUrzRWi",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0100.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "TkDuwK50XkmWvbUrzRWi",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "TtErPtqExy1mUpLtpEeX",
+    "name": "Navy Blue Streetwear",
+    "category": "Streetwear",
+    "color": "Navy Blue",
+    "price": 8000,
+    "image": "/products/6.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "TtErPtqExy1mUpLtpEeX",
+        "stock": 100,
+        "price": 8000
+      }
+    ],
+    "description": "Navy Blue Streetwear crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "UT0NjBecLUrrzk0MMaJt",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0039.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "UT0NjBecLUrrzk0MMaJt",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "UjDSFKf9n97YRIl6zlW2",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0099.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "UjDSFKf9n97YRIl6zlW2",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "VHr1S5KvrWQg3oPSFbqR",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0078.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "VHr1S5KvrWQg3oPSFbqR",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "W0poubOVk27yG6bCotti",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0038.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "W0poubOVk27yG6bCotti",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "WGDFIhSMFDZRPBzHiqnK",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0027.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "WGDFIhSMFDZRPBzHiqnK",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "WZ83Vu8h6wvIls1kVEEq",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0121.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "WZ83Vu8h6wvIls1kVEEq",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "WqgF1SVkKWCkD0f1XEC5",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0146.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "WqgF1SVkKWCkD0f1XEC5",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "X9Daa2p9D2VO0YNZCh2G",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0052.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "X9Daa2p9D2VO0YNZCh2G",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "XCZBcjaNZmFD53vMxVkR",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0176.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "XCZBcjaNZmFD53vMxVkR",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "XEwAMOFUcLWIe46pKUpR",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0167.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "XEwAMOFUcLWIe46pKUpR",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "Y53YRVAmi3ypicfpdcSc",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0160.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "Y53YRVAmi3ypicfpdcSc",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "YCafCZW5HihVl5mjJy6N",
+    "name": "Navy Blue Shirt",
+    "category": "Shirt",
+    "color": "Navy Blue",
+    "price": 5000,
+    "image": "/products/5.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "YCafCZW5HihVl5mjJy6N",
+        "stock": 100,
+        "price": 5000
+      }
+    ],
+    "description": "Navy Blue Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "YQZ9mTr4oe2OcEg55vHi",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0067.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "YQZ9mTr4oe2OcEg55vHi",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "Z37hm3KxGiYu2ZgVnOYf",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0151.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "Z37hm3KxGiYu2ZgVnOYf",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "ZHddBuCwcBoJFwkUAuCS",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0023.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "ZHddBuCwcBoJFwkUAuCS",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "ZIv47JFbA0aPaLZd8FUK",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0196.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "ZIv47JFbA0aPaLZd8FUK",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "ZOG8Om2QuSSGFDkBIQB0",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0149.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "ZOG8Om2QuSSGFDkBIQB0",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "aAWCPaQ45KxE6Z6g1MZS",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0171.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "aAWCPaQ45KxE6Z6g1MZS",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "aXFqAfsHDkHnnveBzb3L",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0070.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "aXFqAfsHDkHnnveBzb3L",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "aYAEcMjXFvErHxDRTIFO",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0184.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "aYAEcMjXFvErHxDRTIFO",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "ar1mvS3KNZM5OSdyAgUe",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0081.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "ar1mvS3KNZM5OSdyAgUe",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "b4iI2qrOQxDTAkylvQjb",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0200.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "b4iI2qrOQxDTAkylvQjb",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "bJcB98ONYNgFoW0ft92E",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0002.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "bJcB98ONYNgFoW0ft92E",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "bNOUMvzM8Tb0B2nzjoCt",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0203.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "bNOUMvzM8Tb0B2nzjoCt",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "bYMC9FqDBNcIDwmrQCBp",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0191.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "bYMC9FqDBNcIDwmrQCBp",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "bdpIlgK8JGAUwGcgd59k",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0105.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "bdpIlgK8JGAUwGcgd59k",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "bu5QhIQGZFVs5hZuqyot",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0035.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "bu5QhIQGZFVs5hZuqyot",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "bxirHFt1PjQmJGiiSKuG",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0040.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "bxirHFt1PjQmJGiiSKuG",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "c6HxAZSYM1sxL9LBKjAp",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0211.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "c6HxAZSYM1sxL9LBKjAp",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "cUYaaoFU8xHH5ZvXeoY3",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0140.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "cUYaaoFU8xHH5ZvXeoY3",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "cYxzIsUvfaMuWKa5CeuN",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0109.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "cYxzIsUvfaMuWKa5CeuN",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "cfEHZzhb5H3UTha4DFB9",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0172.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "cfEHZzhb5H3UTha4DFB9",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "dB4pAm2ahqRMfYs6a8YS",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0018.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "dB4pAm2ahqRMfYs6a8YS",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "dLz0ZqwzqHvFfBNsEc62",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0194.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "dLz0ZqwzqHvFfBNsEc62",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "dqIGBVq9LDpTwoVbCdxA",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0173.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "dqIGBVq9LDpTwoVbCdxA",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "dwALwqXgKzFQMRtJ7xTi",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0159.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "dwALwqXgKzFQMRtJ7xTi",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "eoeNLeUXn9z5kd7ljF9s",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0053.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "eoeNLeUXn9z5kd7ljF9s",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "ez9742xpADWrnybZ9yoj",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0004.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "ez9742xpADWrnybZ9yoj",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "fM8llumDGeVLIlAKxQHa",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0144.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "fM8llumDGeVLIlAKxQHa",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "fqy3lwFDVHHLKjkDeVKt",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0179.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "fqy3lwFDVHHLKjkDeVKt",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "g6o2VxoV0OaPf9dltXAw",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0088.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "g6o2VxoV0OaPf9dltXAw",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "gwAC3bAD7XNVPgooWP2u",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0208.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "gwAC3bAD7XNVPgooWP2u",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "h84vmkJRPn55a19KnTqs",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0074.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "h84vmkJRPn55a19KnTqs",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "hP9WJuiPbsB4s1YIceDi",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0174.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "hP9WJuiPbsB4s1YIceDi",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "hX6j6iiY5KuMLC3bUcqX",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0213.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "hX6j6iiY5KuMLC3bUcqX",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "hz6hy2cQxXhjPfxh7TtO",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0204.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "hz6hy2cQxXhjPfxh7TtO",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "i3WCx6R6591t0S3XEfym",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0032.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "i3WCx6R6591t0S3XEfym",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "iAEoJ77xEINqOhpZpDyo",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0025.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "iAEoJ77xEINqOhpZpDyo",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "iIf14Nok7r9kJuJHEYtl",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0013.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "iIf14Nok7r9kJuJHEYtl",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "in0gINuJoNHc6iHr0dYh",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0045.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "in0gINuJoNHc6iHr0dYh",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "iwQ7iSFxBVe4qEWq7Pgk",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0115.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "iwQ7iSFxBVe4qEWq7Pgk",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "iyCICOzNgMbEpdpe5X9c",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0164.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "iyCICOzNgMbEpdpe5X9c",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "jKlasv3i2ettekLh62Rm",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0062.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "jKlasv3i2ettekLh62Rm",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "jpwE7fE2ztPrdW4MCR4m",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0210.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "jpwE7fE2ztPrdW4MCR4m",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "jx643ZMowPjJHOnsrI1w",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0168.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "jx643ZMowPjJHOnsrI1w",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "kN9GRrlXyQTZ66U9jOmO",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0192.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "kN9GRrlXyQTZ66U9jOmO",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "kclZBSU015OXQlrablHL",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0199.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "kclZBSU015OXQlrablHL",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "keg2QLYh6fep253qOsgI",
+    "name": "Black T-Shirt",
+    "category": "T-Shirt",
+    "color": "Black",
+    "price": 6000,
+    "image": "/products/6.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "keg2QLYh6fep253qOsgI",
+        "stock": 100,
+        "price": 6000
+      }
+    ],
+    "description": "Black T-Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "lD4coZ4C6HWpj8Y1zzch",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0147.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "lD4coZ4C6HWpj8Y1zzch",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "lS1Q1AdujVD55EJG5Gny",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0127.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "lS1Q1AdujVD55EJG5Gny",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "ldjBBmI67rZSn4Su304j",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0071.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "ldjBBmI67rZSn4Su304j",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "lpzp1w0smlx44Rc7ioI9",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0063.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "lpzp1w0smlx44Rc7ioI9",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "lyNyNskifDHb89H67u2r",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0106.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "lyNyNskifDHb89H67u2r",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "mWCwFcMXQQCSX9z9XL07",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0117.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "mWCwFcMXQQCSX9z9XL07",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "meMBHg9iiIdpEYz6o5Q9",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0122.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "meMBHg9iiIdpEYz6o5Q9",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "nAlqoJ46SmGHDBTPYVrG",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0161.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "nAlqoJ46SmGHDBTPYVrG",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "nEoyjvoIDcsBDw5yVvtB",
+    "name": "Grey T-Shirt",
+    "category": "T-Shirt",
+    "color": "Grey",
+    "price": 7000,
+    "image": "/products/7.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "nEoyjvoIDcsBDw5yVvtB",
+        "stock": 100,
+        "price": 7000
+      }
+    ],
+    "description": "Grey T-Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "nXlCjFaDmmdyGcJ7d1NH",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0084.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "nXlCjFaDmmdyGcJ7d1NH",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "nkaJq10wjwKWC0eHM1Ts",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0054.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "nkaJq10wjwKWC0eHM1Ts",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "nnAXWuLmX3inVdbs4vQf",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0021.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "nnAXWuLmX3inVdbs4vQf",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "o8jukd7zd3Y2hZBtQ6xL",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0205.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "o8jukd7zd3Y2hZBtQ6xL",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "pAX6v7knYWufnLHqspkf",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0111.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "pAX6v7knYWufnLHqspkf",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "pCM7QCd2w5fQogUrwBjQ",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0085.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "pCM7QCd2w5fQogUrwBjQ",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "pgcweLO5zWACK9M4pp65",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0016.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "pgcweLO5zWACK9M4pp65",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "pjgHmdzm2TlpjnGvj0ZU",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0019.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "pjgHmdzm2TlpjnGvj0ZU",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "pkGQigAdoBohS5jNWwuO",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0103.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "pkGQigAdoBohS5jNWwuO",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "qZ6pnQP7nzkwvRhgUUyD",
+    "name": "Black T-Shirt",
+    "category": "T-Shirt",
+    "color": "Black",
+    "price": 2000,
+    "image": "/products/2.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "qZ6pnQP7nzkwvRhgUUyD",
+        "stock": 100,
+        "price": 2000
+      }
+    ],
+    "description": "Black T-Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "qzAiUIrsADyvjVT0iuRB",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0024.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "qzAiUIrsADyvjVT0iuRB",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "rRI0cA4jwhLQRgIB9aMn",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0017.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "rRI0cA4jwhLQRgIB9aMn",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "rUNzmcHFucv6fk7DCXEt",
+    "name": "Grey Shirt",
+    "category": "Shirt",
+    "color": "Grey",
+    "price": 3000,
+    "image": "/products/3.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "rUNzmcHFucv6fk7DCXEt",
+        "stock": 100,
+        "price": 3000
+      }
+    ],
+    "description": "Grey Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "rUgG6GCUur1Kv6xtUE7V",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0169.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "rUgG6GCUur1Kv6xtUE7V",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "rkDjXn6qHyQ2o37VifwI",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0057.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "rkDjXn6qHyQ2o37VifwI",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "rmS12fZjNxbPzni5SLqW",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0007.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "rmS12fZjNxbPzni5SLqW",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "rtjYZ6zO10zAePAfVjlY",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0030.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "rtjYZ6zO10zAePAfVjlY",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "sXsI3l77YDMCT7zV9zrH",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0135.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "sXsI3l77YDMCT7zV9zrH",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "sqpuCvmJjUVTaX55sD4w",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0043.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "sqpuCvmJjUVTaX55sD4w",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "tZVjrjqwDeaGszHFAONc",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0020.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "tZVjrjqwDeaGszHFAONc",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "u17GjDVf7ULCuoMjfwe9",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0076.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "u17GjDVf7ULCuoMjfwe9",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "u32LBW2nqt0BeRUK1l4p",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0061.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "u32LBW2nqt0BeRUK1l4p",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "uJshsvCucKvzSChy5AVE",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0177.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "uJshsvCucKvzSChy5AVE",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "uLxcxk0DilJebug6LXrt",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0163.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "uLxcxk0DilJebug6LXrt",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "uUsx7vkP9ecH7IWYfdHF",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0202.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "uUsx7vkP9ecH7IWYfdHF",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "uWoDykMWUVnfX6HM77YU",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0150.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "uWoDykMWUVnfX6HM77YU",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "v1QEPtoJcFLANsOF0hqG",
+    "name": "Olive Green T-Shirt",
+    "category": "T-Shirt",
+    "color": "Olive Green",
+    "price": 1000,
+    "image": "/products/1.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "v1QEPtoJcFLANsOF0hqG",
+        "stock": 100,
+        "price": 1000
+      }
+    ],
+    "description": "Olive Green T-Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "vFdu1i7GgLUHrW1vA44k",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0190.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "vFdu1i7GgLUHrW1vA44k",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "vHfTejvKfM2FuFheC9IS",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0079.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "vHfTejvKfM2FuFheC9IS",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "vcat1utsVEQ11oTU6Jon",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0022.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "vcat1utsVEQ11oTU6Jon",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "w7il6iTRaUHqTUfYSFds",
+    "name": "Urban Polo Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0152.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "w7il6iTRaUHqTUfYSFds",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "wEC4kFdxL4Irwfooe7OH",
+    "name": "Linen Summer Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0060.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "wEC4kFdxL4Irwfooe7OH",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "wvjhwDLtlJqmko8VSUgK",
+    "name": "Modern Olive Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0139.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "wvjhwDLtlJqmko8VSUgK",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Olive Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "x2wLbQ9D96avzYFwyiyr",
+    "name": "Luxury Knit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0120.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "x2wLbQ9D96avzYFwyiyr",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Knit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "xD0BgSmiSDqyO3IB6jVu",
+    "name": "Executive Formal Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0087.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "xD0BgSmiSDqyO3IB6jVu",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Executive Formal Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "xKNHzND1Z7kp25c2HXm6",
+    "name": "Streetwear Graphic Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0008.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "xKNHzND1Z7kp25c2HXm6",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Streetwear Graphic Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "xLyFzeiNt3QwVRpJ9a5B",
+    "name": "Relaxed Fit Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0132.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "xLyFzeiNt3QwVRpJ9a5B",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Relaxed Fit Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "xbe9v7rwY2363lLjshbK",
+    "name": "Smart Casual Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0183.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "xbe9v7rwY2363lLjshbK",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Smart Casual Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "xdFpAmoo01nTzGFTCNEh",
+    "name": "Signature Crew Neck",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0148.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "xdFpAmoo01nTzGFTCNEh",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Signature Crew Neck crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "y263KDFDVLe4PvStBA0j",
+    "name": "Weekend Resort Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0086.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "y263KDFDVLe4PvStBA0j",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Weekend Resort Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "yE3mWCoUOBwgMV2YxacE",
+    "name": "Premium Denim Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0170.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "yE3mWCoUOBwgMV2YxacE",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Denim Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "yIzgJvTkAuCIRv1MzBMd",
+    "name": "Minimal Black Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0055.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "yIzgJvTkAuCIRv1MzBMd",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Minimal Black Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "ya4ri14LA5Q7Kv9pLrVK",
+    "name": "Elite Cotton Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0212.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "ya4ri14LA5Q7Kv9pLrVK",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Elite Cotton Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "z2U5XLGCX2AMSu1oPLgS",
+    "name": "Modern Check Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0185.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "z2U5XLGCX2AMSu1oPLgS",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Modern Check Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "zS1XCqoqxyJYA0ZD8k4G",
+    "name": "Luxury Summer Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0187.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "zS1XCqoqxyJYA0ZD8k4G",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Luxury Summer Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "zVkjFkQJwWcqI3lJL7ef",
+    "name": "Tailored Casual Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0029.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "zVkjFkQJwWcqI3lJL7ef",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Tailored Casual Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "zeyKioQjamyNlR4PHOOY",
+    "name": "Urban Essential Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0182.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "zeyKioQjamyNlR4PHOOY",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Urban Essential Tee crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "zi0qPSpITUZQlXKZwoak",
+    "name": "Classic Fit Polo",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0195.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "zi0qPSpITUZQlXKZwoak",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Fit Polo crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "zmpNOJqjGstWvFIXj2UN",
+    "name": "Premium Oxford Shirt",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0028.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "zmpNOJqjGstWvFIXj2UN",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Premium Oxford Shirt crafted for everyday comfort and premium style."
+  },
+  {
+    "id": "zyhP7CC5XaA1JM6VAtav",
+    "name": "Classic Stripe Tee",
+    "category": "Fashion",
+    "color": "Unknown",
+    "price": 2990,
+    "image": "/products/product_0155.png",
+    "featured": false,
+    "trending": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "gallery": [],
+    "variants": [
+      {
+        "size": "M",
+        "color": "Default",
+        "sku": "zyhP7CC5XaA1JM6VAtav",
+        "stock": 100,
+        "price": 2990
+      }
+    ],
+    "description": "Classic Stripe Tee crafted for everyday comfort and premium style."
+  }
 ]

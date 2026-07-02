@@ -57,6 +57,7 @@ export interface AdminProduct {
   gallery: string[];
 
   variants: ProductVariant[];
+  variantGroup?: string;
 
   brand?: string;
 
@@ -128,6 +129,7 @@ function normalize(product: any): AdminProduct {
           ...v
         }))
       : [],
+      variantGroup: product.variantGroup || "",
 
     featured: !!product.featured,
 

@@ -15,6 +15,7 @@ const id=params.get("id");
 const [uploading,setUploading]=useState(false);
 
 const [product,setProduct]=useState<any>({
+  variantGroup:"",
  name:"",
  category:"",
  description:"",
@@ -95,6 +96,9 @@ async function uploadImage(file:any){
 
 async function save(){
 
+console.log("PRODUCT TO SAVE",JSON.stringify(product,null,2));
+
+
  if(!product.name){
    alert("Please enter product name");
    return;
@@ -114,11 +118,28 @@ async function save(){
    await updateProduct(id,product);
    alert("Updated");
  }else{
-   await saveProduct(product);
-   alert("Created");
- }
+   try{
+
+const saved = await saveProduct(product);
+
+console.log("PRODUCT SAVED", saved);
+
+setProduct(saved);
+
+alert("Created");
+
+}catch(err){
+
+console.error("SAVE ERROR:",err);
+
+alert("SAVE FAILED: "+(err instanceof Error ? err.message : String(err)));
 
 }
+
+}
+ }
+
+
 return(
 <div className="max-w-5xl mx-auto p-10">
 
@@ -252,7 +273,15 @@ onChange={e=>setProduct({...product,seoDescription:e.target.value})}
 <label className="font-semibold mb-2 block">
 Main Product Image
 </label>
-
+<input
+className="border p-4 rounded-xl"
+placeholder="Variant Group"
+value={product.variantGroup || ""}
+onChange={e=>setProduct({
+...product,
+variantGroup:e.target.value
+})}
+/>
 <input
 type="file"
 onChange={e=>{
@@ -481,6 +510,9 @@ className="bg-black text-white p-4 rounded-xl hover:bg-gray-800"
 </div>
 );
 }
+
+
+
 
 
 
