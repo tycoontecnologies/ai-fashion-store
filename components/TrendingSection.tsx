@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -51,7 +51,7 @@ export default function TrendingSection() {
 
             <Link
               key={product.id}
-              href={`/products/${product.id}`}
+              href={`/product/${product.id}`}
               className="
                 bg-white
                 rounded-[24px]

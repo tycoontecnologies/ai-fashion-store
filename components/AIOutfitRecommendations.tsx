@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import {
   useEffect,
@@ -141,7 +141,7 @@ export default function AIOutfitRecommendations({
 
             <Link
               key={item.id}
-              href={`/products/${item.id}`}
+              href={`/product/${item.id}`}
               className="
                 flex
                 gap-4

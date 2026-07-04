@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 
@@ -88,7 +88,7 @@ export default function RelatedProducts({
 
             <Link
               key={product.id}
-              href={`/products/${product.id}`}
+              href={`/product/${product.id}`}
               className="
                 bg-white
                 rounded-[24px]

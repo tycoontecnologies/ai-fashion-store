@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -100,7 +100,7 @@ export default function WishlistPage() {
                 >
 
                   <Link
-                    href={`/products/${product.id}`}
+                    href={`/product/${product.id}`}
                   >
 
                     <Image
