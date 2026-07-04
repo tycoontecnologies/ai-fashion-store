@@ -195,27 +195,33 @@ export default function AdminPage() {
 
       await saveProduct({
 
-        name:
-          productName,
+  name: productName,
 
-        category:
-          productCategory,
+  category: productCategory,
 
-        color:
-          productColor,
+  color: productColor,
 
-        price:
-          Number(
-            productPrice
-          ),
+  price: Number(productPrice),
 
-        description:
-          productDescription,
+  description: productDescription,
 
-        image:
-          preview || "",
+  image: preview || "",
 
-      });
+  gallery: [],
+
+  variants: [],
+
+  featured: false,
+
+  trending: false,
+
+  bestseller: false,
+
+  newArrival: true,
+
+  active: true,
+
+});
 
       alert(
         "Product saved successfully."
