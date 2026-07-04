@@ -1,307 +1,245 @@
 "use client";
 
-import {
-  useEffect,
-  useState,
-} from "react";
-
+import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
 import {
-  AdminProduct,
   getProducts,
   deleteProduct,
 } from "@/lib/adminProducts";
 
-export default function AdminProductsPage() {
+export default function ProductsPage() {
+  const [products, setProducts] = useState<any[]>([]);
+  const [search, setSearch] = useState("");
 
-  const [products, setProducts] =
-    useState<AdminProduct[]>([]);
-
-  useEffect(() => {
-
-    async function loadProducts() {
-
-      try {
-
-        const data =
-          await getProducts();
-
-        setProducts(data);
-
-      } catch (error) {
-
-        console.error(
-          "Failed to load products:",
-          error
-        );
-
-      }
-
-    }
-
-    loadProducts();
-
-  }, []);
-
-  async function handleDelete(
-    id: string
-  ) {
-
-    try {
-
-      await deleteProduct(id);
-
-      const data =
-        await getProducts();
-
-      setProducts(data);
-
-    } catch (error) {
-
-      console.error(
-        "Failed to delete product:",
-        error
-      );
-
-    }
-
+  async function load() {
+    const data = await getProducts();
+    setProducts(data);
   }
 
+  useEffect(() => {
+    load();
+  }, []);
+
+  async function remove(id: string) {
+    if (!confirm("Delete product?")) return;
+
+    await deleteProduct(id);
+    await load();
+  }
+
+  const filtered = useMemo(() => {
+    const q = search.trim().toLowerCase();
+
+    if (!q) return products;
+
+    return products.filter((p: any) => {
+      return (
+        (p.name || "").toLowerCase().includes(q) ||
+        (p.category || "").toLowerCase().includes(q) ||
+        (p.description || "").toLowerCase().includes(q)
+      );
+    });
+  }, [products, search]);
+
   return (
+    <div className="p-8">
+      <div className="flex items-center justify-between mb-8">
+        <div>
+          <h1 className="text-4xl font-black">Products</h1>
 
-    <main
-      className="
-        min-h-screen
-        bg-[#f5f5f5]
-      "
-    >
-
-      <Navbar />
-
-      <section
-        className="
-          max-w-7xl
-          mx-auto
-          px-6
-          py-20
-        "
-      >
-
-        <div className="mb-12">
-
-          <p
-            className="
-              uppercase
-              tracking-[6px]
-              text-gray-500
-              text-sm
-              mb-3
-            "
-          >
-            Admin Dashboard
+          <p className="text-gray-500 mt-2">
+            {filtered.length} Products
           </p>
-
-          <h1
-            className="
-              text-5xl
-              lg:text-7xl
-              font-black
-              text-black
-            "
-          >
-            Product Library
-          </h1>
-
         </div>
 
-        {products.length === 0 ? (
+        <Link
+          href="/admin/product"
+          className="bg-black text-white px-6 py-3 rounded-xl"
+        >
+          + Add Product
+        </Link>
+      </div>
 
-          <div
-            className="
-              bg-white
-              rounded-[32px]
-              p-12
-              text-center
-            "
-          >
+      <input
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder="Search products..."
+        className="w-full mb-6 rounded-xl border p-4"
+      />
 
-            <h2
-              className="
-                text-3xl
-                font-bold
-                text-black
-                mb-4
-              "
-            >
-              No Products Yet
-            </h2>
+      <div className="bg-white rounded-3xl overflow-hidden border">
+        <table className="w-full">
+          <thead className="bg-gray-50">
+            <tr>
+              <th className="p-4 text-left">
+                Image
+              </th>
 
-            <p className="text-gray-500">
-              Save products from the AI Studio first.
-            </p>
+              <th className="p-4 text-left">
+                Product
+              </th>
 
-          </div>
+              <th className="p-4 text-left">
+                Category
+              </th>
 
-        ) : (
+              <th className="p-4 text-left">
+                Price
+              </th>
 
-          <div
-            className="
-              grid
-              md:grid-cols-2
-              lg:grid-cols-3
-              gap-8
-            "
-          >
+              <th className="p-4 text-center">
+                Variants
+              </th>
 
-            {products.map(
-              (
-                product,
-                index
-              ) => (
+              <th className="p-4 text-center">
+                Variant Thumbnail
+              </th>
 
-                <div
-                  key={
-                    product.id ??
-                    index
-                  }
-                  className="
-                    bg-white
-                    rounded-[24px]
-                    overflow-hidden
-                    shadow-sm
-                  "
-                >
+              <th className="p-4 text-center">
+                Gallery
+              </th>
 
-                  {product.image && (
+              <th className="p-4 text-center">
+                Status
+              </th>
 
-                    <div
-                      className="
-                        relative
-                        h-[280px]
-                      "
-                    >
+              <th className="p-4 text-center">
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+  {filtered.map((p: any) => {
+    const firstVariant = (p.variants || [])[0];
 
-                      <Image
-                        src={
-                          product.image
-                        }
-                        alt={
-                          product.name
-                        }
-                        fill
-                        className="
-                          object-cover
-                        "
-                      />
+   const variantThumb =
+  firstVariant?.image?.trim() ||
+  firstVariant?.images?.[0]?.trim() ||
+  "";
 
-                    </div>
+    return (
+      <tr
+        key={p.id}
+        className="border-t hover:bg-gray-50"
+      >
+        {/* Product Image */}
+        <td className="p-4">
+          {p.image ? (
+            <Image
+              src={p.image}
+              alt={p.name}
+              width={70}
+              height={70}
+              className="rounded-xl border object-cover"
+            />
+          ) : (
+            <div className="w-[70px] h-[70px] rounded-xl border flex items-center justify-center text-xs text-gray-400">
+              No Image
+            </div>
+          )}
+        </td>
 
-                  )}
+        {/* Product */}
+        <td className="p-4 font-semibold">
+          {p.name}
+        </td>
 
-                  <div className="p-6">
+        {/* Category */}
+        <td className="p-4">
+          {p.category}
+        </td>
 
-                    <p
-                      className="
-                        text-xs
-                        uppercase
-                        tracking-[3px]
-                        text-gray-500
-                        mb-2
-                      "
-                    >
-                      {product.category}
-                    </p>
+        {/* Price */}
+        <td className="p-4">
+          Rs {p.price}
+        </td>
 
-                    <h3
-                      className="
-                        text-2xl
-                        font-bold
-                        text-black
-                        mb-3
-                      "
-                    >
-                      {product.name}
-                    </h3>
+        {/* Variant Count */}
+        <td className="p-4 text-center">
+          {(p.variants || []).length}
+        </td>
 
-                    <p
-                      className="
-                        text-sm
-                        text-gray-500
-                        mb-3
-                      "
-                    >
-                      Color:{" "}
-                      {product.color}
-                    </p>
+        {/* Variant Thumbnail */}
+        <td className="p-4 text-center">
+          {variantThumb ? (
+            <Image
+              src={variantThumb}
+              alt="Variant"
+              width={40}
+              height={40}
+              className="w-10 h-10 rounded-lg border object-cover mx-auto"
+            />
+          ) : (
+            <div className="w-10 h-10 rounded-lg border flex items-center justify-center text-[10px] text-gray-400 mx-auto">
+              No Image
+            </div>
+          )}
+        </td>
 
-                    <p
-                      className="
-                        text-lg
-                        font-bold
-                        text-black
-                        mb-3
-                      "
-                    >
-                      Rs. {product.price}
-                    </p>
+        {/* Gallery */}
+        <td className="p-4 text-center">
+          {(p.gallery || []).length}
+        </td>
 
-                    <p
-                      className="
-                        text-gray-600
-                        mb-6
-                      "
-                    >
-                      {
-                        product.description
-                      }
-                    </p>
-
-                    <button
-                      onClick={() => {
-
-                        if (
-                          product.id
-                        ) {
-
-                          handleDelete(
-                            product.id
-                          );
-
-                        }
-
-                      }}
-                      className="
-                        w-full
-                        h-12
-                        rounded-full
-                        bg-black
-                        text-white
-                        font-semibold
-                      "
-                    >
-                      Delete Product
-                    </button>
-
-                  </div>
-
-                </div>
-
-              )
+        {/* Status */}
+        <td className="p-4 text-center">
+          <div className="flex flex-col gap-1">
+            {p.featured && (
+              <span className="bg-blue-100 text-blue-700 rounded px-2 py-1 text-xs">
+                Featured
+              </span>
             )}
 
+            {p.trending && (
+              <span className="bg-green-100 text-green-700 rounded px-2 py-1 text-xs">
+                Trending
+              </span>
+            )}
+
+            {p.bestseller && (
+              <span className="bg-yellow-100 text-yellow-700 rounded px-2 py-1 text-xs">
+                Best Seller
+              </span>
+            )}
+
+            {p.newArrival && (
+              <span className="bg-purple-100 text-purple-700 rounded px-2 py-1 text-xs">
+                New Arrival
+              </span>
+            )}
           </div>
+        </td>
 
-        )}
+        {/* Actions */}
+        <td className="p-4">
+          <div className="flex gap-2 justify-center">
+            <Link
+              href={`/admin/product?id=${p.id}`}
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg"
+            >
+              Edit
+            </Link>
 
-      </section>
+            <button
+              onClick={() => remove(p.id)}
+              className="bg-red-600 text-white px-4 py-2 rounded-lg"
+            >
+              Delete
+            </button>
+          </div>
+        </td>
+      </tr>
+    );
+  })}
+</tbody>
 
-      <Footer />
+        </table>
 
-    </main>
+      </div>
+
+    </div>
 
   );
 
