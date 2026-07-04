@@ -42,20 +42,10 @@ setVariantProducts(group);
 console.log("PRODUCT",p);
 console.log("VARIANTS",p?.variants);
 
-if(p?.variants?.length){
+setSelectedImage(p.image || "");
 
-setSelectedVariant(p.variants[0]);
-
-setSelectedImage(
-p.variants[0].image || p.image
-);
-
-}else{
-
-setSelectedImage(
-p?.gallery?.[0] || p?.image || ""
-);
-
+if (p?.variants?.length) {
+  setSelectedVariant(null);
 }
 
 })
@@ -85,18 +75,12 @@ p?.gallery?.[0] || p?.image || ""
 
   }
 
-  const gallery=
-selectedVariant?.image
-?[
-selectedVariant.image,
-...(product.gallery||[])
-.filter((x:string)=>x!==selectedVariant.image)
-]
-:
-(
-product.gallery?.length
-?product.gallery
-:[product.image]
+  const gallery = [
+  product.image,
+  ...(product.gallery || []),
+  ...(product.variants || []).map((v:any) => v.image)
+].filter(Boolean).filter(
+  (img, index, arr) => arr.indexOf(img) === index
 );
 
   return (
@@ -175,7 +159,7 @@ product.gallery?.length
 
               <span className="px-4 py-2 bg-white border rounded-full">
 
-                {product.color}
+               {selectedVariant?.color || product.color || "Default"}
 
               </span>
 
@@ -198,7 +182,7 @@ product.gallery?.length
               {product.description}
 
             </p>
-            {Array.isArray(product.variants) && product.variants.length > 0 && (
+           {variantProducts.length > 0 && (
 
 <div className="mb-8">
 
@@ -214,14 +198,9 @@ Color
 
 <button
 key={v.id || index}
-onClick={()=>{
-
-setSelectedVariant(v);
-
-setSelectedImage(v.image);
-
-setProduct(v);
-
+onClick={() => {
+  setSelectedVariant(v);
+  setSelectedImage(v.image || product.image);
 }}
 className={`border rounded-xl p-2 ${
 selectedVariant?.id===v.id

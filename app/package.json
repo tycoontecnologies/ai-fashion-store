@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "firebase": "^12.14.0",
+    "firebase-admin": "^14.1.0",
     "framer-motion": "^12.40.0",
     "fs": "^0.0.1-security",
     "image-hash": "^7.0.1",

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect,useState } from "react";
 import Image from "next/image";
@@ -268,48 +268,74 @@ value={product.seoDescription || ""}
 onChange={e=>setProduct({...product,seoDescription:e.target.value})}
 />
 
-<div>
+<div className="space-y-5">
 
-<label className="font-semibold mb-2 block">
-Main Product Image
-</label>
-<input
-className="border p-4 rounded-xl"
-placeholder="Variant Group"
-value={product.variantGroup || ""}
-onChange={e=>setProduct({
-...product,
-variantGroup:e.target.value
-})}
-/>
-<input
-type="file"
-onChange={e=>{
-const file=e.target.files?.[0];
-if(file) uploadImage(file);
-}}
-/>
+  <div>
+    <label className="block mb-2 text-sm font-semibold text-gray-700">
+      Variant Group
+    </label>
+
+    <input
+      className="w-full border rounded-xl p-3"
+      placeholder="Example: Bianca Summer Collection"
+      value={product.variantGroup || ""}
+      onChange={(e) =>
+        setProduct({
+          ...product,
+          variantGroup: e.target.value,
+        })
+      }
+    />
+  </div>
+
+  <div>
+    <label className="block mb-2 text-sm font-semibold text-gray-700">
+      Main Product Image
+    </label>
+
+    <div className="flex items-center gap-4">
+
+      <label className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-medium transition">
+        Choose File
+
+        <input
+          type="file"
+          className="hidden"
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            if (file) uploadImage(file);
+          }}
+        />
+      </label>
+
+      {uploading && (
+        <span className="text-blue-600 font-medium">
+          Uploading...
+        </span>
+      )}
+    </div>
+
+    {product.image && (
+      <div className="mt-5">
+        <Image
+          src={product.image}
+          alt={product.name || "Product"}
+          width={220}
+          height={220}
+          className="rounded-2xl border object-cover shadow"
+        />
+      </div>
+    )}
+  </div>
+
+
 
 </div>
 
-{uploading &&
-<div className="text-blue-600 font-semibold">
-Uploading...
-</div>
-}
 
 
-{product.image && (
 
-<Image
-src={product.image}
-alt="Product"
-width={256}
-height={256}
-className="w-64 h-64 object-cover rounded-xl border"
-/>
 
-)}
 
 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 
@@ -393,6 +419,74 @@ image:""
 key={v.id}
 className="border rounded-xl p-4 space-y-3"
 >
+
+<div className="mb-4">
+
+  <label className="block mb-2 text-sm font-semibold text-gray-700">
+    Variant Image
+  </label>
+
+  {v.image ? (
+    <Image
+      src={v.image}
+      alt="Variant"
+      width={120}
+      height={120}
+      className="rounded-xl border object-cover mb-3"
+    />
+  ) : (
+    <div className="w-[120px] h-[120px] rounded-xl border flex items-center justify-center text-xs text-gray-400 mb-3">
+      No Image
+    </div>
+  )}
+
+  <label className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl inline-block">
+    Choose File
+
+    <input
+      type="file"
+      className="hidden"
+      onChange={async (e) => {
+
+        const file = e.target.files?.[0];
+
+        if (!file) return;
+
+        setUploading(true);
+
+        const formData = new FormData();
+
+        formData.append("file", file);
+
+        const response = await fetch("/api/admin/upload", {
+          method: "POST",
+          body: formData
+        });
+
+        const result = await response.json();
+
+        setUploading(false);
+
+        if (!result.success) {
+          alert("Upload failed");
+          return;
+        }
+
+        const variants = [...(product.variants || [])];
+
+        variants[index].image = result.url;
+
+        setProduct({
+          ...product,
+          variants
+        });
+
+      }}
+    />
+
+  </label>
+
+</div>
 
 <div className="grid grid-cols-5 gap-3">
 
@@ -510,6 +604,7 @@ className="bg-black text-white p-4 rounded-xl hover:bg-gray-800"
 </div>
 );
 }
+
 
 
 
