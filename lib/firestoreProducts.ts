@@ -1,59 +1,24 @@
-import {
-  collection,
-  getDocs,
-  getDoc,
-  doc,
-} from "firebase/firestore";
-
-import { db } from "./firebase";
+import { getProducts as getAdminProducts } from "./adminProducts";
 
 export async function getProducts() {
-
-  const snapshot =
-    await getDocs(
-      collection(
-        db,
-        "products"
-      )
-    );
-
-  return snapshot.docs.map(
-    (docItem) => ({
-
-      id: docItem.id,
-
-      ...docItem.data(),
-
-    })
-  );
-
+  return await getAdminProducts();
 }
 
-export async function getProductById(
-  id: string
-) {
+export async function getProductsForStore() {
+  return await getAdminProducts();
+}
 
-  const snapshot =
-    await getDoc(
-      doc(
-        db,
-        "products",
-        id
-      )
-    );
+export async function getProductById(id: string) {
+  const products = await getAdminProducts();
+  return products.find((p: any) => p.id === id) || null;
+}
 
-  if (!snapshot.exists()) {
+export async function getVariantGroup(group: string) {
+  if (!group) return [];
 
-    return null;
+  const products = await getAdminProducts();
 
-  }
-
-  return {
-
-    id: snapshot.id,
-
-    ...snapshot.data(),
-
-  };
-
+  return products.filter(
+    (p: any) => p.variantGroup === group
+  );
 }
