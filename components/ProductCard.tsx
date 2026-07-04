@@ -1,4 +1,4 @@
-"use client"; 
+﻿"use client"; 
 import ProductRating
 from "@/components/ProductRating";
 
@@ -55,7 +55,7 @@ export default function ProductCard({
         <div className="relative">
 
             <Link
-              href={`/products/${product.id}`}
+              href={`/product/${product.id}`}
             >
 
             <Image
@@ -291,3 +291,4 @@ export default function ProductCard({
     </>
   );
 }
+
