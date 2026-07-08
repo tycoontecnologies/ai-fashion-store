@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { getVariantGroup } from "@/lib/firestoreProducts";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
@@ -31,21 +31,33 @@ const [selectedImage,setSelectedImage]=useState("");
 
 
 setProduct(p);
+
+let group:any[] = [];
+
 if(p?.variantGroup){
 
-const group=await getVariantGroup(p.variantGroup);
+group = await getVariantGroup(p.variantGroup);
+
+setVariantProducts(group);
+
+}
+else if(p?.variants?.length){
+
+group = p.variants;
 
 setVariantProducts(group);
 
 }
 
-console.log("PRODUCT",p);
-console.log("VARIANTS",p?.variants);
 
 setSelectedImage(p.image || "");
 
-if (p?.variants?.length) {
-  setSelectedVariant(null);
+if(group.length){
+
+setSelectedVariant(group[0]);
+
+setSelectedImage(group[0].image || p.image);
+
 }
 
 })
@@ -75,13 +87,15 @@ if (p?.variants?.length) {
 
   }
 
-  const gallery = [
-  product.image,
-  ...(product.gallery || []),
-  ...(product.variants || []).map((v:any) => v.image)
-].filter(Boolean).filter(
-  (img, index, arr) => arr.indexOf(img) === index
-);
+  const activeProduct = selectedVariant || product;
+
+const gallery = [
+  activeProduct.image,
+  ...(activeProduct.gallery || []),
+  ...(activeProduct.variants || []).map((v:any)=>v.image)
+]
+.filter(Boolean)
+.filter((img,index,arr)=>arr.indexOf(img)===index);
 
   return (
 
@@ -99,7 +113,7 @@ if (p?.variants?.length) {
 
               <img
                 src={selectedImage}
-                alt={product.name}
+                alt={activeProduct.name}
                 className="w-full h-[700px] object-cover"
               />
 
@@ -129,7 +143,7 @@ if (p?.variants?.length) {
 
                   <img
                     src={img}
-                    alt={product.name}
+                    alt={activeProduct.name}
                     className="w-24 h-24 object-cover"
                   />
 
@@ -145,13 +159,13 @@ if (p?.variants?.length) {
 
             <p className="uppercase tracking-[5px] text-gray-500 mb-4">
 
-              {product.category}
+              {activeProduct.category}
 
             </p>
 
             <h1 className="text-6xl font-black mb-6">
 
-              {product.name}
+              {activeProduct.name}
 
             </h1>
 
@@ -173,13 +187,13 @@ if (p?.variants?.length) {
 
             <div className="text-4xl font-black mb-8">
 
-              Rs. {product.price}
+              Rs. {activeProduct.price}
 
             </div>
 
             <p className="text-lg leading-8 text-gray-700 mb-10">
 
-              {product.description}
+              {activeProduct.description}
 
             </p>
            {variantProducts.length > 0 && (
@@ -256,6 +270,10 @@ className="w-16 h-16 object-cover rounded-lg"
   );
 
 }
+
+
+
+
 
 
 

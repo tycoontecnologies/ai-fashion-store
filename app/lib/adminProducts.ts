@@ -1,4 +1,4 @@
-import {
+﻿import {
   collection,
   getDocs,
   addDoc,
@@ -186,12 +186,14 @@ export async function getProducts() {
 
   const snap = await getDocs(q);
 
-  return snap.docs.map((d) =>
-    normalize({
-      id: d.id,
-      ...d.data(),
-    })
-  );
+  return snap.docs
+    .map((d) =>
+      normalize({
+        id: d.id,
+        ...d.data(),
+      })
+    )
+    .filter((p) => !p.isDeleted);
 }
 
 export async function getProduct(id: string) {
@@ -300,4 +302,5 @@ product.updatedAt = serverTimestamp();
 
 return saveProduct(product);
 }
+
 
