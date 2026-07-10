@@ -29,37 +29,38 @@ const [selectedImage,setSelectedImage]=useState("");
     getProductById(params.id as string)
       .then(async (p:any)=>{
 
-        setProduct(p);
 
-        let group:any[] = [];
+setProduct(p);
 
-        if (p?.variantGroup) {
+let group:any[] = [];
 
-          group = await getVariantGroup(p.variantGroup);
+if(p?.variantGroup){
 
-        } else if (p?.variants?.length) {
+group = await getVariantGroup(p.variantGroup);
 
-          group = p.variants;
+setVariantProducts(group);
 
-        }
+}
+else if(p?.variants?.length){
 
-        setVariantProducts(group);
+group = p.variants;
 
-        // show product image first
-        setSelectedImage(p.image || "");
+setVariantProducts(group);
 
-        if (group.length) {
+}
 
-          const defaultVariant =
-            group.find((v:any)=>v.image===p.image);
 
-          if (defaultVariant) {
-            setSelectedVariant(defaultVariant);
-          }
+setSelectedImage(p.image || "");
 
-        }
+if(group.length){
 
-      })
+setSelectedVariant(group[0]);
+
+setSelectedImage(group[0].image || p.image);
+
+}
+
+})
       .catch(console.error);
 
   }, [params.id]);
@@ -172,7 +173,7 @@ const gallery = [
 
               <span className="px-4 py-2 bg-white border rounded-full">
 
-               {selectedVariant?.color ?? "Default"}
+               {selectedVariant?.color || product.color || "Default"}
 
               </span>
 
@@ -186,7 +187,7 @@ const gallery = [
 
             <div className="text-4xl font-black mb-8">
 
-              Rs. {selectedVariant?.price ?? product.price}
+              Rs. {activeProduct.price}
 
             </div>
 

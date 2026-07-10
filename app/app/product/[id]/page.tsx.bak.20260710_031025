@@ -51,11 +51,10 @@ const [selectedImage,setSelectedImage]=useState("");
         if (group.length) {
 
           const defaultVariant =
-            group.find((v:any)=>v.image===p.image);
+            group.find((v:any)=>v.image===p.image) ||
+            group[0];
 
-          if (defaultVariant) {
-            setSelectedVariant(defaultVariant);
-          }
+          setSelectedVariant(defaultVariant);
 
         }
 
@@ -172,7 +171,7 @@ const gallery = [
 
               <span className="px-4 py-2 bg-white border rounded-full">
 
-               {selectedVariant?.color ?? "Default"}
+               {selectedVariant?.color || product.color || "Default"}
 
               </span>
 
@@ -186,7 +185,7 @@ const gallery = [
 
             <div className="text-4xl font-black mb-8">
 
-              Rs. {selectedVariant?.price ?? product.price}
+              Rs. {activeProduct.price}
 
             </div>
 

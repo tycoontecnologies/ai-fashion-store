@@ -114,10 +114,6 @@ export default function ProductsPage() {
   {filtered.map((p: any) => {
     const firstVariant = (p.variants || [])[0];
 
-console.log("IMAGE URL =", p.image);
-console.log("VARIANT URL =", firstVariant?.image);
-
-
    const variantThumb =
   firstVariant?.image?.trim() ||
   firstVariant?.images?.[0]?.trim() ||
@@ -131,10 +127,12 @@ console.log("VARIANT URL =", firstVariant?.image);
         {/* Product Image */}
         <td className="p-4">
           {p.image ? (
-            <img
+            <Image
               src={p.image}
               alt={p.name}
-              className="w-[70px] h-[70px] rounded-xl border object-cover"
+              width={70}
+              height={70}
+              className="rounded-xl border object-cover"
             />
           ) : (
             <div className="w-[70px] h-[70px] rounded-xl border flex items-center justify-center text-xs text-gray-400">
@@ -166,9 +164,11 @@ console.log("VARIANT URL =", firstVariant?.image);
         {/* Variant Thumbnail */}
         <td className="p-4 text-center">
           {variantThumb ? (
-            <img
+            <Image
               src={variantThumb}
               alt="Variant"
+              width={40}
+              height={40}
               className="w-10 h-10 rounded-lg border object-cover mx-auto"
             />
           ) : (

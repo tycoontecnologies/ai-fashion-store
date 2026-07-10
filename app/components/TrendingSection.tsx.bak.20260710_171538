@@ -12,18 +12,6 @@ export default function TrendingSection() {
       try {
         const res = await fetch("/api/products");
         const data = await res.json();
-
-        console.group("TRENDING PRODUCTS");
-        console.table(
-          (Array.isArray(data) ? data : []).map((p:any)=>({
-            id: p.id,
-            name: p.name,
-            image: p.image,
-            variantImage: p.variants?.[0]?.image || ""
-          }))
-        );
-        console.groupEnd();
-
         setProducts(Array.isArray(data) ? data : []);
       } catch (err) {
         console.error(err);

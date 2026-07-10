@@ -114,10 +114,6 @@ export default function ProductsPage() {
   {filtered.map((p: any) => {
     const firstVariant = (p.variants || [])[0];
 
-console.log("IMAGE URL =", p.image);
-console.log("VARIANT URL =", firstVariant?.image);
-
-
    const variantThumb =
   firstVariant?.image?.trim() ||
   firstVariant?.images?.[0]?.trim() ||
