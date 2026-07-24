@@ -1,5 +1,5 @@
 ﻿"use client";
-import { getVariantGroup } from "@/lib/firestoreProducts";
+import { getVariantGroup } from "@/lib/products";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 
@@ -9,7 +9,7 @@ import ProductActions from "@/components/ProductActions";
 import RelatedProducts from "@/components/RelatedProducts";
 import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
 
-import { getProductById } from "@/lib/firestoreProducts";
+import { getProductById } from "@/lib/products";
 
 export default function ProductPage() {
 

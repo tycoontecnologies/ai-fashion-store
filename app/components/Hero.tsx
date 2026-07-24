@@ -32,7 +32,7 @@ export default function Hero() {
                 mb-5
               "
             >
-              AI Powered Fashion
+               Powered Fashion
             </p>
 
             <h1
@@ -49,7 +49,7 @@ export default function Hero() {
               <br />
               Reimagined
               <br />
-              By AI
+              By 
             </h1>
 
             <p
@@ -63,8 +63,8 @@ export default function Hero() {
               "
             >
               Personalized fashion shopping,
-              AI styling and intelligent
-              recommendations powered by AI.
+               styling and intelligent
+              recommendations powered by .
             </p>
 
             <div className="flex gap-4">
@@ -99,7 +99,7 @@ export default function Hero() {
                   transition-all
                 "
               >
-                AI Stylist
+                
               </button>
 
             </div>
@@ -158,7 +158,7 @@ export default function Hero() {
                   mb-2
                 "
               >
-                AI Recommendation
+                 Recommendation
               </p>
 
               <h3
@@ -179,7 +179,7 @@ export default function Hero() {
                   leading-relaxed
                 "
               >
-                AI selected this outfit
+                 selected this outfit
                 based on color harmony,
                 trends and customer
                 preferences.

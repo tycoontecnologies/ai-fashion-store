@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { getProducts } from "@/lib/firestoreProducts";
+import { getProducts } from "@/lib/products";
 
 import AIMatchScore from "./AIMatchScore";
 

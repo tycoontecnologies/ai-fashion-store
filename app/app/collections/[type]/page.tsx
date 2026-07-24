@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getProducts } from "@/lib/adminProducts";
+import { getProducts } from "@/lib/products";
 
 export default async function Page({
   params,

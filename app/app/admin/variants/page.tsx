@@ -8,7 +8,7 @@ import Image from "next/image";
 
 import {
   getProducts
-} from "@/lib/adminProducts";
+} from "@/lib/products";
 
 import {
   saveVariants

@@ -1,12 +1,11 @@
-import { NextResponse } from "next/server";
-import { getProducts } from "@/lib/adminProducts";
+import {NextResponse} from "next/server";
+import {getLocalProducts} from "@/lib/localProducts.server";
 
-export async function GET() {
-  try {
-    const products = await getProducts();
-    return NextResponse.json(products);
-  } catch (error) {
-    console.error(error);
-    return NextResponse.json([], { status: 500 });
-  }
+
+export async function GET(){
+
+ return NextResponse.json(
+   getLocalProducts()
+ );
+
 }

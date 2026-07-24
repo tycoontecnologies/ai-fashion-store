@@ -1,0 +1,86 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+type Item = {
+  name: string;
+  href: string;
+  image: string;
+  description: string;
+};
+
+export default function MegaMenu({
+  open,
+  items,
+}: {
+  open: boolean;
+  items: Item[];
+}) {
+  const first = useMemo(() => items[0], [items]);
+  const [active, setActive] = useState(first);
+
+  if (!open) return null;
+
+  const current = active ?? first;
+
+  return (
+    <div className="absolute left-1/2 top-full z-50 w-screen -translate-x-1/2 pt-4 flex justify-center">
+      <div className="w-[1180px] max-w-[calc(100vw-48px)] overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-2xl">
+        <div className="grid grid-cols-[320px_1fr]">
+          <div className="border-r border-neutral-200 bg-white py-4">
+            {items.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                onMouseEnter={() => setActive(item)}
+                className={`flex items-center justify-between px-8 py-5 transition ${
+                  current?.name === item.name
+                    ? "bg-stone-100 font-semibold"
+                    : "hover:bg-neutral-50"
+                }`}
+              >
+                <span className="text-lg">{item.name}</span>
+                <span className="text-xl">›</span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="p-6">
+            {current && (
+              <div className="relative h-[350px] overflow-hidden rounded-xl">
+                <Image
+                  src={current.image}
+                  alt={current.name}
+                  fill
+                  priority
+                  className="object-cover"
+                />
+
+                <div className="absolute inset-0 flex items-center justify-end bg-gradient-to-r from-transparent via-transparent to-white/90">
+                  <div className="max-w-sm pr-12">
+                    <h2 className="text-5xl font-semibold">
+                      {current.name}
+                    </h2>
+
+                    <p className="mt-4 text-lg text-neutral-600">
+                      {current.description}
+                    </p>
+
+                    <Link
+                      href={current.href}
+                      className="mt-8 inline-flex rounded-md bg-black px-8 py-4 text-sm font-semibold uppercase tracking-wide text-white"
+                    >
+                      Shop {current.name}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

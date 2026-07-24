@@ -1,5 +1,6 @@
 "use client";
 
+import AnnouncementBar from "@/components/topbar/AnnouncementBar";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,6 +55,8 @@ export default function Navbar() {
   }
 
   return (
+<>
+<AnnouncementBar />
   <>
 
 
@@ -116,24 +119,18 @@ export default function Navbar() {
           ">
 
             <Link href="/">
-              Shop
+              Men's
             </Link>
 
             <Link href="/style-quiz">
-              AI Stylist
+              Accessories
             </Link>
 
-            <Link href="/try-on">
-              Try-On
-            </Link>
+            <Link href="/try-on">            </Link>
 
-            <Link href="/profile">
-              Profile
-            </Link>
+            <Link href="/profile">            </Link>
 
-            <Link href="/wishlist">
-              Wishlist
-            </Link>
+            <Link href="/wishlist">            </Link>
 
           </nav>
 
@@ -407,6 +404,8 @@ export default function Navbar() {
 
     </>
 
-  );
+  
+</>
+);
 
 }

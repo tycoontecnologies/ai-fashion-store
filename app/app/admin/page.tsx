@@ -7,8 +7,8 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import { saveProduct } from "@/lib/adminProducts";
-import { getProducts } from "@/lib/firestoreProducts";
+import { saveProduct } from "@/lib/products";
+import { getProducts } from "@/lib/products";
 import { getOrders } from "@/lib/firestoreOrders";
 
 import { storage } from "@/lib/storage";

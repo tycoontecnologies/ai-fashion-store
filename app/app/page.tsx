@@ -5,15 +5,18 @@ import { useEffect, useState } from "react";
 import TrendingSection from "@/components/TrendingSection";
 
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+// Hero removed
 import ProductGrid from "@/components/ProductGrid";
 import Footer from "@/components/Footer";
 import SearchBar from "@/components/SearchBar";
-import AIStylist from "@/components/AIStylist";
-import AIChatStylist from "@/components/AIChatStylist";
 import FilterBar from "@/components/FilterBar";
 
-import { getProducts } from "@/lib/firestoreProducts";
+import { getProducts } from "@/lib/products";
+
+
+
+
+
 
 export default function Home() {
 
@@ -105,9 +108,11 @@ export default function Home() {
 
       <Navbar />
 
-      <Hero />
+      {/* Hero removed */}
 
-      <TrendingSection />
+      
+
+<TrendingSection />
 
       <section
         className="
@@ -142,7 +147,7 @@ export default function Home() {
                 mb-3
               "
             >
-              AI Recommended
+               Recommended
             </p>
 
             <h2
@@ -193,9 +198,9 @@ export default function Home() {
 
       </section>
 
-      <AIStylist />
+      
 
-      <AIChatStylist />
+      
 
       <Footer />
 

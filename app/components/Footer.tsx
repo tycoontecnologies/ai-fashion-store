@@ -54,9 +54,25 @@ export default function Footer() {
               leading-relaxed
               max-w-[320px]
             ">
-              AI powered fashion shopping,
-              styling, recommendations and
-              virtual try-on experiences.
+               Men's Premium Fashion Brand
+
+
+<div className="mt-6">
+  <h4 className="font-semibold mb-2">
+    Our Locations
+  </h4>
+
+  <p>
+    Rahimyar Khan, Multan, Bahawalpur, Gujranwala, Sialkot,
+    Islamabad, Rawalpindi, Chakwal, Sahiwal, Gujrat,
+    Kharian, Pindi Bhattian
+  </p>
+
+  <p className="mt-2">
+    Coming Soon: Lala Musa, Bhakkar, Tandlianwala, Samundari
+  </p>
+</div>
+
             </p>
 
           </div>
@@ -85,15 +101,15 @@ export default function Footer() {
               </Link>
 
               <Link href="/">
-                Women
+                
               </Link>
 
               <Link href="/">
-                Trending
+                
               </Link>
 
               <Link href="/">
-                New Arrivals
+                
               </Link>
 
             </div>
@@ -109,7 +125,7 @@ export default function Footer() {
               font-bold
               mb-6
             ">
-              Company
+              
             </h3>
 
             <div className="
@@ -120,19 +136,19 @@ export default function Footer() {
             ">
 
               <Link href="/">
-                About
+                
               </Link>
 
               <Link href="/">
-                Careers
+                
               </Link>
 
               <Link href="/">
-                Contact
+                
               </Link>
 
               <Link href="/">
-                Privacy
+                
               </Link>
 
             </div>
@@ -256,7 +272,7 @@ export default function Footer() {
             </Link>
 
             <Link href="/">
-              Privacy
+              
             </Link>
 
             <Link href="/">

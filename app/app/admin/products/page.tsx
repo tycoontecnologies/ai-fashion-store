@@ -7,7 +7,7 @@ import Image from "next/image";
 import {
   getProducts,
   deleteProduct,
-} from "@/lib/adminProducts";
+} from "@/lib/products";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState<any[]>([]);

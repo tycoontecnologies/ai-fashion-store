@@ -9,7 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { getProducts }
-from "@/lib/firestoreProducts";
+from "@/lib/products";
 
 export default function AIOutfitRecommendations({
   product,

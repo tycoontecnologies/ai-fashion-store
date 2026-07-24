@@ -1,178 +1,123 @@
-export const products = [
 
-  {
-    id: 1,
+export type Product = {
+  id:string;
+  name:string;
+  slug?:string;
+  image:string;
+  gallery?:string[];
+  category?:string;
+  price?:number;
+  description?:string;
+  featured?:boolean;
+  trending?:boolean;
+  newArrival?:boolean;
+  [key:string]:any;
+};
 
-    name: "Olive Relaxed Fit Tee",
 
-    image: "/products/1.png",
+async function api(){
 
-    price: 4999,
+  const res = await fetch(
+    "/api/products",
+    {
+      cache:"no-store"
+    }
+  );
 
-    category: "T-Shirt",
+  return await res.json();
 
-    color: "Green",
+}
 
-    pattern: "Solid",
 
-    style: "Minimal",
+export async function getProducts(){
 
-    fit: "Relaxed",
+  return await api();
 
-    occasion: "Casual",
+}
 
-    description:
-      "Premium oversized olive t-shirt with relaxed luxury silhouette.",
-  },
 
-  {
-    id: 2,
+export async function getProduct(id:string){
 
-    name: "Black Urban Street Tee",
+  const products = await api();
 
-    image: "/products/2.png",
+  return products.find(
+    (p:any)=>
+      p.id===id ||
+      p.slug===id
+  );
 
-    price: 5499,
+}
 
-    category: "Streetwear",
 
-    color: "Black",
+export async function getProductById(id:string){
 
-    pattern: "Graphic",
+  return getProduct(id);
 
-    style: "Streetwear",
+}
 
-    fit: "Oversized",
 
-    occasion: "Casual",
+export async function getVariantGroup(groupId?:string){
 
-    description:
-      "Modern black oversized streetwear tee with bold urban aesthetic.",
-  },
+  const products = await api();
 
-  {
-    id: 3,
+  if(!groupId){
+    return [];
+  }
 
-    name: "White Minimal Polo",
+  return products.filter(
+    (p:any)=>
+      p.variantGroup===groupId
+  );
 
-    image: "/products/3.png",
+}
 
-    price: 6999,
 
-    category: "Polo Shirt",
+// compatibility functions
 
-    color: "White",
+export async function saveProduct(product:any){
 
-    pattern: "Solid",
+  console.log(
+    "LOCAL SAVE PRODUCT",
+    product
+  );
 
-    style: "Luxury",
+  return product;
 
-    fit: "Slim",
+}
 
-    occasion: "Office",
 
-    description:
-      "Luxury white polo shirt crafted for elegant smart-casual styling.",
-  },
+export async function updateProduct(
+ id:string,
+ data:any
+){
 
-  {
-    id: 4,
+  console.log(
+    "LOCAL UPDATE PRODUCT",
+    id,
+    data
+  );
 
-    name: "Grey Essential Shirt",
+  return {
+    id,
+    ...data
+  };
 
-    image: "/products/4.png",
+}
 
-    price: 7999,
 
-    category: "Shirt",
+export async function deleteProduct(
+ id:string
+){
 
-    color: "Grey",
+  console.log(
+    "LOCAL DELETE PRODUCT",
+    id
+  );
 
-    pattern: "Solid",
+  return true;
 
-    style: "Minimal",
+}
 
-    fit: "Regular",
+// legacy compatibility
+export const products:any[] = [];
 
-    occasion: "Formal",
-
-    description:
-      "Refined grey shirt with premium tailoring and clean modern structure.",
-  },
-
-  {
-    id: 5,
-
-    name: "Blue Modern Fit Polo",
-
-    image: "/products/5.png",
-
-    price: 6499,
-
-    category: "Polo Shirt",
-
-    color: "Blue",
-
-    pattern: "Solid",
-
-    style: "Luxury",
-
-    fit: "Regular",
-
-    occasion: "Office",
-
-    description:
-      "Modern premium blue polo with clean luxury-inspired silhouette.",
-  },
-
-  {
-    id: 6,
-
-    name: "Black Oversized Essential",
-
-    image: "/products/6.png",
-
-    price: 5299,
-
-    category: "Streetwear",
-
-    color: "Black",
-
-    pattern: "Solid",
-
-    style: "Streetwear",
-
-    fit: "Oversized",
-
-    occasion: "Casual",
-
-    description:
-      "Oversized black essential tee designed for elevated streetwear looks.",
-  },
-
-  {
-    id: 7,
-
-    name: "White Relaxed Street Tee",
-
-    image: "/products/7.png",
-
-    price: 4899,
-
-    category: "T-Shirt",
-
-    color: "White",
-
-    pattern: "Graphic",
-
-    style: "Streetwear",
-
-    fit: "Relaxed",
-
-    occasion: "Casual",
-
-    description:
-      "Relaxed white street-inspired tee with contemporary oversized energy.",
-  },
-
-];

@@ -7,7 +7,7 @@ import {
 
 import {
   getProducts
-} from "@/lib/adminProducts";
+} from "@/lib/products";
 
 import {
   getHomepageSettings,

@@ -3,7 +3,7 @@
 import { useEffect,useState } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { saveProduct,updateProduct,getProduct } from "@/lib/adminProducts";
+import { saveProduct,updateProduct,getProduct } from "@/lib/products";
 
 
 

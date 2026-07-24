@@ -3,84 +3,47 @@
 import {
   createContext,
   useContext,
-  useEffect,
+  ReactNode,
   useState,
 } from "react";
 
-import {
-  onAuthStateChanged,
-  signOut,
-  User,
-} from "firebase/auth";
+type AuthContextType = {
+  user: any;
+  loading: boolean;
+  logout: () => Promise<void>;
+};
 
-import { auth } from "@/lib/firebase";
-
-const AuthContext =
-  createContext<any>(null);
+const AuthContext = createContext<AuthContextType>({
+  user: null,
+  loading: false,
+  logout: async () => {},
+});
 
 export function AuthProvider({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
 
-  const [user, setUser] =
-    useState<User | null>(null);
-
-  const [loading, setLoading] =
-    useState(true);
-
-  useEffect(() => {
-
-    const unsubscribe =
-      onAuthStateChanged(
-        auth,
-        (currentUser) => {
-
-          setUser(
-            currentUser
-          );
-
-          setLoading(
-            false
-          );
-
-        }
-      );
-
-    return () =>
-      unsubscribe();
-
-  }, []);
+  const [user, setUser] = useState<any>(null);
 
   async function logout() {
-
-    await signOut(auth);
-
+    setUser(null);
   }
 
   return (
-
     <AuthContext.Provider
       value={{
         user,
+        loading: false,
         logout,
       }}
     >
-
-      {!loading &&
-        children}
-
+      {children}
     </AuthContext.Provider>
-
   );
-
 }
 
 export function useAuth() {
-
-  return useContext(
-    AuthContext
-  );
-
+  return useContext(AuthContext);
 }

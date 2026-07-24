@@ -45,7 +45,7 @@ export default function ProductDetails({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              src={activeImage}
+              src={activeImage?.startsWith('/') ? activeImage : '/' + activeImage}
               alt={product.name}
               className="
                 w-full
@@ -88,7 +88,7 @@ export default function ProductDetails({
                 >
 
                   <img
-                    src={img}
+                    src={img?.startsWith('/') ? img : '/' + img}
                     alt=""
                     className="
                       w-full

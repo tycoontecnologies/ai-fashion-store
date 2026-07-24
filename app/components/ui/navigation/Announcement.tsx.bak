@@ -1,0 +1,88 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+const messages = [
+  "🚚 FREE SHIPPING OVER PKR 5,000",
+  "💳 VISA & MASTERCARD",
+  "📦 CASH ON DELIVERY",
+  "⭐ PREMIUM QUALITY",
+  "↩ EASY RETURNS",
+  "🔥 NEW ARRIVALS EVERY WEEK"
+];
+
+export default function Announcement() {
+  const [clock, setClock] = useState("");
+  const [seconds, setSeconds] = useState(0);
+
+  const [live, setLive] = useState({
+    visitors: 0,
+    online: 0,
+  });
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const r = await fetch("/api/live?ts=" + Date.now(), {
+          cache: "no-store",
+        });
+
+        setLive(await r.json());
+      } catch {}
+    };
+
+    load();
+
+    const poll = setInterval(load, 5000);
+
+    const timer = setInterval(() => {
+      setClock(
+        new Date().toLocaleTimeString("en-PK", {
+          hour12: true,
+        })
+      );
+      setSeconds((s) => s + 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+      clearInterval(poll);
+    };
+  }, []);
+
+  const mins = String(Math.floor(seconds / 60)).padStart(2, "0");
+  const secs = String(seconds % 60).padStart(2, "0");
+
+  const ticker = [...messages, ...messages].join("   •   ");
+
+  return (
+    <div className="relative overflow-hidden bg-black text-white">
+      <div className="mx-auto flex h-10 items-center">
+
+        <div className="flex-1 overflow-hidden whitespace-nowrap">
+          <div
+            className="inline-block animate-[marquee_35s_linear_infinite]"
+            style={{ paddingLeft: "100%" }}
+          >
+            {ticker}
+          </div>
+        </div>
+
+        <div className="hidden items-center gap-5 px-6 text-[11px] lg:flex">
+          <span>👁 {live.visitors.toLocaleString()}</span>
+          <span>🔥 {live.online} Online</span>
+          <span>🕒 {clock}</span>
+          <span>⏱ {mins}:{secs}</span>
+        </div>
+
+      </div>
+
+      <style jsx>{`
+        @keyframes marquee {
+          from { transform: translateX(0%); }
+          to { transform: translateX(-100%); }
+        }
+      `}</style>
+    </div>
+  );
+}

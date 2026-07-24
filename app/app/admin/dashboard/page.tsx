@@ -11,7 +11,7 @@ import {
 import {
   getProducts,
   deleteProduct
-} from "@/lib/adminProducts";
+} from "@/lib/products";
 
 export default function Dashboard(){
 
