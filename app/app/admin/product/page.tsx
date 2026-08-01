@@ -13,6 +13,7 @@ const params=useSearchParams();
 const id=params.get("id");
 
 const [uploading,setUploading]=useState(false);
+const [categories,setCategories]=useState<any[]>([]);
 
 const [product,setProduct]=useState<any>({
   variantGroup:"",
@@ -45,17 +46,98 @@ seoDescription:"",
 comparePrice:0,
 
 sku:"",
-newArrival:false
+newArrival:false,
+gallery:[],
+variants:[]
 });
 
 useEffect(()=>{
+
  async function load(){
-   if(!id) return;
-   const data=await getProduct(id);
-   if(data) setProduct(data);
+
+   const cats =
+    await fetch("/api/admin/categories")
+    .then(r=>r.json());
+
+   setCategories(cats);
+
+
+   if(id){
+
+     const data =
+       await getProduct(id);
+
+     if(data)
+       setProduct(data);
+
+   }
+
  }
+
  load();
+
 },[id]);
+
+
+async function uploadGalleryImages(files:FileList){
+
+  const uploaded:string[] = [];
+
+  for(const file of Array.from(files)){
+
+    const formData = new FormData();
+
+    formData.append(
+      "file",
+      file
+    );
+
+
+    const response =
+      await fetch(
+        "/api/admin/upload",
+        {
+          method:"POST",
+          body:formData
+        }
+      );
+
+
+    const result =
+      await response.json();
+
+
+    if(result.success){
+      uploaded.push(result.url);
+    }
+
+  }
+
+
+  setProduct({
+    ...product,
+    gallery:[
+      ...(product.gallery || []),
+      ...uploaded
+    ]
+  });
+
+}
+
+function removeGalleryImage(
+ index:number
+){
+
+ setProduct({
+   ...product,
+   gallery:
+   (product.gallery || [])
+   .filter(
+    (_:any,i:number)=>i!==index
+   )
+ });
+
+}
 
 async function uploadImage(file:any){
 
@@ -96,7 +178,26 @@ async function uploadImage(file:any){
 
 async function save(){
 
-console.log("PRODUCT TO SAVE",JSON.stringify(product,null,2));
+const latestProduct = {
+  ...product,
+  category: product.category || "",
+  subcategory: product.subcategory || ""
+};
+
+console.log("CATEGORY DEBUG:", product.category, product.subcategory);
+
+console.log("========== SAVE START ==========");
+console.log(JSON.stringify(latestProduct,null,2));
+console.log("========== VARIANTS ==========");
+console.log(JSON.stringify(latestProduct.variants,null,2));
+
+
+if(product.variants){
+  console.log(
+    "VARIANT IMAGES:",
+    product.variants.map((v:any)=>v.image)
+  );
+}
 
 
  if(!product.name){
@@ -115,12 +216,12 @@ console.log("PRODUCT TO SAVE",JSON.stringify(product,null,2));
  }
 
  if(id){
-   await updateProduct(id,product);
+   await updateProduct(id,latestProduct);
    alert("Updated");
  }else{
    try{
 
-const saved = await saveProduct(product);
+const saved = await saveProduct(latestProduct);
 
 console.log("PRODUCT SAVED", saved);
 
@@ -147,6 +248,68 @@ return(
 Product Editor
 </h1>
 
+
+<div className="grid grid-cols-2 gap-4 mb-6">
+
+<div>
+<label className="block font-semibold mb-2">
+Category
+</label>
+
+<select
+className="w-full border p-3 rounded"
+value={product.category || ""}
+onChange={(e)=>setProduct({
+ ...product,
+ category:e.target.value
+})}
+>
+
+<option value="">Select Category</option>
+<option value="Men">Men</option>
+<option value="Women">Women</option>
+<option value="Accessories">Accessories</option>
+
+</select>
+
+</div>
+
+
+<div>
+<label className="block font-semibold mb-2">
+Sub Category
+</label>
+
+<select
+className="w-full border p-3 rounded"
+value={product.subcategory || ""}
+onChange={(e)=>setProduct({
+ ...product,
+ subcategory:e.target.value
+})}
+>
+
+<option value="">Select Sub Category</option>
+
+<option value="Shirts">Shirts</option>
+<option value="Polo Shirts">Polo Shirts</option>
+<option value="T-Shirts">T-Shirts</option>
+<option value="Suits">Suits</option>
+<option value="Jeans">Jeans</option>
+
+<option value="Dresses">Dresses</option>
+<option value="Tops">Tops</option>
+
+<option value="Watches">Watches</option>
+<option value="Belts">Belts</option>
+<option value="Wallets">Wallets</option>
+<option value="Bags">Bags</option>
+
+</select>
+
+</div>
+
+</div>
 <div className="grid gap-4">
 
 <input
@@ -156,12 +319,22 @@ value={product.name || ""}
 onChange={e=>setProduct({...product,name:e.target.value})}
 />
 
-<input
+<select
 className="border p-4 rounded-xl"
-placeholder="Category"
 value={product.category || ""}
 onChange={e=>setProduct({...product,category:e.target.value})}
-/>
+>
+<option value="">
+Select Category
+</option>
+
+{categories.map((c:any)=>(
+<option key={c.id} value={c.name}>
+{c.name}
+</option>
+))}
+
+</select>
 
 <input
 className="border p-4 rounded-xl"
@@ -315,7 +488,84 @@ onChange={e=>setProduct({...product,seoDescription:e.target.value})}
       )}
     </div>
 
-    {product.image && (
+    
+
+<div className="border p-5 rounded-xl">
+
+<h3 className="font-bold mb-4">
+Gallery Images
+</h3>
+
+
+<input
+type="file"
+multiple
+accept="image/*"
+onChange={
+e=>{
+ if(e.target.files)
+  uploadGalleryImages(
+   e.target.files
+  );
+}
+}
+/>
+
+
+<div className="
+grid
+grid-cols-4
+gap-4
+mt-5
+">
+
+{(product.gallery || []).map(
+(img:string,index:number)=>(
+
+<div key={index} className="relative">
+
+<img
+src={img}
+className="
+w-full
+h-24
+object-cover
+rounded-xl
+border
+"
+/>
+
+
+<button
+type="button"
+onClick={()=>
+removeGalleryImage(index)
+}
+className="
+absolute
+top-1
+right-1
+bg-red-600
+text-white
+rounded-full
+px-2
+"
+>
+×
+</button>
+
+
+</div>
+
+))
+
+}
+
+</div>
+
+</div>
+
+{product.image && (
       <div className="mt-5">
         <Image
           src={product.image}
@@ -472,14 +722,25 @@ className="border rounded-xl p-4 space-y-3"
           return;
         }
 
-        const variants = [...(product.variants || [])];
+        console.log("VARIANT IMAGE UPLOADED URL", result.url);
 
-        variants[index].image = result.url;
+        setProduct((prev:any)=>({
 
-        setProduct({
-          ...product,
-          variants
-        });
+          ...prev,
+
+          variants:(prev.variants || []).map(
+            (item:any,i:number)=>
+              i===index
+              ?
+              {
+                ...item,
+                image:result.url
+              }
+              :
+              item
+          )
+
+        }));
 
       }}
     />

@@ -10,7 +10,7 @@ export default function TrendingSection() {
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch("/api/products");
+        const res = await 
         const data = await res.json();
         setProducts(Array.isArray(data) ? data : []);
       } catch (err) {

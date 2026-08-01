@@ -61,7 +61,6 @@ export default function Navbar() {
 
           <nav className="hidden lg:flex items-center gap-8 text-base font-medium text-[#d6aa5a]">
             <Link href="/">Shop</Link>
-            <Link href="/style-quiz">AI Stylist</Link>
             <Link href="/try-on">Try-On</Link>
             <Link href="/profile">Profile</Link>
             <Link href="/wishlist">Wishlist</Link>

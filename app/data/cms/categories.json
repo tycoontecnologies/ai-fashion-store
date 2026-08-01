@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": "1785007430748",
+    "name": "Accessories",
+    "slug": "accessories"
+  },
+  {
+    "id": "1785007438604",
+    "name": "Belts",
+    "slug": "belts"
+  },
+  {
+    "id": "1785007442993",
+    "name": "Socks",
+    "slug": "socks"
+  },
+  {
+    "id": "1785008227104",
+    "name": "Shirts",
+    "slug": "shirts"
+  }
+]

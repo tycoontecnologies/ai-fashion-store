@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root{
+
+  /* GUESS360 BRAND */
+
+  --gold:#d6aa5a;
+  --gold-hover:#c99a43;
+  --gold-dark:#b88431;
+
+  --black:#050505;
+  --charcoal:#151515;
+
+  --white:#ffffff;
+  --gray:#b5b5b5;
+
+}
+
+/* GLOBAL */
+
+html,
+body{
+  background:var(--black);
+  color:var(--white);
+}
+
+/* LINKS */
+
+a{
+  transition:.25s;
+}
+
+a:hover{
+  color:var(--gold);
+}
+
+/* BUTTONS */
+
+button{
+  transition:.25s;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:.95;
+}
+
+/* NAVBAR */
+
+header,
+nav{
+  background:var(--black);
+}
+
+/* PRODUCT CARDS */
+
+.card,
+.product-card{
+  background:var(--charcoal);
+  border:1px solid rgba(214,170,90,.20);
+}
+
+.card:hover,
+.product-card:hover{
+  border-color:var(--gold);
+}
+
+/* PRICE */
+
+.price{
+  color:var(--gold);
+}
+
+/* PRIMARY BUTTON */
+
+.btn-primary{
+  background:var(--gold);
+  color:var(--black);
+  font-weight:700;
+}
+
+.btn-primary:hover{
+  background:var(--gold-hover);
+}
+
+/* SECONDARY BUTTON */
+
+.btn-secondary{
+  background:transparent;
+  border:1px solid var(--gold);
+  color:var(--gold);
+}
+
+.btn-secondary:hover{
+  background:var(--gold);
+  color:var(--black);
+}
+
+/* WISHLIST */
+
+.wishlist-active{
+  color:var(--gold);
+}
+
+/* INPUTS */
+
+input,
+textarea,
+select{
+  background:var(--charcoal);
+  color:var(--white);
+  border:1px solid rgba(214,170,90,.25);
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+  outline:none;
+  border-color:var(--gold);
+}
+
+/* FOOTER */
+
+footer{
+  background:var(--black);
+  color:var(--white);
+}

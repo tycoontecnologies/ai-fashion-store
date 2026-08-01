@@ -1,0 +1,137 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import Announcement from "./Announcement";
+import MegaMenu from "./mega/MegaMenu";
+import { mensCollection, accessories } from "./mega/menuData";
+import { Search, Heart, User, ShoppingBag } from "lucide-react";
+
+const nav = [
+  { name: "HOME", href: "/" },
+  { name: "MEN'S COLLECTION", href: "#men", mega: true },
+  { name: "ACCESSORIES", href: "#accessories", mega: true },
+];
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobile, setMobile] = useState(false);
+  const [megaOpen, setMegaOpen] = useState<string | null>(null);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <>
+      <Announcement />
+
+      <header
+        className={`sticky top-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? "bg-white shadow-md"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6">
+
+          <button
+            className="lg:hidden text-2xl"
+            onClick={() => setMobile(!mobile)}
+          >
+            ☰
+          </button>
+
+          <nav
+            className="hidden lg:flex items-center gap-6 text-[13px] font-semibold tracking-[0.18em]"
+            onMouseLeave={() => setMegaOpen(null)}
+          >
+            {nav.map((item) => (
+              <div
+                key={item.name}
+                className="group relative"
+                onMouseEnter={() => item.mega && setMegaOpen(item.name)}
+                onFocus={() => item.mega && setMegaOpen(item.name)}
+              >
+                <Link
+                  href={item.href}
+                  className="whitespace-nowrap transition-opacity hover:opacity-60"
+                >
+                  {item.name}
+                </Link>
+
+                {item.mega && (
+                  <MegaMenu
+                    open={megaOpen === item.name}
+                    items={item.name === "MEN\'S COLLECTION" ? mensCollection : accessories}
+                  />
+                )}
+              </div>
+            ))}
+          </nav>
+
+          <Link
+            href="/"
+            className="absolute left-1/2 flex -translate-x-1/2 items-center gap-3"
+          >
+            <Image
+              src="/brand/logo.png"
+              alt="Guess360"
+              width={190}
+              height={55}
+              priority
+              className="h-12 w-auto object-contain"
+            />
+            <span className="text-2xl font-semibold tracking-[0.18em] text-black">
+              Guess360
+            </span>
+          </Link>
+
+          <div className="flex items-center gap-5 text-black">
+            
+<Link href="/search" className="transition hover:opacity-60">
+  <Search size={22} strokeWidth={1.8} />
+</Link>
+
+            
+<Link href="/wishlist" className="transition hover:opacity-60">
+  <Heart size={22} strokeWidth={1.8} />
+</Link>
+
+            
+<Link href="/profile" className="transition hover:opacity-60">
+  <User size={22} strokeWidth={1.8} />
+</Link>
+
+            
+<Link href="/cart" className="transition hover:opacity-60">
+  <ShoppingBag size={22} strokeWidth={1.8} />
+</Link>
+
+          </div>
+        </div>
+
+        {mobile && (
+          <div className="border-t bg-white lg:hidden">
+            <div className="flex flex-col py-3">
+              {nav.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="px-6 py-3 text-sm font-medium"
+                  onClick={() => setMobile(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </header>
+    </>
+  );
+}

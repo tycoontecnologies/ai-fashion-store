@@ -1,123 +1,58 @@
+export type Product = any;
 
-export type Product = {
-  id:string;
-  name:string;
-  slug?:string;
-  image:string;
-  gallery?:string[];
-  category?:string;
-  price?:number;
-  description?:string;
-  featured?:boolean;
-  trending?:boolean;
-  newArrival?:boolean;
-  [key:string]:any;
-};
+const API =
+process.env.NEXT_PUBLIC_SITE_URL
+? `${process.env.NEXT_PUBLIC_SITE_URL}/api/cms/products`
+: "http://localhost:3000/api/cms/products";
 
-
-async function api(){
-
-  const res = await fetch(
-    "/api/products",
-    {
-      cache:"no-store"
-    }
-  );
-
-  return await res.json();
-
+export async function getProducts() {
+  const r = await fetch(API, { cache: "no-store" });
+  return await r.json();
 }
 
-
-export async function getProducts(){
-
-  return await api();
-
+export async function getProduct(id: string) {
+  const products = await getProducts();
+  return products.find((p: any) => p.id === id || p.slug === id);
 }
 
-
-export async function getProduct(id:string){
-
-  const products = await api();
-
-  return products.find(
-    (p:any)=>
-      p.id===id ||
-      p.slug===id
-  );
-
-}
-
-
-export async function getProductById(id:string){
-
+export async function getProductById(id: string) {
   return getProduct(id);
-
 }
 
-
-export async function getVariantGroup(groupId?:string){
-
-  const products = await api();
-
-  if(!groupId){
-    return [];
-  }
-
-  return products.filter(
-    (p:any)=>
-      p.variantGroup===groupId
-  );
-
+export async function getVariantGroup(groupId?: string) {
+  if (!groupId) return [];
+  const products = await getProducts();
+  return products.filter((p: any) => p.variantGroup === groupId);
 }
 
+export async function saveProduct(product: any) {
+  const r = await fetch(API, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(product),
+  });
 
-// compatibility functions
-
-export async function saveProduct(product:any){
-
-  console.log(
-    "LOCAL SAVE PRODUCT",
-    product
-  );
-
-  return product;
-
+  return await r.json();
 }
 
+export async function updateProduct(id: string, product: any) {
+  const r = await fetch(API, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...product, id }),
+  });
 
-export async function updateProduct(
- id:string,
- data:any
-){
-
-  console.log(
-    "LOCAL UPDATE PRODUCT",
-    id,
-    data
-  );
-
-  return {
-    id,
-    ...data
-  };
-
+  return await r.json();
 }
 
+export async function deleteProduct(id: string) {
+  const r = await fetch(API, {
+    method: "DELETE",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ id }),
+  });
 
-export async function deleteProduct(
- id:string
-){
-
-  console.log(
-    "LOCAL DELETE PRODUCT",
-    id
-  );
-
-  return true;
-
+  return await r.json();
 }
 
-// legacy compatibility
-export const products:any[] = [];
-
+export const products: Product[] = [];

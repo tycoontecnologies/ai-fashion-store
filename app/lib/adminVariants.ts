@@ -1,24 +1,43 @@
-import {
-  doc,
-  updateDoc
-} from "firebase/firestore";
-
-import { db } from "./firebase";
-
 export async function saveVariants(
   productId:string,
   variants:any[]
 ){
 
-  return updateDoc(
-    doc(
-      db,
-      "products",
-      productId
-    ),
+  const res =
+    await fetch("/api/cms/products");
+
+  const products =
+    await res.json();
+
+
+  const index =
+    products.findIndex(
+      (p:any)=>p.id===productId
+    );
+
+
+  if(index===-1){
+    throw new Error("Product not found");
+  }
+
+
+  products[index].variants =
+    variants;
+
+
+  const update =
+    await fetch("/api/cms/products",
     {
-      variants
-    }
-  );
+      method:"PUT",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify(
+        products[index]
+      )
+    });
+
+
+  return await update.json();
 
 }

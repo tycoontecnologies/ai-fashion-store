@@ -1,262 +1,250 @@
 "use client";
 
-import { useEffect,useState } from "react";
-
-import {
-  getCategories,
-  addCategory,
-  updateCategory,
-  deleteCategory
-} from "@/lib/adminCategories";
+import {useEffect,useState} from "react";
 
 export default function Categories(){
 
-  const [items,setItems] =
-    useState<any[]>([]);
+const [items,setItems]=useState<any[]>([]);
+const [name,setName]=useState("");
+const [image,setImage]=useState("");
+const [file,setFile]=useState<File|null>(null);
 
-  const [name,setName] =
-    useState("");
 
-  async function load(){
+async function load(){
 
-    const data =
-      await getCategories();
-
-    setItems(data);
-
+ const res=await fetch(
+  "/api/admin/categories",
+  {
+   cache:"no-store"
   }
+ );
 
-  useEffect(()=>{
-    load();
-  },[]);
+ setItems(await res.json());
 
-  async function create(){
+}
 
-    if(!name) return;
 
-    await addCategory(name);
+useEffect(()=>{
+ load();
+},[]);
 
-    setName("");
 
-    await load();
 
+async function uploadImage(){
+
+ if(!file)
+  return "";
+
+ const fd=new FormData();
+
+ fd.append(
+  "file",
+  file
+ );
+
+
+ const res=await fetch(
+  "/api/admin/categories/upload",
+  {
+   method:"POST",
+   body:fd
   }
+ );
 
-  async function edit(
-    id:string,
-    current:string
-  ){
 
-    const value =
-      prompt(
-        "Category",
-        current
-      );
+ const data=await res.json();
 
-    if(!value) return;
+ return data.url;
 
-    await updateCategory(
-      id,
-      value
-    );
+}
 
-    await load();
 
+
+async function save(){
+
+ if(!name)
+  return;
+
+
+ let img=image;
+
+ if(file){
+  img=await uploadImage();
+ }
+
+
+ await fetch(
+  "/api/admin/categories",
+  {
+   method:"POST",
+   headers:{
+    "Content-Type":"application/json"
+   },
+   body:JSON.stringify({
+    name,
+    image:img
+   })
   }
+ );
 
-  async function remove(
-    id:string
-  ){
 
-    if(
-      !confirm(
-        "Delete Category?"
-      )
-    ) return;
+ setName("");
+ setImage("");
+ setFile(null);
 
-    await deleteCategory(id);
+ load();
 
-    await load();
+}
 
+
+
+async function remove(id:string){
+
+ await fetch(
+  "/api/admin/categories",
+  {
+   method:"DELETE",
+   headers:{
+    "Content-Type":"application/json"
+   },
+   body:JSON.stringify({
+    id
+   })
   }
+ );
 
-  return (
+ load();
 
-    <div className="p-10">
+}
 
-      <h1
-        className="
-          text-4xl
-          font-black
-          mb-8
-        "
-      >
-        Categories
-      </h1>
 
-      <div
-        className="
-          flex
-          gap-3
-          mb-8
-        "
-      >
 
-        <input
-          value={name}
-          onChange={(e)=>
-            setName(
-              e.target.value
-            )
-          }
-          placeholder="Category"
-          className="
-            border
-            p-3
-            rounded-xl
-            flex-1
-          "
-        />
+return (
 
-        <button
-          onClick={create}
-          className="
-            bg-black
-            text-white
-            px-6
-            rounded-xl
-          "
-        >
-          Add
-        </button>
+<div className="p-10">
 
-      </div>
+<h1 className="text-4xl font-black mb-8">
+Categories CMS
+</h1>
 
-      <div
-        className="
-          bg-white
-          rounded-3xl
-          overflow-hidden
-        "
-      >
 
-        <table
-          className="w-full"
-        >
+<div className="
+bg-white
+rounded-3xl
+p-6
+mb-10
+space-y-4
+">
 
-          <thead>
+<input
+className="
+border
+p-3
+rounded-xl
+w-full
+"
+placeholder="Category name"
+value={name}
+onChange={
+e=>setName(e.target.value)
+}
+/>
 
-            <tr
-              className="
-                border-b
-              "
-            >
 
-              <th
-                className="
-                  p-4
-                  text-left
-                "
-              >
-                Category
-              </th>
+<input
+type="file"
+accept="image/*"
+onChange={
+e=>setFile(
+ e.target.files?.[0] || null
+)
+}
+/>
 
-              <th
-                className="
-                  p-4
-                  text-left
-                "
-              >
-                Actions
-              </th>
 
-            </tr>
+<button
+onClick={save}
+className="
+bg-black
+text-white
+px-8
+py-3
+rounded-xl
+"
+>
+Save Category
+</button>
 
-          </thead>
+</div>
 
-          <tbody>
 
-            {items.map(
-              (c:any)=>(
-                <tr
-                  key={c.id}
-                  className="
-                    border-b
-                  "
-                >
 
-                  <td
-                    className="
-                      p-4
-                    "
-                  >
-                    {c.name}
-                  </td>
+<div className="
+grid
+md:grid-cols-3
+gap-6
+">
 
-                  <td
-                    className="
-                      p-4
-                    "
-                  >
 
-                    <div
-                      className="
-                        flex
-                        gap-2
-                      "
-                    >
+{
+items.map((c:any)=>(
 
-                      <button
-                        onClick={()=>
-                          edit(
-                            c.id,
-                            c.name
-                          )
-                        }
-                        className="
-                          bg-blue-600
-                          text-white
-                          px-4
-                          py-2
-                          rounded
-                        "
-                      >
-                        Edit
-                      </button>
+<div
+key={c.id}
+className="
+bg-white
+rounded-3xl
+p-5
+"
+>
 
-                      <button
-                        onClick={()=>
-                          remove(
-                            c.id
-                          )
-                        }
-                        className="
-                          bg-red-600
-                          text-white
-                          px-4
-                          py-2
-                          rounded
-                        "
-                      >
-                        Delete
-                      </button>
 
-                    </div>
+{
+c.image &&
+<img
+src={c.image}
+className="
+h-40
+w-full
+object-cover
+rounded-xl
+mb-4
+"
+/>
+}
 
-                  </td>
 
-                </tr>
-              )
-            )}
+<h2 className="text-xl font-bold">
+{c.name}
+</h2>
 
-          </tbody>
 
-        </table>
+<button
+onClick={()=>remove(c.id)}
+className="
+mt-4
+bg-red-600
+text-white
+px-4
+py-2
+rounded-lg
+"
+>
+Delete
+</button>
 
-      </div>
 
-    </div>
+</div>
 
-  );
+))
+}
+
+
+</div>
+
+
+</div>
+
+);
 
 }

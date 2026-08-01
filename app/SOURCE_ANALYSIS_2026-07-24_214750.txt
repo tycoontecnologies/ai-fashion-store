@@ -1,0 +1,1073 @@
+==================================================
+GUESS360 SOURCE ANALYSIS
+==================================================
+
+========== BUILD ==========
+
+> ai-fashion-store@0.1.0 build
+> next build
+
+▲ Next.js 16.2.6 (Turbopack)
+- Environments: .env.local
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 30.6s
+  Running TypeScript ...
+Failed to type check.
+
+./components/AIChatStylist.tsx:18:30
+Type error: No overload matches this call.
+  Overload 2 of 2, '(input: URL | RequestInfo, init?: RequestInit | undefined): Promise<Response>', gave the following error.
+    Object literal may only specify known properties, and '"Content-Type"' does not exist in type 'Headers'.
+  Overload 2 of 2, '(input: URL | RequestInfo, init?: RequestInit | undefined): Promise<Response>', gave the following error.
+    Type 'string' is not assignable to type 'ReadableStream<Uint8Array<ArrayBuffer>>'.
+
+  [90m16 |[0m       setLoading([36mtrue[0m);
+  [90m17 |[0m
+[31m[1m>[0m [90m18 |[0m       [36mconst[0m response = [36mawait[0m fetch(
+  [90m   |[0m                              [31m[1m^[0m
+  [90m19 |[0m         {
+  [90m20 |[0m           method: [32m"POST"[0m,
+  [90m21 |[0m           headers: {
+Next.js build worker exited with code: 1 and signal: null
+
+========== TYPESCRIPT ==========
+components/AIChatStylist.tsx(138,11): error TS1005: ':' expected.
+components/AIChatStylist.tsx(168,1): error TS1128: Declaration or statement expected.
+components/AIStylist.tsx(282,1): error TS1128: Declaration or statement expected.
+
+========== BROKEN FETCH ==========
+6:  const r = await fetch(API, { cache: "no-store" });
+26:  const r = await fetch(API, {
+36:  const r = await fetch(API, {
+46:  const r = await fetch(API, {
+17:    const res = await fetch("/api/cms/products");
+3:  const res = await fetch(
+23:  const res = await fetch(
+18:      const response = await fetch(
+18:        const res = await fetch("/api/products");
+65:    const res=await fetch(
+68:  const response=await fetch("/api/admin/upload",{
+461:        const response = await fetch("/api/admin/upload", {
+126:        await fetch("/api/analyze", {
+20:        const res = await fetch("/api/admin/orders");
+15:    const res=await fetch("/api/admin/orders");
+32:        const res = await fetch("/api/products");
+20:  const res = await fetch(
+
+========== FETCH WITHOUT URL ==========
+components/AIChatStylist.tsx 324
+
+========== API ROUTES ==========
+app/api/admin/orders/route.ts
+app/api/admin/orders/save/route.ts
+app/api/admin/server/route.ts
+app/api/admin/upload/route.ts
+app/api/cms/products/route.ts
+app/api/debug-products/route.ts
+app/api/products/route.ts
+
+========== API REFERENCES ==========
+app/admin/variants/page.tsx:66:      "/api/admin/upload",
+app/admin/product/page.tsx.before_restore.20260626_162918:71:        "/api/admin/upload",
+app/admin/product/page.tsx:68:  const response=await fetch("/api/admin/upload",{
+app/admin/product/page.tsx:461:        const response = await fetch("/api/admin/upload", {
+app/admin/product/page.tsx.bak.20260710_144326:68:  const response=await fetch("/api/admin/upload",{
+app/admin/product/page.tsx.bak.20260710_144326:461:        const response = await fetch("/api/admin/upload", {
+app/admin/page.tsx:126:        await fetch("/api/analyze", {
+app/admin/orders/[id]/page.tsx:20:        const res = await fetch("/api/admin/orders");
+app/admin/orders/page.tsx:15:    const res=await fetch("/api/admin/orders");
+app/admin/page.tsx.bak-links:127:          "/api/analyze",
+app/search/page.tsx:32:        const res = await fetch("/api/products");
+components/AIRecommendations.tsx.disabled:15:        const res = await fetch("/api/products");
+components/dashboard/ServerWidget.tsx:10:    fetch("/api/admin/server")
+components/AIChatStylist.tsx.bak-links:19:        "/api/stylist",
+components/RecentlyViewed.tsx:18:        const res = await fetch("/api/products");
+components/TrendingSection.tsx.bak.1784926854:13:        const res = await fetch("/api/products");
+components/ui/hero/Hero.tsx:11:    fetch("/api/banners")
+components/ui/navigation/Announcement.tsx.bak:26:        const r = await fetch("/api/live?ts=" + Date.now(), {
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:20:        "/api/stylist",
+lib/products.ts:3:const API = "/api/cms/products";
+lib/importer/ProductImporter.ts:17:    const res = await fetch("/api/cms/products");
+lib/firestoreOrders.ts:4:    "/api/admin/orders/save",
+lib/firestoreOrders.ts:24:    "/api/admin/orders"
+
+========== AI REFERENCES ==========
+app/page.tsx.homepage.1781773547:143:              AI Recommended
+app/product/[id]/page.tsx.bak.20260710_025720:10:import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
+app/product/[id]/page.tsx.bak.20260710_025720:256:        <AIOutfitRecommendations
+app/product/[id]/page.tsx.bak.20260710_025836:10:import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
+app/product/[id]/page.tsx.bak.20260710_025836:256:        <AIOutfitRecommendations
+app/product/[id]/page-old.tsx.disabled:218:                AI Styling Tip
+app/product/[id]/page.tsx.bak.20260710_031025:10:import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
+app/product/[id]/page.tsx.bak.20260710_031025:254:        <AIOutfitRecommendations
+app/product/[id]/page.tsx.bak.20260710_030407:10:import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
+app/product/[id]/page.tsx.bak.20260710_030407:248:        <AIOutfitRecommendations
+app/page.tsx.fast-home.1781773682.bak-remove-ai:12:import AIStylist from "@/components/AIStylist";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:13:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:145:              AI Recommended
+app/page.tsx.fast-home.1781773682.bak-remove-ai:196:      <AIStylist />
+app/page.tsx.fast-home.1781773682.bak-remove-ai:198:      <AIChatStylist />
+app/page.tsx.bgfix.1781803237.bak-remove-ai:10:import AIStylist from "@/components/AIStylist";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:11:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:139:      <AIStylist />
+app/page.tsx.bgfix.1781803237.bak-remove-ai:141:      <AIChatStylist />
+app/admin/product/page.tsx:135:alert("SAVE FAILED: "+(err instanceof Error ? err.message : String(err)));
+app/admin/product/page.tsx.bak.20260710_144326:135:alert("SAVE FAILED: "+(err instanceof Error ? err.message : String(err)));
+app/admin/page.tsx:111:  async function analyzeProduct() {
+app/admin/page.tsx:126:        await fetch("/api/analyze", {
+app/admin/page.tsx:269:                AI Analysis
+app/admin/page.tsx:289:                onClick={analyzeProduct}
+app/admin/dashboard/page.tsx:70:      {/* MAIN */}
+app/admin/page.tsx.bak-links:111:  async function analyzeProduct() {
+app/admin/page.tsx.bak-links:127:          "/api/analyze",
+app/admin/page.tsx.bak-links:274:                AI Analysis
+app/admin/page.tsx.bak-links:294:                onClick={analyzeProduct}
+app/admin/page.tsx.bak.1784929449:111:  async function analyzeProduct() {
+app/admin/page.tsx.bak.1784929449:273:                AI Analysis
+app/admin/page.tsx.bak.1784929449:293:                onClick={analyzeProduct}
+app/page.tsx.fast-home.1781773876.bak-remove-ai:10:import AIStylist from "@/components/AIStylist";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:11:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:139:      <AIStylist />
+app/page.tsx.fast-home.1781773876.bak-remove-ai:141:      <AIChatStylist />
+app/context/temp.env.local.local:1:NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyBwmuhaJxAjTLXv-FszLeqDAaKYuUSY4Es
+app/context/temp.env.local.local:2:NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=guess360-d6c98.firebaseapp.com
+app/page.tsx.bak.20260710_172707:143:              AI Recommended
+app/page.tsx.homepage.1781773547.bak-remove-ai:12:import AIStylist from "@/components/AIStylist";
+app/page.tsx.homepage.1781773547.bak-remove-ai:13:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.homepage.1781773547.bak-remove-ai:145:              AI Recommended
+app/page.tsx.homepage.1781773547.bak-remove-ai:196:      <AIStylist />
+app/page.tsx.homepage.1781773547.bak-remove-ai:198:      <AIChatStylist />
+app/page.tsx.bak.20260710_172707.bak-remove-ai:12:import AIStylist from "@/components/AIStylist";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:13:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:145:              AI Recommended
+app/page.tsx.bak.20260710_172707.bak-remove-ai:196:      <AIStylist />
+app/page.tsx.bak.20260710_172707.bak-remove-ai:198:      <AIChatStylist />
+app/maintenance/page.tsx:53:            We're building the future of AI-powered fashion shopping.
+app/maintenance/page.tsx:65:              AI Styling
+app/page.tsx.fast-home.1781773682:143:              AI Recommended
+components/Navbar.tsx.newlogo.1781770066.bak-remove-ai:112:              AI Stylist
+components/AIMatchScore.tsx:3:interface AIMatchScoreProps {
+components/AIMatchScore.tsx:14:export default function AIMatchScore({
+components/AIMatchScore.tsx:17:}: AIMatchScoreProps) {
+components/AIMatchScore.tsx:52:      AI Match {score}%
+components/RelatedProducts.tsx:10:import AIMatchScore from "./AIMatchScore";
+components/RelatedProducts.tsx:62:          AI Powered Suggestions
+components/RelatedProducts.tsx:115:                <AIMatchScore
+components/Navbar.tsx.brand.1781764734.bak-remove-ai:109:              AI Stylist
+components/AIRecommendations.tsx.disabled:7:export default function AIRecommendations({
+components/AIRecommendations.tsx.disabled:52:          AI Suggestions
+components/Hero.tsx.uifix.1781804002.bak-remove-ai:35:              AI Powered Fashion
+components/Hero.tsx.uifix.1781804002.bak-remove-ai:52:              By AI
+components/Hero.tsx.uifix.1781804002.bak-remove-ai:66:              AI styling and intelligent
+components/Hero.tsx.uifix.1781804002.bak-remove-ai:67:              recommendations powered by AI.
+components/Hero.tsx.uifix.1781804002.bak-remove-ai:102:                AI Stylist
+components/Hero.tsx.uifix.1781804002.bak-remove-ai:161:                AI Recommendation
+components/Hero.tsx.uifix.1781804002.bak-remove-ai:182:                AI selected this outfit
+components/admin/Sidebar.tsx.bak-remove-ai:27:  { title:"AI Tools", href:"/admin/ai", icon:Sparkles },
+components/Navbar.tsx.logo.1781726170.bak-remove-ai:109:              AI Stylist
+components/Navbar.tsx.darkmode.1781800942.bak-remove-ai:64:            <Link href="/style-quiz">AI Stylist</Link>
+components/AIChatStylist.tsx:10:  async function handleAIReply() {
+components/AIChatStylist.tsx:44:        "AI stylist unavailable."
+components/AIChatStylist.tsx:108:            placeholder="Ask AI about fashion styling..."
+components/AIChatStylist.tsx:123:            onClick={handleAIReply}
+components/ProductDetails.tsx.pre14j:35:          {/* MAIN IMAGE */}
+components/ProductDetails.tsx.pre14j:59:          {/* THUMBNAILS */}
+components/ProductDetails.tsx.pre14j:144:            Premium AI curated fashion
+components/ProductDetails.tsx.pre14j:223:                AI Recommended Styling
+components/dashboard/AIUsageWidget.tsx:1:export default function AIUsageWidget(){
+components/dashboard/AIUsageWidget.tsx:6:        AI Usage
+components/dashboard/AIUsageWidget.tsx:14:        OpenAI tracking pending
+components/Navbar.tsx.remove-logo.1781766469.bak-remove-ai:109:              AI Stylist
+components/AIChatStylist.tsx.bak-links:10:  async function handleAIReply() {
+components/AIChatStylist.tsx.bak-links:45:        "AI stylist unavailable."
+components/AIChatStylist.tsx.bak-links:109:            placeholder="Ask AI about fashion styling..."
+components/AIChatStylist.tsx.bak-links:124:            onClick={handleAIReply}
+components/ProductDetails.tsx:35:          {/* MAIN IMAGE */}
+components/ProductDetails.tsx:59:          {/* THUMBNAILS */}
+components/ProductDetails.tsx:144:            Premium AI curated fashion
+components/ProductDetails.tsx:223:                AI Recommended Styling
+components/AIOutfitRecommendations.tsx.disabled:14:export default function AIOutfitRecommendations({
+components/AIOutfitRecommendations.tsx.disabled:117:        AI Fashion Assistant
+components/AIOutfitRecommendations.tsx.disabled:128:        AI Styled With
+components/Navbar.tsx.corrupt.1781781937.bak-remove-ai:129:              AI Stylist
+components/ui/footer/Footer.tsx:18:              Premium Fashion. Powered by AI.
+components/Navbar.tsx.lightmode.1781787187.bak-remove-ai:64:            <Link href="/style-quiz">AI Stylist</Link>
+components/Navbar.tsx.lightfix.1781787001.bak-remove-ai:64:            <Link href="/style-quiz">AI Stylist</Link>
+components/AIStylist.tsx:33:            AI Powered Styling
+components/AIStylist.tsx:174:                Generate AI Outfit
+components/AIStylist.tsx:197:              AI Recommendation
+components/AIStylist.tsx:256:              AI recommends neutral olive tones with
+components/Navbar.tsx.uifix.1781804002.bak-remove-ai:68:            <Link href="/style-quiz">AI Stylist</Link>
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:5:export default function AIChatStylist() {
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:11:  async function handleAIReply() {
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:46:        "AI stylist unavailable."
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:83:            AI Assistant
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:92:            AI Chat Stylist
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:112:            placeholder="Ask AI about fashion styling..."
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:127:            onClick={handleAIReply}
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:142:              : "Ask AI Stylist"}
+components/Navbar.tsx.lightmode.1781785664.bak-remove-ai:64:            <Link href="/style-quiz">AI Stylist</Link>
+components/AIChatStylist.tsx.bak-remove-ai:5:export default function AIChatStylist() {
+components/AIChatStylist.tsx.bak-remove-ai:11:  async function handleAIReply() {
+components/AIChatStylist.tsx.bak-remove-ai:45:        "AI stylist unavailable."
+components/AIChatStylist.tsx.bak-remove-ai:82:            AI Assistant
+components/AIChatStylist.tsx.bak-remove-ai:91:            AI Chat Stylist
+components/AIChatStylist.tsx.bak-remove-ai:111:            placeholder="Ask AI about fashion styling..."
+components/AIChatStylist.tsx.bak-remove-ai:126:            onClick={handleAIReply}
+components/AIChatStylist.tsx.bak-remove-ai:141:              : "Ask AI Stylist"}
+components/AIStylist.tsx.bak-remove-ai:3:export default function AIStylist() {
+components/AIStylist.tsx.bak-remove-ai:34:            AI Powered Styling
+components/AIStylist.tsx.bak-remove-ai:44:            Your AI Stylist
+components/AIStylist.tsx.bak-remove-ai:176:                Generate AI Outfit
+components/AIStylist.tsx.bak-remove-ai:199:              AI Recommendation
+components/AIStylist.tsx.bak-remove-ai:258:              AI recommends neutral olive tones with
+components/Navbar.tsx.remove-logo.1781767007.bak-remove-ai:110:              AI Stylist
+components/Hero.tsx.uifix.1781804002:35:              AI Powered Fashion
+components/Hero.tsx.uifix.1781804002:52:              By AI
+components/Hero.tsx.uifix.1781804002:66:              AI styling and intelligent
+components/Hero.tsx.uifix.1781804002:67:              recommendations powered by AI.
+components/Hero.tsx.uifix.1781804002:160:                AI Recommendation
+components/Hero.tsx.uifix.1781804002:181:                AI selected this outfit
+components/Navbar.tsx.icons.1781783977.bak-remove-ai:64:            <Link href="/style-quiz">AI Stylist</Link>
+lib/firebase.ts.before_restore.1782378603:14:      .NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+lib/engine/ProductEngine.ts:10:  static async analyze() {
+lib/engine/ProductEngine.ts:15:    const analyzed = products.map((product: any) => {
+lib/engine/ProductEngine.ts:59:  GalleryDetector.group(analyzed);
+lib/firebase.ts:14:      .NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+
+========== IMPORT ERRORS ==========
+app/order-success/page.tsx:3:import Link from "next/link";
+app/order-success/page.tsx:5:import Navbar from "@/components/Navbar";
+app/order-success/page.tsx:6:import Footer from "@/components/Footer";
+app/cms/layout.tsx:1:import Sidebar from "@/components/cms/Sidebar";
+app/cms/layout.tsx:2:import Header from "@/components/cms/Header";
+app/wishlist/page.tsx:3:import Link from "next/link";
+app/wishlist/page.tsx:4:import Image from "next/image";
+app/wishlist/page.tsx:6:import Navbar from "@/components/Navbar";
+app/wishlist/page.tsx:7:import Footer from "@/components/Footer";
+app/wishlist/page.tsx:9:import { useCart } from "@/app/context/CartContext";
+app/signup/page.tsx:3:import {useState} from "react";
+app/signup/page.tsx:4:import {useRouter} from "next/navigation";
+app/page.tsx.homepage.1781773547:3:import { useEffect, useState } from "react";
+app/page.tsx.homepage.1781773547:5:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx.homepage.1781773547:7:import Navbar from "@/components/Navbar";
+app/page.tsx.homepage.1781773547:8:import Hero from "@/components/Hero";
+app/page.tsx.homepage.1781773547:9:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.homepage.1781773547:10:import Footer from "@/components/Footer";
+app/page.tsx.homepage.1781773547:11:import SearchBar from "@/components/SearchBar";
+app/page.tsx.homepage.1781773547:12:import FilterBar from "@/components/FilterBar";
+app/page.tsx.homepage.1781773547:14:import { getProducts } from "@/lib/firestoreProducts";
+app/login/page.tsx:3:import {useState} from "react";
+app/login/page.tsx:4:import {useRouter} from "next/navigation";
+app/collections/[type]/page.tsx:1:import Link from "next/link";
+app/collections/[type]/page.tsx:2:import { getProducts } from "@/lib/products";
+app/product/[id]/page.tsx.bak.20260710_025720:2:import { getVariantGroup } from "@/lib/firestoreProducts";
+app/product/[id]/page.tsx.bak.20260710_025720:3:import { useEffect, useState } from "react";
+app/product/[id]/page.tsx.bak.20260710_025720:4:import { useParams } from "next/navigation";
+app/product/[id]/page.tsx.bak.20260710_025720:6:import Navbar from "@/components/Navbar";
+app/product/[id]/page.tsx.bak.20260710_025720:7:import Footer from "@/components/Footer";
+app/product/[id]/page.tsx.bak.20260710_025720:8:import ProductActions from "@/components/ProductActions";
+app/product/[id]/page.tsx.bak.20260710_025720:9:import RelatedProducts from "@/components/RelatedProducts";
+app/product/[id]/page.tsx.bak.20260710_025720:10:import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
+app/product/[id]/page.tsx.bak.20260710_025720:12:import { getProductById } from "@/lib/firestoreProducts";
+app/product/[id]/page.tsx:2:import { getVariantGroup } from "@/lib/products";
+app/product/[id]/page.tsx:3:import { useEffect, useState } from "react";
+app/product/[id]/page.tsx:4:import { useParams } from "next/navigation";
+app/product/[id]/page.tsx:6:import Navbar from "@/components/Navbar";
+app/product/[id]/page.tsx:7:import Footer from "@/components/Footer";
+app/product/[id]/page.tsx:8:import ProductActions from "@/components/ProductActions";
+app/product/[id]/page.tsx:9:import RelatedProducts from "@/components/RelatedProducts";
+app/product/[id]/page.tsx:11:import { getProductById } from "@/lib/products";
+app/product/[id]/page.tsx.bak.20260710_025836:2:import { getVariantGroup } from "@/lib/firestoreProducts";
+app/product/[id]/page.tsx.bak.20260710_025836:3:import { useEffect, useState } from "react";
+app/product/[id]/page.tsx.bak.20260710_025836:4:import { useParams } from "next/navigation";
+app/product/[id]/page.tsx.bak.20260710_025836:6:import Navbar from "@/components/Navbar";
+app/product/[id]/page.tsx.bak.20260710_025836:7:import Footer from "@/components/Footer";
+app/product/[id]/page.tsx.bak.20260710_025836:8:import ProductActions from "@/components/ProductActions";
+app/product/[id]/page.tsx.bak.20260710_025836:9:import RelatedProducts from "@/components/RelatedProducts";
+app/product/[id]/page.tsx.bak.20260710_025836:10:import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
+app/product/[id]/page.tsx.bak.20260710_025836:12:import { getProductById } from "@/lib/firestoreProducts";
+app/product/[id]/page-old.tsx.disabled:3:import Image from "next/image";
+app/product/[id]/page-old.tsx.disabled:4:import { useParams } from "next/navigation";
+app/product/[id]/page-old.tsx.disabled:6:import Navbar from "@/components/Navbar";
+app/product/[id]/page-old.tsx.disabled:7:import Footer from "@/components/Footer";
+app/product/[id]/page-old.tsx.disabled:9:import { products } from "@/lib/products";
+app/product/[id]/page.tsx.bak.20260710_031025:2:import { getVariantGroup } from "@/lib/firestoreProducts";
+app/product/[id]/page.tsx.bak.20260710_031025:3:import { useEffect, useState } from "react";
+app/product/[id]/page.tsx.bak.20260710_031025:4:import { useParams } from "next/navigation";
+app/product/[id]/page.tsx.bak.20260710_031025:6:import Navbar from "@/components/Navbar";
+app/product/[id]/page.tsx.bak.20260710_031025:7:import Footer from "@/components/Footer";
+app/product/[id]/page.tsx.bak.20260710_031025:8:import ProductActions from "@/components/ProductActions";
+app/product/[id]/page.tsx.bak.20260710_031025:9:import RelatedProducts from "@/components/RelatedProducts";
+app/product/[id]/page.tsx.bak.20260710_031025:10:import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
+app/product/[id]/page.tsx.bak.20260710_031025:12:import { getProductById } from "@/lib/firestoreProducts";
+app/product/[id]/page.tsx.bak.20260710_030407:2:import { getVariantGroup } from "@/lib/firestoreProducts";
+app/product/[id]/page.tsx.bak.20260710_030407:3:import { useEffect, useState } from "react";
+app/product/[id]/page.tsx.bak.20260710_030407:4:import { useParams } from "next/navigation";
+app/product/[id]/page.tsx.bak.20260710_030407:6:import Navbar from "@/components/Navbar";
+app/product/[id]/page.tsx.bak.20260710_030407:7:import Footer from "@/components/Footer";
+app/product/[id]/page.tsx.bak.20260710_030407:8:import ProductActions from "@/components/ProductActions";
+app/product/[id]/page.tsx.bak.20260710_030407:9:import RelatedProducts from "@/components/RelatedProducts";
+app/product/[id]/page.tsx.bak.20260710_030407:10:import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
+app/product/[id]/page.tsx.bak.20260710_030407:12:import { getProductById } from "@/lib/firestoreProducts";
+app/product/[id]/page.tsx.bak:2:import { getVariantGroup } from "@/lib/products";
+app/product/[id]/page.tsx.bak:3:import { useEffect, useState } from "react";
+app/product/[id]/page.tsx.bak:4:import { useParams } from "next/navigation";
+app/product/[id]/page.tsx.bak:6:import Navbar from "@/components/Navbar";
+app/product/[id]/page.tsx.bak:7:import Footer from "@/components/Footer";
+app/product/[id]/page.tsx.bak:8:import ProductActions from "@/components/ProductActions";
+app/product/[id]/page.tsx.bak:9:import RelatedProducts from "@/components/RelatedProducts";
+app/product/[id]/page.tsx.bak:11:import { getProductById } from "@/lib/products";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:3:import { useEffect, useState } from "react";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:5:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:7:import Navbar from "@/components/Navbar";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:8:import Hero from "@/components/Hero";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:9:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:10:import Footer from "@/components/Footer";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:11:import SearchBar from "@/components/SearchBar";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:12:import AIStylist from "@/components/AIStylist";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:13:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:14:import FilterBar from "@/components/FilterBar";
+app/page.tsx.fast-home.1781773682.bak-remove-ai:16:import { getProducts } from "@/lib/firestoreProducts";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:3:import { useEffect, useState } from "react";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:4:import Link from "next/link";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:6:import Navbar from "@/components/Navbar";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:7:import Hero from "@/components/Hero";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:8:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:9:import Footer from "@/components/Footer";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:10:import AIStylist from "@/components/AIStylist";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:11:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.bgfix.1781803237.bak-remove-ai:13:import { getProducts } from "@/lib/firestoreProducts";
+app/admin/variants/page.tsx:3:import {
+app/admin/variants/page.tsx:7:import Image from "next/image";
+app/admin/variants/page.tsx:9:import {
+app/admin/variants/page.tsx:13:import {
+app/admin/product/page.tsx.before_restore.20260626_162918:3:import Image from "next/image";
+app/admin/product/page.tsx.before_restore.20260626_162918:4:import { Suspense, useEffect, useState } from "react";
+app/admin/product/page.tsx.before_restore.20260626_162918:5:import { useSearchParams } from "next/navigation";
+app/admin/product/page.tsx.before_restore.20260626_162918:7:import {
+app/admin/product/page.tsx.before_restore.20260626_162918:132:import Image from "next/image";
+app/admin/product/page.tsx.before_restore.20260626_162918:134:import {
+app/admin/product/page.tsx.before_restore.20260626_162918:141:import { useSearchParams } from "next/navigation";
+app/admin/product/page.tsx.before_restore.20260626_162918:144:import {
+app/admin/product/page.tsx.before_restore.20260626_162918:151:import { storage } from "@/lib/firebase";
+app/admin/product/page.tsx.before_restore.20260626_162918:154:import {
+app/admin/product/page.tsx:3:import { useEffect,useState } from "react";
+app/admin/product/page.tsx:4:import Image from "next/image";
+app/admin/product/page.tsx:5:import { useSearchParams } from "next/navigation";
+app/admin/product/page.tsx:6:import { saveProduct,updateProduct,getProduct } from "@/lib/products";
+app/admin/product/page.tsx.bak.20260710_144326:3:import { useEffect,useState } from "react";
+app/admin/product/page.tsx.bak.20260710_144326:4:import Image from "next/image";
+app/admin/product/page.tsx.bak.20260710_144326:5:import { useSearchParams } from "next/navigation";
+app/admin/product/page.tsx.bak.20260710_144326:6:import { saveProduct,updateProduct,getProduct } from "@/lib/adminProducts";
+app/admin/product/PATCH-PRODUCT-EDITOR.ps1:3:import { useEffect,useState } from "react";
+app/admin/product/PATCH-PRODUCT-EDITOR.ps1:4:import Image from "next/image";
+app/admin/product/PATCH-PRODUCT-EDITOR.ps1:5:import { useSearchParams } from "next/navigation";
+app/admin/product/PATCH-PRODUCT-EDITOR.ps1:6:import { saveProduct,updateProduct,getProduct } from "@/lib/adminProducts";
+app/admin/product/PATCH-PRODUCT-EDITOR.ps1:7:import { storage } from "@/lib/firebase";
+app/admin/product/PATCH-PRODUCT-EDITOR.ps1:8:import { ref,uploadBytes,getDownloadURL } from "firebase/storage";
+app/admin/products/page.tsx:3:import { useEffect, useMemo, useState } from "react";
+app/admin/products/page.tsx:4:import Link from "next/link";
+app/admin/products/page.tsx:5:import Image from "next/image";
+app/admin/products/page.tsx:7:import {
+app/admin/products/page.tsx.bak.1784924439:3:import { useEffect, useMemo, useState } from "react";
+app/admin/products/page.tsx.bak.1784924439:4:import Link from "next/link";
+app/admin/products/page.tsx.bak.1784924439:5:import Image from "next/image";
+app/admin/products/page.tsx.bak.1784924439:7:import {
+app/admin/products/page.tsx.bak.20260709_124052:3:import { useEffect, useMemo, useState } from "react";
+app/admin/products/page.tsx.bak.20260709_124052:4:import Link from "next/link";
+app/admin/products/page.tsx.bak.20260709_124052:5:import Image from "next/image";
+app/admin/products/page.tsx.bak.20260709_124052:7:import {
+app/admin/page.tsx:3:import AdminGuard from "./AdminGuard";
+app/admin/page.tsx:4:import { useEffect, useState } from "react";
+app/admin/page.tsx:5:import Image from "next/image";
+app/admin/page.tsx:7:import Navbar from "@/components/Navbar";
+app/admin/page.tsx:8:import Footer from "@/components/Footer";
+app/admin/page.tsx:10:import { saveProduct } from "@/lib/products";
+app/admin/page.tsx:11:import { getProducts } from "@/lib/products";
+app/admin/page.tsx:12:import { getOrders } from "@/lib/firestoreOrders";
+app/admin/page.tsx:14:import { storage } from "@/lib/storage";
+app/admin/page.tsx:16:import {
+app/admin/page.tsx:22:import {
+app/admin/dashboard/page.tsx:3:import { useEffect,useState } from "react";
+app/admin/dashboard/page.tsx:4:import {
+app/admin/dashboard/page.tsx:11:import {
+app/admin/media/page.tsx:3:import {
+app/admin/media/page.tsx:7:import { storage }
+app/admin/media/page.tsx:10:import {
+app/admin/orders/[id]/page.tsx:3:import { useEffect, useState } from "react";
+app/admin/orders/[id]/page.tsx:4:import { useParams } from "next/navigation";
+app/admin/orders/page.tsx:3:import { useEffect, useState } from "react";
+app/admin/orders/page.tsx:4:import Link from "next/link";
+app/admin/products.page.fix.bak:3:import { useEffect, useMemo, useState } from "react";
+app/admin/products.page.fix.bak:4:import Link from "next/link";
+app/admin/products.page.fix.bak:5:import Image from "next/image";
+app/admin/products.page.fix.bak:7:import {
+app/admin/layout.tsx:1:import Sidebar from "@/components/admin/Sidebar";
+app/admin/layout.tsx:2:import Topbar from "@/components/admin/Topbar";
+app/admin/layout.tsx:3:import AdminGuard from "./AdminGuard";
+app/admin/page.tsx.bak-links:3:import AdminGuard from "./AdminGuard";
+app/admin/page.tsx.bak-links:4:import { useEffect, useState } from "react";
+app/admin/page.tsx.bak-links:5:import Image from "next/image";
+app/admin/page.tsx.bak-links:7:import Navbar from "@/components/Navbar";
+app/admin/page.tsx.bak-links:8:import Footer from "@/components/Footer";
+app/admin/page.tsx.bak-links:10:import { saveProduct } from "@/lib/products";
+app/admin/page.tsx.bak-links:11:import { getProducts } from "@/lib/products";
+app/admin/page.tsx.bak-links:12:import { getOrders } from "@/lib/firestoreOrders";
+app/admin/page.tsx.bak-links:14:import { storage } from "@/lib/storage";
+app/admin/page.tsx.bak-links:16:import {
+app/admin/page.tsx.bak-links:22:import {
+app/admin/categories/page.tsx:3:import { useEffect,useState } from "react";
+app/admin/categories/page.tsx:5:import {
+app/admin/page.tsx.bak.1784929449:3:import AdminGuard from "./AdminGuard";
+app/admin/page.tsx.bak.1784929449:4:import { useEffect, useState } from "react";
+app/admin/page.tsx.bak.1784929449:5:import Image from "next/image";
+app/admin/page.tsx.bak.1784929449:7:import Navbar from "@/components/Navbar";
+app/admin/page.tsx.bak.1784929449:8:import Footer from "@/components/Footer";
+app/admin/page.tsx.bak.1784929449:10:import { saveProduct } from "@/lib/products";
+app/admin/page.tsx.bak.1784929449:11:import { getProducts } from "@/lib/products";
+app/admin/page.tsx.bak.1784929449:12:import { getOrders } from "@/lib/firestoreOrders";
+app/admin/page.tsx.bak.1784929449:14:import { storage } from "@/lib/storage";
+app/admin/page.tsx.bak.1784929449:16:import {
+app/admin/page.tsx.bak.1784929449:22:import {
+app/admin/dashboard.page.simple.1781885530:3:import Link from "next/link";
+app/admin/AdminGuard.tsx:3:import {
+app/admin/AdminGuard.tsx:7:import {
+app/admin/AdminGuard.tsx:11:import {
+app/admin/homepage/page.tsx:3:import {
+app/admin/homepage/page.tsx:8:import {
+app/admin/homepage/page.tsx:12:import {
+app/page.tsx:3:import Hero from "@/components/home/Hero";
+app/page.tsx:4:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx:5:import Navbar from "@/components/Navbar";
+app/page.tsx:6:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx:7:import Footer from "@/components/Footer";
+app/page.tsx:8:import SearchBar from "@/components/SearchBar";
+app/page.tsx:9:import FilterBar from "@/components/FilterBar";
+app/page.tsx:10:import { useMemo, useState } from "react";
+app/page.tsx:11:import { getProducts } from "@/lib/products";
+app/page.tsx:12:import { useEffect } from "react";
+app/AuthContext.tsx:3:import {
+app/page.tsx.fast-home.1781773876.bak-remove-ai:3:import { useEffect, useState } from "react";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:4:import Link from "next/link";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:6:import Navbar from "@/components/Navbar";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:7:import Hero from "@/components/Hero";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:8:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:9:import Footer from "@/components/Footer";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:10:import AIStylist from "@/components/AIStylist";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:11:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.fast-home.1781773876.bak-remove-ai:13:import { getProducts } from "@/lib/firestoreProducts";
+app/layout.tsx.bak:1:import "./globals.css";
+app/layout.tsx.bak:2:import type { Metadata } from "next";
+app/layout.tsx.bak:3:import { AuthProvider } from "./context/AuthContext";
+app/context/CartContext.tsx.bak:3:import {
+app/context/CartContext.tsx.fix2:3:import {
+app/context/AuthContext.tsx:3:import {
+app/context/AuthContext.tsx.bak:3:import {
+app/context/ThemeContext.tsx:3:import {
+app/context/CartContext.tsx:3:import {
+app/page.tsx.bak.20260710_172707:3:import { useEffect, useState } from "react";
+app/page.tsx.bak.20260710_172707:5:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx.bak.20260710_172707:7:import Navbar from "@/components/Navbar";
+app/page.tsx.bak.20260710_172707:8:import Hero from "@/components/Hero";
+app/page.tsx.bak.20260710_172707:9:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.bak.20260710_172707:10:import Footer from "@/components/Footer";
+app/page.tsx.bak.20260710_172707:11:import SearchBar from "@/components/SearchBar";
+app/page.tsx.bak.20260710_172707:12:import FilterBar from "@/components/FilterBar";
+app/page.tsx.bak.20260710_172707:14:import { getProducts } from "@/lib/firestoreProducts";
+app/api/cms/products/route.ts:1:import { NextRequest, NextResponse } from "next/server";
+app/api/cms/products/route.ts:2:import { readJson, writeJson } from "@/lib/cms/storage";
+app/api/admin/server/route.ts:1:import { execSync } from "child_process";
+app/api/admin/server/route.ts:2:import { NextResponse } from "next/server";
+app/api/admin/orders/save/route.ts:1:import fs from "fs";
+app/api/admin/orders/save/route.ts:2:import path from "path";
+app/api/admin/orders/route.ts:1:import fs from "fs";
+app/api/admin/orders/route.ts:2:import path from "path";
+app/api/admin/upload/route.ts:1:import { writeFile } from "fs/promises";
+app/api/admin/upload/route.ts:2:import path from "path";
+app/api/products/route.ts:1:import {NextResponse} from "next/server";
+app/api/products/route.ts:2:import {getLocalProducts} from "@/lib/localProducts.server";
+app/api/debug-products/route.ts:1:import { NextResponse } from "next/server";
+app/api/debug-products/route.ts:2:import { getProducts } from "@/lib/products";
+app/profile/page.tsx:3:import {
+app/profile/page.tsx:7:import {
+app/profile/page.tsx:11:import Navbar from "@/components/Navbar";
+app/profile/page.tsx:12:import Footer from "@/components/Footer";
+app/profile/page.tsx:14:import {
+app/profile/page.tsx:18:import {
+app/orders/page.tsx:3:import {
+app/orders/page.tsx:8:import Navbar from "@/components/Navbar";
+app/orders/page.tsx:9:import Footer from "@/components/Footer";
+app/orders/page.tsx:11:import {
+app/layout.tsx:1:import "./globals.css";
+app/layout.tsx:2:import type { Metadata } from "next";
+app/layout.tsx:4:import { AuthProvider } from "./context/AuthContext";
+app/layout.tsx:5:import { CartProvider } from "./context/CartContext";
+app/cart/page.tsx:3:import Image from "next/image";
+app/cart/page.tsx:4:import Link from "next/link";
+app/cart/page.tsx:6:import Navbar from "@/components/Navbar";
+app/cart/page.tsx:7:import Footer from "@/components/Footer";
+app/cart/page.tsx:9:import { useCart } from "@/app/context/CartContext";
+app/admin2/page.tsx:1:import { redirect } from "next/navigation";
+app/checkout/page.tsx:3:import {
+app/checkout/page.tsx:6:import Navbar from "@/components/Navbar";
+app/checkout/page.tsx:7:import Footer from "@/components/Footer";
+app/checkout/page.tsx:9:import { useCart } from "@/app/context/CartContext";
+app/checkout/page.tsx:11:import { useRouter } from "next/navigation";
+app/search/page.tsx:3:import {
+app/search/page.tsx:9:import { useSearchParams } from "next/navigation";
+app/search/page.tsx:11:import Navbar from "@/components/Navbar";
+app/search/page.tsx:12:import Footer from "@/components/Footer";
+app/search/page.tsx:13:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.bgfix.1781803237:3:import { useEffect, useState } from "react";
+app/page.tsx.bgfix.1781803237:4:import Link from "next/link";
+app/page.tsx.bgfix.1781803237:6:import Navbar from "@/components/Navbar";
+app/page.tsx.bgfix.1781803237:7:import Hero from "@/components/Hero";
+app/page.tsx.bgfix.1781803237:8:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.bgfix.1781803237:9:import Footer from "@/components/Footer";
+app/page.tsx.bgfix.1781803237:11:import { getProducts } from "@/lib/firestoreProducts";
+app/page.tsx.bak:3:import Hero from "@/components/home/Hero";
+app/page.tsx.bak:4:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx.bak:5:import Navbar from "@/components/Navbar";
+app/page.tsx.bak:6:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.bak:7:import Footer from "@/components/Footer";
+app/page.tsx.bak:8:import SearchBar from "@/components/SearchBar";
+app/page.tsx.bak:9:import FilterBar from "@/components/FilterBar";
+app/page.tsx.bak:10:import { useMemo, useState } from "react";
+app/page.tsx.bak:11:import { products as initialProducts } from "@/lib/products";
+app/page.tsx.fast-home.1781773876:3:import { useEffect, useState } from "react";
+app/page.tsx.fast-home.1781773876:4:import Link from "next/link";
+app/page.tsx.fast-home.1781773876:6:import Navbar from "@/components/Navbar";
+app/page.tsx.fast-home.1781773876:7:import Hero from "@/components/Hero";
+app/page.tsx.fast-home.1781773876:8:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.fast-home.1781773876:9:import Footer from "@/components/Footer";
+app/page.tsx.fast-home.1781773876:11:import { getProducts } from "@/lib/firestoreProducts";
+app/page.tsx.homepage.1781773547.bak-remove-ai:3:import { useEffect, useState } from "react";
+app/page.tsx.homepage.1781773547.bak-remove-ai:5:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx.homepage.1781773547.bak-remove-ai:7:import Navbar from "@/components/Navbar";
+app/page.tsx.homepage.1781773547.bak-remove-ai:8:import Hero from "@/components/Hero";
+app/page.tsx.homepage.1781773547.bak-remove-ai:9:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.homepage.1781773547.bak-remove-ai:10:import Footer from "@/components/Footer";
+app/page.tsx.homepage.1781773547.bak-remove-ai:11:import SearchBar from "@/components/SearchBar";
+app/page.tsx.homepage.1781773547.bak-remove-ai:12:import AIStylist from "@/components/AIStylist";
+app/page.tsx.homepage.1781773547.bak-remove-ai:13:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.homepage.1781773547.bak-remove-ai:14:import FilterBar from "@/components/FilterBar";
+app/page.tsx.homepage.1781773547.bak-remove-ai:16:import { getProducts } from "@/lib/firestoreProducts";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:3:import { useEffect, useState } from "react";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:5:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:7:import Navbar from "@/components/Navbar";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:8:import Hero from "@/components/Hero";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:9:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:10:import Footer from "@/components/Footer";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:11:import SearchBar from "@/components/SearchBar";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:12:import AIStylist from "@/components/AIStylist";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:13:import AIChatStylist from "@/components/AIChatStylist";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:14:import FilterBar from "@/components/FilterBar";
+app/page.tsx.bak.20260710_172707.bak-remove-ai:16:import { getProducts } from "@/lib/firestoreProducts";
+app/page.tsx.bak.1784927015:3:import Hero from "@/components/home/Hero";
+app/page.tsx.bak.1784927015:4:import { useEffect, useState } from "react";
+app/page.tsx.bak.1784927015:6:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx.bak.1784927015:8:import Navbar from "@/components/Navbar";
+app/page.tsx.bak.1784927015:10:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.bak.1784927015:11:import Footer from "@/components/Footer";
+app/page.tsx.bak.1784927015:12:import SearchBar from "@/components/SearchBar";
+app/page.tsx.bak.1784927015:13:import FilterBar from "@/components/FilterBar";
+app/page.tsx.bak.1784927015:15:import { getProducts } from "@/lib/products";
+app/maintenance/page.tsx:1:import Image from "next/image";
+app/page.tsx.fast-home.1781773682:3:import { useEffect, useState } from "react";
+app/page.tsx.fast-home.1781773682:5:import TrendingSection from "@/components/TrendingSection";
+app/page.tsx.fast-home.1781773682:7:import Navbar from "@/components/Navbar";
+app/page.tsx.fast-home.1781773682:8:import Hero from "@/components/Hero";
+app/page.tsx.fast-home.1781773682:9:import ProductGrid from "@/components/ProductGrid";
+app/page.tsx.fast-home.1781773682:10:import Footer from "@/components/Footer";
+app/page.tsx.fast-home.1781773682:11:import SearchBar from "@/components/SearchBar";
+app/page.tsx.fast-home.1781773682:12:import FilterBar from "@/components/FilterBar";
+app/page.tsx.fast-home.1781773682:14:import { getProducts } from "@/lib/firestoreProducts";
+components/cms/Sidebar.tsx:1:import Link from "next/link";
+components/Navbar.tsx.newlogo.1781770066.bak-remove-ai:2:import Image from "next/image";
+components/Navbar.tsx.newlogo.1781770066.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.newlogo.1781770066.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.newlogo.1781770066.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.newlogo.1781770066.bak-remove-ai:8:import {
+components/Navbar.tsx.newlogo.1781770066.bak-remove-ai:17:import { useCart } from "@/app/context/CartContext";
+components/QuickView.tsx:3:import Image from "next/image";
+components/QuickView.tsx:5:import {
+components/QuickView.tsx:11:import { useCart } from "@/app/context/CartContext";
+components/RelatedProducts.tsx:3:import { useEffect, useState } from "react";
+components/RelatedProducts.tsx:5:import Link from "next/link";
+components/RelatedProducts.tsx:6:import Image from "next/image";
+components/RelatedProducts.tsx:8:import { getProducts } from "@/lib/products";
+components/RelatedProducts.tsx:10:import AIMatchScore from "./AIMatchScore";
+components/Footer.tsx:1:import Link from "next/link";
+components/Footer.tsx:3:import {
+components/ProductGrid.tsx:1:import ProductCard from "./ProductCard";
+components/Navbar.tsx.brand.1781764734.bak-remove-ai:2:import Image from "next/image";
+components/Navbar.tsx.brand.1781764734.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.brand.1781764734.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.brand.1781764734.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.brand.1781764734.bak-remove-ai:8:import {
+components/Navbar.tsx.brand.1781764734.bak-remove-ai:17:import { useCart } from "@/app/context/CartContext";
+components/TrendingSection.tsx.bak.20260710_171538:3:import { useEffect, useState } from "react";
+components/TrendingSection.tsx.bak.20260710_171538:4:import Link from "next/link";
+components/TrendingSection.tsx.bak.20260710_171538:5:import Image from "next/image";
+components/AIRecommendations.tsx.disabled:3:import { useEffect, useState } from "react";
+components/AIRecommendations.tsx.disabled:4:import Link from "next/link";
+components/AIRecommendations.tsx.disabled:5:import Image from "next/image";
+components/HomeCategories.tsx.quicklinks.1781852083:3:import Image from "next/image";
+components/HomeCategories.tsx.quicklinks.1781852083:4:import Link from "next/link";
+components/ProductActions.tsx:3:import { useState } from "react";
+components/ProductActions.tsx:5:import { useCart } from "@/app/context/CartContext";
+components/Hero.tsx.uifix.1781804002.bak-remove-ai:3:import Image from "next/image";
+components/TrendingSection.tsx:3:import Link from "next/link";
+components/TrendingSection.tsx:4:import ProductCard from "@/components/ProductCard";
+components/TrendingSection.tsx:5:import { getProducts } from "@/lib/products";
+components/TrendingSection.tsx:6:import { useEffect,useState } from "react";
+components/navbar/MegaMenu.tsx:3:import Link from "next/link";
+components/admin/Sidebar.tsx.bak-remove-ai:3:import Link from "next/link";
+components/admin/Sidebar.tsx.bak-remove-ai:4:import { usePathname } from "next/navigation";
+components/admin/Sidebar.tsx.bak-remove-ai:5:import {
+components/admin/Topbar.tsx:3:import { Search, Bell, User, LogOut } from "lucide-react";
+components/admin/Topbar.tsx:4:import { useRouter } from "next/navigation";
+components/admin/Topbar.tsx:5:import { useAuth } from "@/app/context/AuthContext";
+components/admin/Sidebar.tsx:3:import Link from "next/link";
+components/admin/Sidebar.tsx:4:import { usePathname } from "next/navigation";
+components/admin/Sidebar.tsx:5:import {
+components/ProductReviews.tsx:3:import { useEffect, useState } from "react";
+components/Navbar.tsx.darkmode.1781800942:3:import Image from "next/image";
+components/Navbar.tsx.darkmode.1781800942:4:import { useState } from "react";
+components/Navbar.tsx.darkmode.1781800942:5:import Link from "next/link";
+components/Navbar.tsx.darkmode.1781800942:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.darkmode.1781800942:7:import {
+components/Navbar.tsx.darkmode.1781800942:16:import { useCart } from "@/app/context/CartContext";
+components/ProductCard.tsx.addfix.1781807610:2:import ProductRating
+components/ProductCard.tsx.addfix.1781807610:5:import { useState } from "react";
+components/ProductCard.tsx.addfix.1781807610:6:import Link from "next/link";
+components/ProductCard.tsx.addfix.1781807610:7:import Image from "next/image";
+components/ProductCard.tsx.addfix.1781807610:8:import {
+components/ProductCard.tsx.addfix.1781807610:14:import { useCart } from "@/app/context/CartContext";
+components/ProductCard.tsx.addfix.1781807610:15:import QuickView from "@/components/QuickView";
+components/Navbar.tsx.lightfix.1781787001:3:import Image from "next/image";
+components/Navbar.tsx.lightfix.1781787001:4:import { useState } from "react";
+components/Navbar.tsx.lightfix.1781787001:5:import Link from "next/link";
+components/Navbar.tsx.lightfix.1781787001:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.lightfix.1781787001:7:import {
+components/Navbar.tsx.lightfix.1781787001:16:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.logo.1781726170.bak-remove-ai:2:import Image from "next/image";
+components/Navbar.tsx.logo.1781726170.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.logo.1781726170.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.logo.1781726170.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.logo.1781726170.bak-remove-ai:8:import {
+components/Navbar.tsx.logo.1781726170.bak-remove-ai:17:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.darkmode.1781800942.bak-remove-ai:3:import Image from "next/image";
+components/Navbar.tsx.darkmode.1781800942.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.darkmode.1781800942.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.darkmode.1781800942.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.darkmode.1781800942.bak-remove-ai:7:import {
+components/Navbar.tsx.darkmode.1781800942.bak-remove-ai:16:import { useCart } from "@/app/context/CartContext";
+components/AIChatStylist.tsx:3:import { useState } from "react";
+components/Navbar.tsx.lightmode.1781787187:3:import Image from "next/image";
+components/Navbar.tsx.lightmode.1781787187:4:import { useState } from "react";
+components/Navbar.tsx.lightmode.1781787187:5:import Link from "next/link";
+components/Navbar.tsx.lightmode.1781787187:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.lightmode.1781787187:7:import {
+components/Navbar.tsx.lightmode.1781787187:16:import { useCart } from "@/app/context/CartContext";
+components/ProductDetails.tsx.pre14j:3:import { useState } from "react";
+components/ProductDetails.tsx.pre14j:4:import { motion } from "framer-motion";
+components/ProductDetails.tsx.pre14j:6:import { useCart } from "@/app/context/CartContext";
+components/dashboard/ServerWidget.tsx:3:import { useEffect,useState } from "react";
+components/TrendingSection.tsx.bak.1784927015:3:import Link from "next/link";
+components/TrendingSection.tsx.bak.1784927015:4:import ProductCard from "@/components/ProductCard";
+components/TrendingSection.tsx.bak.1784927015:5:import { useEffect, useState } from "react";
+components/TrendingSection.tsx.bak.1784927015:6:import { getProducts } from "@/lib/products";
+components/Navbar.tsx.remove-logo.1781766469.bak-remove-ai:2:import Image from "next/image";
+components/Navbar.tsx.remove-logo.1781766469.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.remove-logo.1781766469.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.remove-logo.1781766469.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.remove-logo.1781766469.bak-remove-ai:8:import {
+components/Navbar.tsx.remove-logo.1781766469.bak-remove-ai:17:import { useCart } from "@/app/context/CartContext";
+components/HomeCategories.tsx.quicklinks.1781872855:3:import Link from "next/link";
+components/Navbar.tsx.brand.1781764734:2:import Image from "next/image";
+components/Navbar.tsx.brand.1781764734:4:import { useState } from "react";
+components/Navbar.tsx.brand.1781764734:5:import Link from "next/link";
+components/Navbar.tsx.brand.1781764734:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.brand.1781764734:8:import {
+components/Navbar.tsx.brand.1781764734:17:import { useCart } from "@/app/context/CartContext";
+components/QuickView.tsx.addfix.1781807610:3:import Image from "next/image";
+components/QuickView.tsx.addfix.1781807610:5:import {
+components/QuickView.tsx.addfix.1781807610:11:import { useCart } from "@/app/context/CartContext";
+components/AIChatStylist.tsx.bak-links:3:import { useState } from "react";
+components/Hero.tsx:3:import Image from "next/image";
+components/Navbar.tsx.remove-logo.1781766469:2:import Image from "next/image";
+components/Navbar.tsx.remove-logo.1781766469:4:import { useState } from "react";
+components/Navbar.tsx.remove-logo.1781766469:5:import Link from "next/link";
+components/Navbar.tsx.remove-logo.1781766469:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.remove-logo.1781766469:8:import {
+components/Navbar.tsx.remove-logo.1781766469:17:import { useCart } from "@/app/context/CartContext";
+components/RecentlyViewed.tsx:3:import { useEffect, useState } from "react";
+components/RecentlyViewed.tsx:4:import Link from "next/link";
+components/RecentlyViewed.tsx:5:import Image from "next/image";
+components/Navbar.tsx.newlogo.1781770066:2:import Image from "next/image";
+components/Navbar.tsx.newlogo.1781770066:4:import { useState } from "react";
+components/Navbar.tsx.newlogo.1781770066:5:import Link from "next/link";
+components/Navbar.tsx.newlogo.1781770066:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.newlogo.1781770066:8:import {
+components/Navbar.tsx.newlogo.1781770066:17:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.lightmode.1781785664:3:import Image from "next/image";
+components/Navbar.tsx.lightmode.1781785664:4:import { useState } from "react";
+components/Navbar.tsx.lightmode.1781785664:5:import Link from "next/link";
+components/Navbar.tsx.lightmode.1781785664:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.lightmode.1781785664:7:import {
+components/Navbar.tsx.lightmode.1781785664:16:import { useCart } from "@/app/context/CartContext";
+components/topbar/AnnouncementBar.tsx:3:import {useEffect,useState} from "react";
+components/mega/MegaMenu.tsx:3:import { useMemo, useState } from "react";
+components/mega/MegaMenu.tsx:4:import Link from "next/link";
+components/mega/MegaMenu.tsx:5:import Image from "next/image";
+components/mega/menuData.ts:1:import {
+components/TrendingSection.tsx.bak.1784926854:3:import { useEffect, useState } from "react";
+components/TrendingSection.tsx.bak.1784926854:4:import Link from "next/link";
+components/TrendingSection.tsx.bak.1784926854:5:import Image from "next/image";
+components/ProductDetails.tsx:3:import { useState } from "react";
+components/ProductDetails.tsx:4:import { motion } from "framer-motion";
+components/ProductDetails.tsx:6:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.logo.1781726170:2:import Image from "next/image";
+components/Navbar.tsx.logo.1781726170:4:import { useState } from "react";
+components/Navbar.tsx.logo.1781726170:5:import Link from "next/link";
+components/Navbar.tsx.logo.1781726170:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.logo.1781726170:8:import {
+components/Navbar.tsx.logo.1781726170:17:import { useCart } from "@/app/context/CartContext";
+components/AIOutfitRecommendations.tsx.disabled:3:import {
+components/AIOutfitRecommendations.tsx.disabled:8:import Link from "next/link";
+components/AIOutfitRecommendations.tsx.disabled:9:import Image from "next/image";
+components/AIOutfitRecommendations.tsx.disabled:11:import { getProducts }
+components/Navbar.tsx.icons.1781783977:3:import Image from "next/image";
+components/Navbar.tsx.icons.1781783977:4:import { useState } from "react";
+components/Navbar.tsx.icons.1781783977:5:import Link from "next/link";
+components/Navbar.tsx.icons.1781783977:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.icons.1781783977:7:import {
+components/Navbar.tsx.icons.1781783977:16:import { useCart } from "@/app/context/CartContext";
+components/home/Hero.tsx:3:import Image from "next/image";
+components/home/Hero.tsx:4:import { useEffect, useState } from "react";
+components/HomeCategories.tsx.quicklinks.1781854499:3:import Link from "next/link";
+components/CartDrawer.tsx:3:import {
+components/CartDrawer.tsx:8:import { useCart } from "@/app/context/CartContext";
+components/SearchBar.tsx:3:import { Search } from "lucide-react";
+components/Navbar.tsx.corrupt.1781781937.bak-remove-ai:2:import Image from "next/image";
+components/Navbar.tsx.corrupt.1781781937.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.corrupt.1781781937.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.corrupt.1781781937.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.corrupt.1781781937.bak-remove-ai:8:import {
+components/Navbar.tsx.corrupt.1781781937.bak-remove-ai:17:import { useCart } from "@/app/context/CartContext";
+components/ui/hero/HeroSlider.tsx.before-fix.1784611285:3:import { useEffect, useState } from "react";
+components/ui/hero/HeroSlider.tsx.before-fix.1784611285:4:import Link from "next/link";
+components/ui/hero/HeroSlider.tsx:3:import { useEffect, useState } from "react";
+components/ui/hero/HeroSlider.tsx:4:import Image from "next/image";
+components/ui/hero/HeroSlider.tsx:5:import Link from "next/link";
+components/ui/hero/HeroSlider.tsx.bak.1784525127:3:import { useEffect, useState } from "react";
+components/ui/hero/HeroSlider.tsx.bak.1784525127:4:import Image from "next/image";
+components/ui/hero/Hero.tsx:3:import { useEffect, useState } from "react";
+components/ui/hero/Hero.tsx:4:import HeroSlider from "./HeroSlider";
+components/ui/hero/HeroSlider.tsx.bak.1784605669:3:import { useEffect, useState } from "react";
+components/ui/hero/HeroSlider.tsx.bak.1784605669:4:import Image from "next/image";
+components/ui/hero/HeroSlider.tsx.bak.1784605669:5:import Link from "next/link";
+components/ui/hero/HeroSlider.tsx.bak.1784632660:3:import { useEffect, useState } from "react";
+components/ui/navigation/NavbarUI.tsx.layout.1784776264:3:import Link from "next/link";
+components/ui/navigation/NavbarUI.tsx.layout.1784776264:4:import Image from "next/image";
+components/ui/navigation/NavbarUI.tsx.layout.1784776264:5:import { useEffect, useState } from "react";
+components/ui/navigation/NavbarUI.tsx.layout.1784776264:6:import Announcement from "./Announcement";
+components/ui/navigation/NavbarUI.tsx.layout.1784776264:7:import MegaMenu from "./mega/MegaMenu";
+components/ui/navigation/NavbarUI.tsx.layout.1784776264:8:import { mensCollection, accessories } from "./mega/menuData";
+components/ui/navigation/NavbarUI.tsx.layout.1784776264:9:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/Announcement.tsx.bak:3:import { useEffect, useState } from "react";
+components/ui/navigation/Navbar.tsx.before-megamenu.1784640154:3:import Link from "next/link";
+components/ui/navigation/Navbar.tsx.before-megamenu.1784640154:4:import Image from "next/image";
+components/ui/navigation/Navbar.tsx.before-megamenu.1784640154:5:import { useEffect, useState } from "react";
+components/ui/navigation/Navbar.tsx.before-megamenu.1784640154:6:import Announcement from "./Announcement";
+components/ui/navigation/Navbar.tsx.before-megamenu.1784640154:7:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/Navbar.tsx.bak.1784634286:3:import Link from "next/link";
+components/ui/navigation/Navbar.tsx.bak.1784634286:4:import Image from "next/image";
+components/ui/navigation/Navbar.tsx.bak.1784634286:5:import { useEffect, useState } from "react";
+components/ui/navigation/Navbar.tsx.bak.1784634286:6:import Announcement from "./Announcement";
+components/ui/navigation/Navbar.tsx.bak.1784634286:7:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/mega/MegaMenu.tsx.before-layout.1784775754:3:import Link from "next/link";
+components/ui/navigation/mega/MegaMenu.tsx.before-layout.1784775754:4:import Image from "next/image";
+components/ui/navigation/mega/MegaMenu.tsx.responsive.1784776952:3:import { useMemo, useState } from "react";
+components/ui/navigation/mega/MegaMenu.tsx.responsive.1784776952:4:import Link from "next/link";
+components/ui/navigation/mega/MegaMenu.tsx.responsive.1784776952:5:import Image from "next/image";
+components/ui/navigation/mega/MegaMenu.tsx.position.1784776839:3:import { useMemo, useState } from "react";
+components/ui/navigation/mega/MegaMenu.tsx.position.1784776839:4:import Link from "next/link";
+components/ui/navigation/mega/MegaMenu.tsx.position.1784776839:5:import Image from "next/image";
+components/ui/navigation/mega/MegaMenu.tsx.anchor.1784776793:3:import { useMemo, useState } from "react";
+components/ui/navigation/mega/MegaMenu.tsx.anchor.1784776793:4:import Link from "next/link";
+components/ui/navigation/mega/MegaMenu.tsx.anchor.1784776793:5:import Image from "next/image";
+components/ui/navigation/mega/MegaMenu.tsx.fix-position.1784776185:3:import { useMemo, useState } from "react";
+components/ui/navigation/mega/MegaMenu.tsx.fix-position.1784776185:4:import Link from "next/link";
+components/ui/navigation/mega/MegaMenu.tsx.fix-position.1784776185:5:import Image from "next/image";
+components/ui/navigation/mega/MegaMenu.tsx.viewport.1784776214:3:import { useMemo, useState } from "react";
+components/ui/navigation/mega/MegaMenu.tsx.viewport.1784776214:4:import Link from "next/link";
+components/ui/navigation/mega/MegaMenu.tsx.viewport.1784776214:5:import Image from "next/image";
+components/ui/navigation/mega/MegaMenu.tsx:3:import { useMemo, useState } from "react";
+components/ui/navigation/mega/MegaMenu.tsx:4:import Link from "next/link";
+components/ui/navigation/mega/MegaMenu.tsx:5:import Image from "next/image";
+components/ui/navigation/mega/MegaMenu.tsx.center.1784776152:3:import { useMemo, useState } from "react";
+components/ui/navigation/mega/MegaMenu.tsx.center.1784776152:4:import Link from "next/link";
+components/ui/navigation/mega/MegaMenu.tsx.center.1784776152:5:import Image from "next/image";
+components/ui/navigation/mega/menuData.ts:1:import {
+components/ui/navigation/Navbar.tsx.1784693911.bak:3:import Link from "next/link";
+components/ui/navigation/Navbar.tsx.1784693911.bak:4:import Image from "next/image";
+components/ui/navigation/Navbar.tsx.1784693911.bak:5:import { useEffect, useState } from "react";
+components/ui/navigation/Navbar.tsx.1784693911.bak:6:import Announcement from "./Announcement";
+components/ui/navigation/Navbar.tsx.1784693911.bak:7:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/NavbarUI.tsx.bak:3:import Link from "next/link";
+components/ui/navigation/NavbarUI.tsx.bak:4:import Image from "next/image";
+components/ui/navigation/NavbarUI.tsx.bak:5:import { useEffect, useState } from "react";
+components/ui/navigation/NavbarUI.tsx.bak:6:import Announcement from "./Announcement";
+components/ui/navigation/NavbarUI.tsx.bak:7:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/NavbarUI.tsx.current.1784775182:3:import Link from "next/link";
+components/ui/navigation/NavbarUI.tsx.current.1784775182:4:import Image from "next/image";
+components/ui/navigation/NavbarUI.tsx.current.1784775182:5:import { useEffect, useState } from "react";
+components/ui/navigation/NavbarUI.tsx.current.1784775182:6:import Announcement from "./Announcement";
+components/ui/navigation/NavbarUI.tsx.current.1784775182:7:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/NavbarUI.tsx.before-emergency:3:import Link from "next/link";
+components/ui/navigation/NavbarUI.tsx.before-emergency:4:import Image from "next/image";
+components/ui/navigation/NavbarUI.tsx.before-emergency:5:import { useEffect, useState } from "react";
+components/ui/navigation/NavbarUI.tsx.before-emergency:6:import Announcement from "./Announcement";
+components/ui/navigation/NavbarUI.tsx.before-emergency:7:import MegaMenu from "./mega/MegaMenu";
+components/ui/navigation/NavbarUI.tsx.before-emergency:8:import { mensCollection, accessories } from "./mega/menuData";
+components/ui/navigation/NavbarUI.tsx.before-emergency:9:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/NavbarUI.tsx:3:import Link from "next/link";
+components/ui/navigation/NavbarUI.tsx:4:import Image from "next/image";
+components/ui/navigation/NavbarUI.tsx:5:import { useEffect, useState } from "react";
+components/ui/navigation/NavbarUI.tsx:6:import Announcement from "./Announcement";
+components/ui/navigation/NavbarUI.tsx:7:import MegaMenu from "./mega/MegaMenu";
+components/ui/navigation/NavbarUI.tsx:8:import { mensCollection, accessories } from "./mega/menuData";
+components/ui/navigation/NavbarUI.tsx:9:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/Navbar.tsx:3:import Link from "next/link";
+components/ui/navigation/Navbar.tsx:4:import Image from "next/image";
+components/ui/navigation/Navbar.tsx:5:import { useEffect, useState } from "react";
+components/ui/navigation/Navbar.tsx:6:import Announcement from "./Announcement";
+components/ui/navigation/Navbar.tsx:7:import MegaMenu from "./mega/MegaMenu";
+components/ui/navigation/Navbar.tsx:8:import { mensCollection, accessories } from "./mega/menuData";
+components/ui/navigation/Navbar.tsx:9:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/NavbarUI.tsx.center.1784776246:3:import Link from "next/link";
+components/ui/navigation/NavbarUI.tsx.center.1784776246:4:import Image from "next/image";
+components/ui/navigation/NavbarUI.tsx.center.1784776246:5:import { useEffect, useState } from "react";
+components/ui/navigation/NavbarUI.tsx.center.1784776246:6:import Announcement from "./Announcement";
+components/ui/navigation/NavbarUI.tsx.center.1784776246:7:import MegaMenu from "./mega/MegaMenu";
+components/ui/navigation/NavbarUI.tsx.center.1784776246:8:import { mensCollection, accessories } from "./mega/menuData";
+components/ui/navigation/NavbarUI.tsx.center.1784776246:9:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/Navbar.tsx.bak:3:import Link from "next/link";
+components/ui/navigation/Navbar.tsx.bak:4:import Image from "next/image";
+components/ui/navigation/Navbar.tsx.bak:5:import { useEffect, useState } from "react";
+components/ui/navigation/Navbar.tsx.bak:6:import Announcement from "./Announcement";
+components/ui/navigation/Navbar.tsx.bak:7:import MegaMenu from "./mega/MegaMenu";
+components/ui/navigation/Navbar.tsx.bak:8:import { mensCollection, accessories } from "./mega/menuData";
+components/ui/navigation/Navbar.tsx.bak:9:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/navigation/NavbarUI.tsx.phase1.1784776314:3:import Link from "next/link";
+components/ui/navigation/NavbarUI.tsx.phase1.1784776314:4:import Image from "next/image";
+components/ui/navigation/NavbarUI.tsx.phase1.1784776314:5:import { useEffect, useState } from "react";
+components/ui/navigation/NavbarUI.tsx.phase1.1784776314:6:import Announcement from "./Announcement";
+components/ui/navigation/NavbarUI.tsx.phase1.1784776314:7:import MegaMenu from "./mega/MegaMenu";
+components/ui/navigation/NavbarUI.tsx.phase1.1784776314:8:import { mensCollection, accessories } from "./mega/menuData";
+components/ui/navigation/NavbarUI.tsx.phase1.1784776314:9:import { Search, Heart, User, ShoppingBag } from "lucide-react";
+components/ui/footer/Footer.tsx:1:import Container from "../layout/Container";
+components/ui/categories/CategoryGrid.tsx:3:import Image from "next/image";
+components/ui/categories/CategoryGrid.tsx:4:import Link from "next/link";
+components/ui/categories/CategoryGrid.tsx:5:import { categories } from "./categoryData";
+components/ui/layout/Container.tsx:1:import { ReactNode } from "react";
+components/HomeCategories.tsx.homelink.1781872880:3:import Link from "next/link";
+components/Navbar.tsx.lightmode.1781787187.bak-remove-ai:3:import Image from "next/image";
+components/Navbar.tsx.lightmode.1781787187.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.lightmode.1781787187.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.lightmode.1781787187.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.lightmode.1781787187.bak-remove-ai:7:import {
+components/Navbar.tsx.lightmode.1781787187.bak-remove-ai:16:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.lightfix.1781787001.bak-remove-ai:3:import Image from "next/image";
+components/Navbar.tsx.lightfix.1781787001.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.lightfix.1781787001.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.lightfix.1781787001.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.lightfix.1781787001.bak-remove-ai:7:import {
+components/Navbar.tsx.lightfix.1781787001.bak-remove-ai:16:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx:3:import AnnouncementBar from "@/components/topbar/AnnouncementBar";
+components/Navbar.tsx:4:import { useState } from "react";
+components/Navbar.tsx:5:import MegaMenu from "@/components/navbar/MegaMenu";
+components/Navbar.tsx:6:import Image from "next/image";
+components/Navbar.tsx:7:import Link from "next/link";
+components/Navbar.tsx:8:import { useRouter } from "next/navigation";
+components/Navbar.tsx:10:import {
+components/Navbar.tsx:19:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.uifix.1781804002.bak-remove-ai:3:import Image from "next/image";
+components/Navbar.tsx.uifix.1781804002.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.uifix.1781804002.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.uifix.1781804002.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.uifix.1781804002.bak-remove-ai:7:import {
+components/Navbar.tsx.uifix.1781804002.bak-remove-ai:18:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.uifix.1781804002.bak-remove-ai:19:import { useTheme } from "@/app/context/ThemeContext";
+components/HomeCategories.tsx.homelink.1781873244:3:import Link from "next/link";
+components/AIChatStylist.tsx.bak-remove-ai.bak-links:3:import { useState } from "react";
+components/Navbar.tsx.lightmode.1781785664.bak-remove-ai:3:import Image from "next/image";
+components/Navbar.tsx.lightmode.1781785664.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.lightmode.1781785664.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.lightmode.1781785664.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.lightmode.1781785664.bak-remove-ai:7:import {
+components/Navbar.tsx.lightmode.1781785664.bak-remove-ai:16:import { useCart } from "@/app/context/CartContext";
+components/AIChatStylist.tsx.bak-remove-ai:3:import { useState } from "react";
+components/TrendingSection.tsx.bak:3:import Link from "next/link";
+components/TrendingSection.tsx.bak:4:import ProductCard from "@/components/ProductCard";
+components/TrendingSection.tsx.bak:5:import { products } from "@/lib/products";
+components/Navbar.tsx.remove-logo.1781767007:2:import Image from "next/image";
+components/Navbar.tsx.remove-logo.1781767007:4:import { useState } from "react";
+components/Navbar.tsx.remove-logo.1781767007:5:import Link from "next/link";
+components/Navbar.tsx.remove-logo.1781767007:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.remove-logo.1781767007:8:import {
+components/Navbar.tsx.remove-logo.1781767007:17:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.uifix.1781804002:3:import Image from "next/image";
+components/Navbar.tsx.uifix.1781804002:4:import { useState } from "react";
+components/Navbar.tsx.uifix.1781804002:5:import Link from "next/link";
+components/Navbar.tsx.uifix.1781804002:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.uifix.1781804002:7:import {
+components/Navbar.tsx.uifix.1781804002:18:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.uifix.1781804002:19:import { useTheme } from "@/app/context/ThemeContext";
+components/HomeCategories.tsx:3:import Link from "next/link";
+components/Navbar.tsx.remove-logo.1781767007.bak-remove-ai:2:import Image from "next/image";
+components/Navbar.tsx.remove-logo.1781767007.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.remove-logo.1781767007.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.remove-logo.1781767007.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.remove-logo.1781767007.bak-remove-ai:8:import {
+components/Navbar.tsx.remove-logo.1781767007.bak-remove-ai:17:import { useCart } from "@/app/context/CartContext";
+components/Hero.tsx.uifix.1781804002:3:import Image from "next/image";
+components/Breadcrumbs.tsx:3:import Link from "next/link";
+components/Breadcrumbs.tsx:4:import { usePathname } from "next/navigation";
+components/Navbar.tsx.icons.1781783977.bak-remove-ai:3:import Image from "next/image";
+components/Navbar.tsx.icons.1781783977.bak-remove-ai:4:import { useState } from "react";
+components/Navbar.tsx.icons.1781783977.bak-remove-ai:5:import Link from "next/link";
+components/Navbar.tsx.icons.1781783977.bak-remove-ai:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.icons.1781783977.bak-remove-ai:7:import {
+components/Navbar.tsx.icons.1781783977.bak-remove-ai:16:import { useCart } from "@/app/context/CartContext";
+components/Navbar.tsx.corrupt.1781781937:2:import Image from "next/image";
+components/Navbar.tsx.corrupt.1781781937:4:import { useState } from "react";
+components/Navbar.tsx.corrupt.1781781937:5:import Link from "next/link";
+components/Navbar.tsx.corrupt.1781781937:6:import { useRouter } from "next/navigation";
+components/Navbar.tsx.corrupt.1781781937:8:import {
+components/Navbar.tsx.corrupt.1781781937:17:import { useCart } from "@/app/context/CartContext";
+components/ProductCard.tsx:3:import Link from "next/link";
+components/ProductCard.tsx:4:import Image from "next/image";
+components/ProductCard.tsx:5:import { Heart, ShoppingBag, Eye } from "lucide-react";
+components/ProductCard.tsx:6:import { useState } from "react";
+components/ProductCard.tsx:7:import { useCart } from "@/app/context/CartContext";
+components/ProductCard.tsx:8:import QuickView from "@/components/QuickView";
+components/ProductCard.tsx:9:import ProductRating from "@/components/ProductRating";
+components/layout/Container.tsx:1:import { ReactNode } from "react";
+components/ProductActions.tsx.addfix.1781807610:3:import { useState } from "react";
+components/ProductActions.tsx.addfix.1781807610:5:import { useCart } from "@/app/context/CartContext";
+lib/cms/storage.ts:1:import fs from "fs";
+lib/cms/storage.ts:2:import path from "path";
+lib/firebase.ts.before_restore.1782378603:1:import { initializeApp } from "firebase/app";
+lib/firebase.ts.before_restore.1782378603:3:import { getAuth } from "firebase/auth";
+lib/firebase.ts.before_restore.1782378603:5:import { getFirestore } from "firebase/firestore";
+lib/adminCategories.ts:1:import {
+lib/adminCategories.ts:10:import { db } from "./firebase";
+lib/localProducts.server.ts:1:import fs from "fs";
+lib/localProducts.server.ts:2:import path from "path";
+lib/firestoreProducts.fire.1782393110:1:import {
+lib/firestoreProducts.fire.1782393110:8:import { db } from "./firebase";
+lib/engine/ProductEngine.ts:1:import { GalleryDetector } from "../gallery/GalleryDetector";
+lib/engine/ProductEngine.ts:2:import { DuplicateDetector } from "../duplicateDetector";
+lib/engine/ProductEngine.ts:3:import { ProductImporter } from "../importer/ProductImporter";
+lib/engine/ProductEngine.ts:4:import { ProductClassifier } from "../classifier/ProductClassifier";
+lib/engine/ProductEngine.ts:5:import { GalleryBuilder } from "../gallery/GalleryBuilder";
+lib/engine/ProductEngine.ts:6:import { VariantBuilder } from "../variant/VariantBuilder";
+lib/adminProducts.ts.before_restore.1782378603:1:import {
+lib/adminProducts.ts.before_restore.1782378603:9:import { db } from "./firebase";
+lib/localProducts.server.ts.bak:1:import fs from "fs";
+lib/localProducts.server.ts.bak:2:import path from "path";
+lib/storage.ts:1:import { getStorage } from "firebase/storage";
+lib/storage.ts:2:import app from "./firebase";
+lib/adminVariants.ts:1:import {
+lib/adminVariants.ts:6:import { db } from "./firebase";
+lib/firestoreStyleProfile.ts:1:import {
+lib/firestoreStyleProfile.ts:7:import { db } from "./firebase";
+lib/firebase.ts:1:import { initializeApp } from "firebase/app";
+lib/firebase.ts:3:import { getAuth } from "firebase/auth";
+lib/firebase.ts:5:import { getFirestore } from "firebase/firestore";
+lib/firebase.ts:45:import { getStorage } from "firebase/storage";
+lib/adminHomepage.ts:1:import {
+lib/adminHomepage.ts:7:import { db } from "./firebase";
+lib/adminProducts.fire.1782393110:1:import {
+lib/adminProducts.fire.1782393110:11:import { db } from "./firebase";
+
+========== ROUTES ==========
+app/order-success/page.tsx
+app/cms/product/page.tsx
+app/cms/products/page.tsx
+app/cms/page.tsx
+app/cms/dashboard/page.tsx
+app/cms/media/page.tsx
+app/cms/server/page.tsx
+app/cms/orders/page.tsx
+app/cms/analytics/page.tsx
+app/cms/categories/page.tsx
+app/cms/customers/page.tsx
+app/cms/settings/page.tsx
+app/wishlist/page.tsx
+app/signup/page.tsx
+app/login/page.tsx
+app/collections/[type]/page.tsx
+app/product/[id]/page.tsx
+app/admin/variants/page.tsx
+app/admin/product/page.tsx
+app/admin/products/page.tsx
+app/admin/page.tsx
+app/admin/dashboard/page.tsx
+app/admin/media/page.tsx
+app/admin/orders/[id]/page.tsx
+app/admin/orders/page.tsx
+app/admin/categories/page.tsx
+app/admin/homepage/page.tsx
+app/page.tsx
+app/profile/page.tsx
+app/orders/page.tsx
+app/cart/page.tsx
+app/admin2/users/page.tsx
+app/admin2/products/page.tsx
+app/admin2/page.tsx
+app/admin2/dashboard/page.tsx
+app/admin2/media/page.tsx
+app/admin2/orders/page.tsx
+app/admin2/analytics/page.tsx
+app/admin2/inventory/page.tsx
+app/admin2/categories/page.tsx
+app/admin2/roles/page.tsx
+app/admin2/customers/page.tsx
+app/admin2/settings/page.tsx
+app/admin2/homepage/page.tsx
+app/checkout/page.tsx
+app/search/page.tsx
+app/maintenance/page.tsx
+
+========== DUPLICATE FILES ==========
+./lib/firebase.ts.before_restore.1782378603
+./lib/firestoreProducts.fire.1782393110
+./lib/adminProducts.ts.before_restore.1782378603
+./lib/importer/ProductImporter.ts.bak
+./lib/localProducts.server.ts.bak
+./lib/adminProducts.fire.1782393110
+./components/AIRecommendations.tsx.disabled
+./components/AIOutfitRecommendations.tsx.disabled
+./components/ui/navigation/Announcement.tsx.bak
+./components/ui/navigation/Navbar.tsx.1784693911.bak
+./components/ui/navigation/NavbarUI.tsx.bak
+./components/ui/navigation/Navbar.tsx.bak
+./components/TrendingSection.tsx.bak
+./app/product/[id]/page-old.tsx.disabled
+./app/product/[id]/page.tsx.bak
+./app/admin/product/page.tsx.before_restore.20260626_162918
+./app/admin/products.page.fix.bak
+./app/layout.tsx.bak
+./app/context/CartContext.tsx.bak
+./app/context/AuthContext.tsx.bak
+./app/page.tsx.bak
+
+========== REPORT ==========
+SOURCE_ANALYSIS_2026-07-24_214750.txt

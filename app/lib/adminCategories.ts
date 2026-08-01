@@ -1,48 +1,75 @@
-import {
-  collection,
-  addDoc,
-  getDocs,
-  updateDoc,
-  deleteDoc,
-  doc
-} from "firebase/firestore";
-
-import { db } from "./firebase";
-
-const COLLECTION = "categories";
 
 export async function getCategories(){
-  const snap = await getDocs(collection(db,COLLECTION));
-  return snap.docs.map(d=>({
-    id:d.id,
-    ...d.data()
-  }));
+
+  const res =
+    await fetch(
+      "/api/admin/categories",
+      {
+        cache:"no-store"
+      }
+    );
+
+  return res.json();
+
 }
 
-export async function addCategory(name:string){
-  return addDoc(
-    collection(db,COLLECTION),
+
+export async function addCategory(
+  data:any
+){
+
+  return fetch(
+    "/api/admin/categories",
     {
-      name,
-      createdAt:Date.now()
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify(data)
     }
   );
+
 }
+
 
 export async function updateCategory(
-  id:string,
-  name:string
+ id:string,
+ data:any
 ){
-  return updateDoc(
-    doc(db,COLLECTION,id),
-    { name }
-  );
+
+ return fetch(
+  "/api/admin/categories",
+  {
+    method:"PUT",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+      id,
+      ...data
+    })
+  }
+ );
+
 }
 
+
 export async function deleteCategory(
-  id:string
+ id:string
 ){
-  return deleteDoc(
-    doc(db,COLLECTION,id)
-  );
+
+ return fetch(
+  "/api/admin/categories",
+  {
+    method:"DELETE",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+      id
+    })
+  }
+ );
+
 }
+

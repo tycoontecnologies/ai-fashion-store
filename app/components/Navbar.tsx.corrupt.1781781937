@@ -126,7 +126,6 @@ export default function Navbar() {
             </Link>
 
             <Link href="/style-quiz">
-              AI Stylist
             </Link>
 
             <Link href="/try-on">

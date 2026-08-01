@@ -99,7 +99,6 @@ export default function Hero() {
                   transition-all
                 "
               >
-                AI Stylist
               </button>
 
             </div>

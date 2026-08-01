@@ -1,0 +1,174 @@
+"use client";
+
+import Image from "next/image";
+import { Suspense, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
+
+import {
+  getProduct,
+  saveProduct,
+  updateProduct,
+} from "@/lib/adminProducts";
+
+function ProductEditorInner() {
+
+  const params = useSearchParams();
+  const id = params.get("id");
+
+  const [uploading,setUploading]=useState(false);
+
+  const [product,setProduct]=useState<any>({
+    name:"",
+    category:"",
+    description:"",
+    color:"",
+    image:"",
+    gallery:[],
+    variants:[],
+    price:0,
+    featured:false,
+    trending:false,
+    bestseller:false,
+    newArrival:false
+  });
+
+  useEffect(()=>{
+
+    async function load(){
+
+      if(!id) return;
+
+      const data=await getProduct(id);
+
+      if(!data) return;
+
+      setProduct({
+        ...data,
+        gallery:data.gallery || [],
+        variants:data.variants || []
+      });
+
+    }
+
+    load();
+
+  },[id]);
+
+  async function uploadImage(
+    file:File,
+    gallery=false
+  ){
+
+    setUploading(true);
+
+    try{
+
+      const fd=new FormData();
+
+      fd.append("file",file);
+
+      const res=await fetch(
+        "/api/admin/upload",
+        {
+          method:"POST",
+          body:fd
+        }
+      );
+
+      const json=await res.json();
+
+      if(!json.success){
+        alert("Upload failed");
+        return;
+      }
+
+      if(gallery){
+
+        setProduct((p:any)=>({
+          ...p,
+          gallery:[
+            ...(p.gallery||[]),
+            json.url
+          ]
+        }));
+
+      }else{
+
+        setProduct((p:any)=>({
+          ...p,
+          image:json.url
+        }));
+
+      }
+
+    }finally{
+
+      setUploading(false);
+
+    }
+
+  }
+
+  async function save(){
+
+    if(id){
+
+      await updateProduct(id,product);
+
+      alert("Updated");
+
+    }else{
+
+      await saveProduct(product);
+
+      alert("Created");
+
+    }
+
+  }
+
+"use client";
+
+import Image from "next/image";
+
+import {
+  Suspense,
+  useEffect,
+  useState
+} from "react";
+
+
+import { useSearchParams } from "next/navigation";
+
+
+import {
+  saveProduct,
+  updateProduct,
+  getProduct
+} from "@/lib/adminProducts";
+
+
+import { storage } from "@/lib/firebase";
+
+
+import {
+  ref,
+  uploadBytes,
+  getDownloadURL
+} from "firebase/storage";
+
+export default function ProductEditor(){
+
+  return (
+    <Suspense
+      fallback={
+        <div className="p-10">
+          Loading...
+        </div>
+      }
+    >
+      <ProductEditorInner />
+    </Suspense>
+  );
+
+}

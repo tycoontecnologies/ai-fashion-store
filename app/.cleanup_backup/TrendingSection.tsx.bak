@@ -1,0 +1,46 @@
+"use client";
+
+import Link from "next/link";
+import ProductCard from "@/components/ProductCard";
+import { products } from "@/lib/products";
+
+export default function TrendingSection() {
+  const featured = products.some((p:any)=>p.featured)
+    ? products.filter((p:any)=>p.featured).slice(0,12)
+    : products.slice(0,12);
+
+  const trending = products.some((p:any)=>p.trending)
+    ? products.filter((p:any)=>p.trending).slice(0,12)
+    : products.slice(12,24);
+
+  const arrivals = products.some((p:any)=>p.newArrival)
+    ? products.filter((p:any)=>p.newArrival).slice(0,12)
+    : products.slice(24,36);
+
+  const sections = [
+    {title:"FEATURED",href:"/collections/featured",items:featured},
+    {title:"TRENDING",href:"/collections/trending",items:trending},
+    {title:"NEW ARRIVALS",href:"/collections/new-arrivals",items:arrivals},
+  ];
+
+  return (
+    <>
+      {sections.map(s=>(
+        <section key={s.title} className="max-w-7xl mx-auto px-6 py-16">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-4xl font-black">{s.title}</h2>
+            <Link href={s.href} className="text-sm font-semibold hover:underline">
+              SEE ALL →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {s.items.map((p:any)=>(
+              <ProductCard key={p.id} product={p}/>
+            ))}
+          </div>
+        </section>
+      ))}
+    </>
+  );
+}

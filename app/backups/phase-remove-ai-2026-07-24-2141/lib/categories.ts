@@ -1,0 +1,21 @@
+const categories = [
+"MEN",
+"WOMEN",
+"JUNIORS",
+"T-SHIRTS",
+"POLOS",
+"SHIRTS",
+"ACTIVEWEAR",
+"TROUSERS",
+"SHORTS",
+"JEANS",
+"FOOTWEAR",
+"FRAGRANCES",
+"ACCESSORIES",
+"UNDERWEAR",
+"SWEATSHIRTS / HOODIES",
+"SWEATERS",
+"OUTERWEAR"
+];
+
+export default categories;

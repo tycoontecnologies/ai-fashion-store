@@ -108,70 +108,9 @@ export default function AdminPage() {
 
   }
 
-  async function analyzeProduct() {
-
-    try {
-
-      if (!file) {
-        alert("Upload image first");
-        return;
-      }
-
-      setLoading(true);
-
-      const imageUrl =
-        await uploadImage();
-
-      const response =
-        await fetch(
-          "/api/analyze",
-          {
-            method:"POST",
-            headers:{
-              "Content-Type":"application/json"
-            },
-            body:JSON.stringify({
-              imageUrl
-            })
-          }
-        );
-
-      const data =
-        await response.json();
-
-      setAnalysis(data);
-
-      setProductName(
-        data.name || ""
-      );
-
-      setProductCategory(
-        data.category || ""
-      );
-
-      setProductColor(
-        data.color || ""
-      );
-
-      setProductDescription(
-        data.description || ""
-      );
-
-      setPreview(imageUrl);
-
-    } catch(error) {
-
-      console.error(error);
-
-      alert("Analysis failed");
-
-    } finally {
-
-      setLoading(false);
-
-    }
-
-  }
+  async function analyzeProduct(){
+  alert("AI Analysis has been removed.");
+}
 
   async function handleSaveProduct() {
 

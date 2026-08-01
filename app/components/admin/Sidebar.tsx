@@ -24,7 +24,6 @@ const menu = [
   { title:"Media", href:"/admin/media", icon:Image },
   { title:"Homepage", href:"/admin/homepage", icon:Home },
   { title:"Analytics", href:"/admin/analytics", icon:BarChart3 },
-  { title:"AI Tools", href:"/admin/ai", icon:Sparkles },
   { title:"Settings", href:"/admin/settings", icon:Settings },
 ];
 

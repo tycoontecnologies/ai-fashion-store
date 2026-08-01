@@ -9,8 +9,6 @@ import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
 import Footer from "@/components/Footer";
 import SearchBar from "@/components/SearchBar";
-import AIStylist from "@/components/AIStylist";
-import AIChatStylist from "@/components/AIChatStylist";
 import FilterBar from "@/components/FilterBar";
 
 import { getProducts } from "@/lib/firestoreProducts";
@@ -193,9 +191,7 @@ export default function Home() {
 
       </section>
 
-      <AIStylist />
 
-      <AIChatStylist />
 
       <Footer />
 
