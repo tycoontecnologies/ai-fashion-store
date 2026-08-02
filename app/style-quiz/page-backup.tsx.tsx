@@ -15,7 +15,7 @@ import {
 
 import {
   getProducts,
-} from "@/lib/firestoreProducts";
+} from "@/lib/products";
 
 export default function StyleQuizPage() {
 

@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 import {
   getOrders,
-} from "@/lib/firestoreOrders";
+} from "@/lib/orders";
 
 export default function OrdersPage() {
 

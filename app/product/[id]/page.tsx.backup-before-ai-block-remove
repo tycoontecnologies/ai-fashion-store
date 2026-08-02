@@ -237,7 +237,12 @@ className="w-16 h-16 object-cover rounded-lg"
           </div>
 
         </div>
-<RelatedProducts
+
+        <AIOutfitRecommendations
+          product={product}
+        />
+
+        <RelatedProducts
           currentProduct={product}
         />
 

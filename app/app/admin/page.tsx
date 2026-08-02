@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 import { saveProduct } from "@/lib/products";
 import { getProducts } from "@/lib/products";
-import { getOrders } from "@/lib/firestoreOrders";
+import { getOrders } from "@/lib/orders";
 
 import { storage } from "@/lib/storage";
 

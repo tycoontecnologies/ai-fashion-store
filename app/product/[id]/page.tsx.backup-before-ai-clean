@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductActions from "@/components/ProductActions";
 import RelatedProducts from "@/components/RelatedProducts";
+import AIOutfitRecommendations from "@/components/AIOutfitRecommendations";
 
 import { getProductById } from "@/lib/products";
 
@@ -237,7 +238,12 @@ className="w-16 h-16 object-cover rounded-lg"
           </div>
 
         </div>
-<RelatedProducts
+
+        <AIOutfitRecommendations
+          product={product}
+        />
+
+        <RelatedProducts
           currentProduct={product}
         />
 

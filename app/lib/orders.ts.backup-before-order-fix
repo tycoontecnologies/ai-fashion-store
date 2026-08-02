@@ -25,18 +25,13 @@ export function getOrders() {
 }
 
 export function saveOrder(
-  order: Omit<Order, "id">
+  order: Order
 ) {
 
   const orders =
     getOrders();
 
-  const newOrder = {
-    id: Date.now().toString(),
-    ...order,
-  };
-
-  orders.unshift(newOrder);
+  orders.unshift(order);
 
   localStorage.setItem(
     "guess360-orders",

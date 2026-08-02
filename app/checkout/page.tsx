@@ -2,7 +2,7 @@
 
 import {
   saveOrder,
-} from "@/lib/firestoreOrders";
+} from "@/lib/orders";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
