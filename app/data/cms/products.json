@@ -2081,29 +2081,6 @@
     "gender": "Men"
   },
   {
-    "id": "TkDuwK50XkmWvbUrzRWi",
-    "name": "Linen Summer Shirt",
-    "category": "Fashion",
-    "color": "Unknown",
-    "price": 2990,
-    "image": "/products/product_0100.png",
-    "featured": false,
-    "trending": false,
-    "bestSeller": false,
-    "newArrival": false,
-    "gallery": [],
-    "variants": [
-      {
-        "size": "M",
-        "color": "Default",
-        "sku": "TkDuwK50XkmWvbUrzRWi",
-        "stock": 100,
-        "price": 2990
-      }
-    ],
-    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
-  },
-  {
     "id": "TtErPtqExy1mUpLtpEeX",
     "name": "Mens Basic Polo ",
     "category": "Streetwear",
@@ -2463,29 +2440,6 @@
     ],
     "description": "Mens Casual Check Shirt crafted for everyday comfort and premium style.",
     "gender": "Men"
-  },
-  {
-    "id": "aXFqAfsHDkHnnveBzb3L",
-    "name": "Linen Summer Shirt",
-    "category": "Fashion",
-    "color": "Unknown",
-    "price": 2990,
-    "image": "/products/product_0070.png",
-    "featured": false,
-    "trending": false,
-    "bestSeller": false,
-    "newArrival": false,
-    "gallery": [],
-    "variants": [
-      {
-        "size": "M",
-        "color": "Default",
-        "sku": "aXFqAfsHDkHnnveBzb3L",
-        "stock": 100,
-        "price": 2990
-      }
-    ],
-    "description": "Linen Summer Shirt crafted for everyday comfort and premium style."
   },
   {
     "id": "aYAEcMjXFvErHxDRTIFO",
@@ -3620,7 +3574,7 @@
     "name": "Mens Casual Check Shirt ",
     "category": "Fashion",
     "color": "Unknown",
-    "price": 4499,
+    "price": 4500,
     "image": "/products/product_0021.png",
     "featured": false,
     "trending": false,
@@ -3637,7 +3591,8 @@
       }
     ],
     "description": "Mens Casual Check Shirt  crafted for everyday comfort and premium style.",
-    "gender": "Men"
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "o8jukd7zd3Y2hZBtQ6xL",
@@ -4028,7 +3983,7 @@
     "name": "Mens Knitted Polo ",
     "category": "Fashion",
     "color": "Unknown",
-    "price": 4999,
+    "price": 5000,
     "image": "/products/product_0020.png",
     "featured": false,
     "trending": false,
@@ -4045,7 +4000,8 @@
       }
     ],
     "description": "Mens Knitted Polo crafted for everyday comfort and premium style.",
-    "gender": "Men"
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "u17GjDVf7ULCuoMjfwe9",
@@ -4262,29 +4218,6 @@
     ],
     "description": "Mens Ziper Polo Knitted crafted for everyday comfort and premium style.",
     "gender": "Men"
-  },
-  {
-    "id": "w7il6iTRaUHqTUfYSFds",
-    "name": "Urban Polo Shirt",
-    "category": "Fashion",
-    "color": "Unknown",
-    "price": 2990,
-    "image": "/products/product_0152.png",
-    "featured": false,
-    "trending": false,
-    "bestSeller": false,
-    "newArrival": false,
-    "gallery": [],
-    "variants": [
-      {
-        "size": "M",
-        "color": "Default",
-        "sku": "w7il6iTRaUHqTUfYSFds",
-        "stock": 100,
-        "price": 2990
-      }
-    ],
-    "description": "Urban Polo Shirt crafted for everyday comfort and premium style."
   },
   {
     "id": "wEC4kFdxL4Irwfooe7OH",
@@ -4504,7 +4437,7 @@
   },
   {
     "id": "yE3mWCoUOBwgMV2YxacE",
-    "name": "Premium Denim Shirt",
+    "name": "Premium Casual Shirt",
     "category": "Fashion",
     "color": "Unknown",
     "price": 4500,
@@ -4523,8 +4456,9 @@
         "price": 4500
       }
     ],
-    "description": "Premium Denim Shirt crafted for everyday comfort and premium style.",
-    "gender": "Men"
+    "description": "Premium Casual Shirt crafted for everyday comfort and premium style.",
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "yIzgJvTkAuCIRv1MzBMd",
@@ -4986,16 +4920,16 @@
   },
   {
     "id": "cc17129d-5f2a-4e68-a4fa-0512d34348d5",
-    "name": "Product 0224",
+    "name": "Mens Stripe Polo",
     "slug": "product_0224",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Stripe Polo",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0224.png",
     "gallery": [
       "/products/product_0224.png"
     ],
-    "price": 0,
+    "price": 3400,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -5006,9 +4940,11 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3400
       }
-    ]
+    ],
+    "subcategory": "Polo Shirts",
+    "gender": "Men"
   },
   {
     "id": "84e7fd3d-f90e-4041-b05e-c59308206c04",
@@ -5066,16 +5002,16 @@
   },
   {
     "id": "5cdc5568-969e-48f4-bd44-efb90acea734",
-    "name": "Product 0227",
+    "name": "Mens Panel Polo",
     "slug": "product_0227",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Panel Polo",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0227.png",
     "gallery": [
       "/products/product_0227.png"
     ],
-    "price": 0,
+    "price": 3400,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -5086,9 +5022,11 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3400
       }
-    ]
+    ],
+    "subcategory": "Polo Shirts",
+    "gender": "Men"
   },
   {
     "id": "50b400d9-0014-4bb5-a8d5-77dc180457fb",
@@ -6765,9 +6703,9 @@
   },
   {
     "id": "62de7909-6608-4004-a55f-1e4fbdfe9404",
-    "name": "Mens Leather Belt Double Side ",
+    "name": "Mens Leather Belt Dual Side ",
     "slug": "product_0290",
-    "description": "Mens Leather Belt Double Side ",
+    "description": "Mens Leather Belt Dual Side ",
     "category": "Uncategorized",
     "color": "Unknown",
     "image": "/products/product_0290.png",
@@ -6788,7 +6726,8 @@
         "price": 2500
       }
     ],
-    "gender": "Men"
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "4fd73727-1782-4dee-98df-0aa551eb5edc",
@@ -9419,7 +9358,7 @@
     "gallery": [
       "/products/product_0388.png"
     ],
-    "price": 4999,
+    "price": 5000,
     "featured": false,
     "trending": false,
     "newArrival": true,
@@ -9433,7 +9372,8 @@
         "price": 5000
       }
     ],
-    "gender": "Men"
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "512adfb5-4237-40a2-90ee-d1a11a48b97d",
@@ -9833,7 +9773,7 @@
     "gallery": [
       "/products/product_0403.png"
     ],
-    "price": 3997,
+    "price": 4000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -11569,7 +11509,7 @@
     "gallery": [
       "/products/product_0465.png"
     ],
-    "price": 3599,
+    "price": 3600,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12204,16 +12144,16 @@
   },
   {
     "id": "ffc5e4b0-4ac7-4fad-b72a-2f2d1b67a3ed",
-    "name": "Product 0488",
+    "name": "Mens Socks",
     "slug": "product_0488",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Socks",
+    "category": "Socks",
     "color": "Unknown",
     "image": "/products/product_0488.png",
     "gallery": [
       "/products/product_0488.png"
     ],
-    "price": 0,
+    "price": 150,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12224,22 +12164,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 150
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "ecc541ce-45cc-431d-9634-9c25452455c0",
-    "name": "Product 0489",
+    "name": "Mens Dry Fit Trouser\t",
     "slug": "product_0489",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dry Fit Trouser\t",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0489.png",
     "gallery": [
       "/products/product_0489.png"
     ],
-    "price": 0,
+    "price": 5000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12250,22 +12192,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 5000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "9d5b57ff-27c1-4bc2-aa45-72ba309d6e13",
-    "name": "Product 0490",
+    "name": "Mens Black Socks",
     "slug": "product_0490",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Black Socks",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0490.png",
     "gallery": [
       "/products/product_0490.png"
     ],
-    "price": 0,
+    "price": 150,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12276,22 +12220,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 149
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "34efc926-1fb1-4ab2-ac97-3dc1f44f3e2b",
-    "name": "Product 0491",
+    "name": "Mens Black Socks",
     "slug": "product_0491",
-    "description": "",
-    "category": "Uncategorized",
+    "description": " Mens Black Socks",
+    "category": "Socks",
     "color": "Unknown",
     "image": "/products/product_0491.png",
     "gallery": [
       "/products/product_0491.png"
     ],
-    "price": 0,
+    "price": 150,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12302,22 +12248,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 150
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "61ffe7b1-046b-415d-a516-d7fb93fb0b82",
-    "name": "Product 0492",
+    "name": "Mens Socks",
     "slug": "product_0492",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Socks",
+    "category": "Socks",
     "color": "Unknown",
     "image": "/products/product_0492.png",
     "gallery": [
       "/products/product_0492.png"
     ],
-    "price": 0,
+    "price": 150,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12328,22 +12276,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 150
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "58e7b298-3de6-4c13-9135-16defa3261cf",
-    "name": "Product 0493",
+    "name": "Mens Socks",
     "slug": "product_0493",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Socks",
+    "category": "Socks",
     "color": "Unknown",
     "image": "/products/product_0493.png",
     "gallery": [
       "/products/product_0493.png"
     ],
-    "price": 0,
+    "price": 150,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12354,22 +12304,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 150
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "28153bfd-c483-4381-aeb1-d0fe203c6442",
-    "name": "Product 0494",
+    "name": "Mens Socks",
     "slug": "product_0494",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Socks",
+    "category": "Socks",
     "color": "Unknown",
     "image": "/products/product_0494.png",
     "gallery": [
       "/products/product_0494.png"
     ],
-    "price": 0,
+    "price": 150,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12380,22 +12332,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 149
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "a1de7159-057c-4a67-afc4-6d37ad05bc37",
-    "name": "Product 0495",
+    "name": "Mens Socks",
     "slug": "product_0495",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Socks",
+    "category": "Socks",
     "color": "Unknown",
     "image": "/products/product_0495.png",
     "gallery": [
       "/products/product_0495.png"
     ],
-    "price": 0,
+    "price": 150,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12406,22 +12360,23 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 150
       }
-    ]
+    ],
+    "subcategory": ""
   },
   {
     "id": "5020a352-2aff-4112-989e-1babd9f4e197",
-    "name": "Product 0496",
+    "name": "Mens Dry Fit Trouser",
     "slug": "product_0496",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dry Fit Trouser",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0496.png",
     "gallery": [
       "/products/product_0496.png"
     ],
-    "price": 0,
+    "price": 5000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12432,22 +12387,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 5000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "b933e11c-8e09-4164-8c6f-7d474a19a027",
-    "name": "Product 0497",
+    "name": "Mens Dress Shirt ",
     "slug": "product_0497",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dress Shirt ",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0497.png",
     "gallery": [
       "/products/product_0497.png"
     ],
-    "price": 0,
+    "price": 4500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12458,22 +12415,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 4500
       }
-    ]
+    ],
+    "subcategory": "Dresses",
+    "gender": "Men"
   },
   {
     "id": "88accdf5-3179-4eba-be87-ed2b039491bc",
-    "name": "Product 0498",
+    "name": "Mens Dry Fit Trouser\t",
     "slug": "product_0498",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dry Fit Trouser\t",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0498.png",
     "gallery": [
       "/products/product_0498.png"
     ],
-    "price": 0,
+    "price": 5000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12484,22 +12443,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 5000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "d6cd7d38-8a29-4ff9-86d0-92c23913edbe",
-    "name": "Product 0499",
+    "name": "Mens China Cotton Pent ",
     "slug": "product_0499",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent ",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0499.png",
     "gallery": [
       "/products/product_0499.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12510,22 +12471,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "68d75e72-5a1e-49ac-80a9-1c8421a1cf9a",
-    "name": "Product 0500",
+    "name": "Mens China Cotton Pent",
     "slug": "product_0500",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0500.png",
     "gallery": [
       "/products/product_0500.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12536,22 +12499,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "f0e694d8-f7b7-4dbc-8883-be5ed20cb941",
-    "name": "Product 0501",
+    "name": "Mens China Cotton Pent",
     "slug": "product_0501",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0501.png",
     "gallery": [
       "/products/product_0501.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12562,22 +12527,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "3befb42c-227d-4628-ada5-b0a76136de2a",
-    "name": "Product 0502",
+    "name": "Mens China Cotton Pent",
     "slug": "product_0502",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0502.png",
     "gallery": [
       "/products/product_0502.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12588,22 +12555,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "c3e56b86-e98b-4634-8058-15366ddb7521",
-    "name": "Product 0503",
+    "name": "Mens China Cotton Pent",
     "slug": "product_0503",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0503.png",
     "gallery": [
       "/products/product_0503.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12614,22 +12583,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "60f90266-6ea6-419b-9199-6aa09d9fc3eb",
-    "name": "Product 0504",
+    "name": "Mens China Cotton Pent",
     "slug": "product_0504",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0504.png",
     "gallery": [
       "/products/product_0504.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12640,22 +12611,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "911d9954-27fa-4ca4-bd21-0466b18c124f",
-    "name": "Product 0505",
+    "name": "Mens China Cotton Pent\t",
     "slug": "product_0505",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent\t",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0505.png",
     "gallery": [
       "/products/product_0505.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12666,22 +12639,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "5377cc80-f156-4586-a2f7-210b0522d9a5",
-    "name": "Product 0506",
+    "name": "Mens China Cotton Pent\t",
     "slug": "product_0506",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent\t",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0506.png",
     "gallery": [
       "/products/product_0506.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12692,22 +12667,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "3b56584a-9543-4845-9236-476df3e4f2a6",
-    "name": "Product 0507",
+    "name": "Mens China Cotton Pent",
     "slug": "product_0507",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens China Cotton Pent",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0507.png",
     "gallery": [
       "/products/product_0507.png"
     ],
-    "price": 0,
+    "price": 6000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12718,22 +12695,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 6000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "47a7d1d1-0083-4bda-ae1d-e61315d40e8e",
-    "name": "Product 0508",
+    "name": "Mens Dress Shirt",
     "slug": "product_0508",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dress Shirt",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0508.png",
     "gallery": [
       "/products/product_0508.png"
     ],
-    "price": 0,
+    "price": 4500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12744,22 +12723,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 4500
       }
-    ]
+    ],
+    "subcategory": "Dresses",
+    "gender": "Men"
   },
   {
     "id": "f221e367-de44-4b19-8a12-4848da3a4fd2",
-    "name": "Product 0509",
+    "name": "Mens Leather Belt Dual Side",
     "slug": "product_0509",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Leather Belt Dual Side",
+    "category": "Belts",
     "color": "Unknown",
     "image": "/products/product_0509.png",
     "gallery": [
       "/products/product_0509.png"
     ],
-    "price": 0,
+    "price": 2500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12770,22 +12751,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2500
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "18f60cc5-c736-41a5-8981-dcb80a6ec43a",
-    "name": "Product 0510",
+    "name": "Mens Leather Belt ",
     "slug": "product_0510",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Leather Belt ",
+    "category": "Belts",
     "color": "Unknown",
     "image": "/products/product_0510.png",
     "gallery": [
       "/products/product_0510.png"
     ],
-    "price": 0,
+    "price": 2500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12796,22 +12779,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2500
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "11abff22-883e-44ce-9777-6259296cde30",
-    "name": "Product 0511",
+    "name": "Mens Leather Belt",
     "slug": "product_0511",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Leather Belt",
+    "category": "Belts",
     "color": "Unknown",
     "image": "/products/product_0511.png",
     "gallery": [
       "/products/product_0511.png"
     ],
-    "price": 0,
+    "price": 2500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12822,22 +12807,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2500
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "359a0eea-f698-4d87-8664-a2f2f884e353",
-    "name": "Product 0512",
+    "name": "Mens Leather Belt",
     "slug": "product_0512",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Leather Belt",
+    "category": "Belts",
     "color": "Unknown",
     "image": "/products/product_0512.png",
     "gallery": [
       "/products/product_0512.png"
     ],
-    "price": 0,
+    "price": 2500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12848,22 +12835,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2500
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "031b2ac1-90b5-425f-8f0e-3b0b1173e440",
-    "name": "Product 0513",
+    "name": "Mens Leather Belt",
     "slug": "product_0513",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Leather Belt",
+    "category": "Belts",
     "color": "Unknown",
     "image": "/products/product_0513.png",
     "gallery": [
       "/products/product_0513.png"
     ],
-    "price": 0,
+    "price": 2500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12874,22 +12863,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2500
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "5ec81f4d-d03b-4c41-9017-a26630dd49f6",
-    "name": "Product 0514",
+    "name": "Mens Wallet",
     "slug": "product_0514",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0514.png",
     "gallery": [
       "/products/product_0514.png"
     ],
-    "price": 0,
+    "price": 3000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12900,22 +12891,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3000
       }
-    ]
+    ],
+    "subcategory": "Wallets",
+    "gender": "Men"
   },
   {
     "id": "37493fb3-ecd0-4d80-ac32-05b7b65b929d",
-    "name": "Product 0515",
+    "name": "Mens Wallet",
     "slug": "product_0515",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0515.png",
     "gallery": [
       "/products/product_0515.png"
     ],
-    "price": 0,
+    "price": 3000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12926,22 +12919,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "f04ba406-c2aa-466f-8c73-e58a6f45373d",
-    "name": "Product 0516",
+    "name": "Mens Wallet",
     "slug": "product_0516",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0516.png",
     "gallery": [
       "/products/product_0516.png"
     ],
-    "price": 0,
+    "price": 3000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12952,22 +12947,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "7e2bfa7a-5269-435f-9b11-4a8182431abc",
-    "name": "Product 0517",
+    "name": "Mens Wallet",
     "slug": "product_0517",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0517.png",
     "gallery": [
       "/products/product_0517.png"
     ],
-    "price": 0,
+    "price": 2000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -12978,22 +12975,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "dd981075-6852-4268-bc4c-022a40077fb7",
-    "name": "Product 0518",
+    "name": "Mens Wallet",
     "slug": "product_0518",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0518.png",
     "gallery": [
       "/products/product_0518.png"
     ],
-    "price": 0,
+    "price": 2000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13004,22 +13003,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "1edd6b21-c32d-4b49-9596-5b148b189bd0",
-    "name": "Product 0519",
+    "name": "Mens Dress Shirt",
     "slug": "product_0519",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dress Shirt",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0519.png",
     "gallery": [
       "/products/product_0519.png"
     ],
-    "price": 0,
+    "price": 4500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13030,22 +13031,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 4500
       }
-    ]
+    ],
+    "subcategory": "Dresses",
+    "gender": "Men"
   },
   {
     "id": "936ad3fa-7fc6-441f-bdca-0c3d6be2c8d2",
-    "name": "Product 0520",
+    "name": "Mens Wallet",
     "slug": "product_0520",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0520.png",
     "gallery": [
       "/products/product_0520.png"
     ],
-    "price": 0,
+    "price": 2000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13056,22 +13059,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "27cd0e3f-4c9b-48aa-b09a-3eb14a8aad68",
-    "name": "Product 0521",
+    "name": "Mens Wallet",
     "slug": "product_0521",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0521.png",
     "gallery": [
       "/products/product_0521.png"
     ],
-    "price": 0,
+    "price": 2000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13082,22 +13087,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 2000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "c7bb4f0a-f6fd-4181-97c1-8eca32dc70bd",
-    "name": "Product 0522",
+    "name": "Mens Wallet",
     "slug": "product_0522",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0522.png",
     "gallery": [
       "/products/product_0522.png"
     ],
-    "price": 0,
+    "price": 3000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13108,22 +13115,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3002
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "fc03b18a-9c49-438c-b5fa-8b641c9fddc7",
-    "name": "Product 0523",
+    "name": "Mens Wallet",
     "slug": "product_0523",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0523.png",
     "gallery": [
       "/products/product_0523.png"
     ],
-    "price": 0,
+    "price": 3000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13134,22 +13143,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "70200a04-4af8-4e2a-b754-9366a486b5ef",
-    "name": "Product 0524",
+    "name": "Mens Wallet",
     "slug": "product_0524",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0524.png",
     "gallery": [
       "/products/product_0524.png"
     ],
-    "price": 0,
+    "price": 3000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13160,22 +13171,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "6a89c024-96fa-4144-abdd-9a2f26e2ebc0",
-    "name": "Product 0525",
+    "name": "Mens Wallet",
     "slug": "product_0525",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0525.png",
     "gallery": [
       "/products/product_0525.png"
     ],
-    "price": 0,
+    "price": 3600,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13186,22 +13199,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3600
       }
-    ]
+    ],
+    "subcategory": "Wallets",
+    "gender": "Men"
   },
   {
     "id": "a62f3958-c04a-4ced-95c7-6a05939df947",
-    "name": "Product 0526",
+    "name": "Mens Wallet",
     "slug": "product_0526",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0526.png",
     "gallery": [
       "/products/product_0526.png"
     ],
-    "price": 0,
+    "price": 3600,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13212,22 +13227,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3600
       }
-    ]
+    ],
+    "subcategory": "Wallets",
+    "gender": "Men"
   },
   {
     "id": "ff1b3b3c-f150-4884-82d3-5a0937a97b20",
-    "name": "Product 0527",
+    "name": "Mens Wallet",
     "slug": "product_0527",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0527.png",
     "gallery": [
       "/products/product_0527.png"
     ],
-    "price": 0,
+    "price": 3600,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13238,22 +13255,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3600
       }
-    ]
+    ],
+    "subcategory": "Wallets",
+    "gender": "Men"
   },
   {
     "id": "6a59b18f-f2dd-4b12-8217-7b5521d7fb99",
-    "name": "Product 0528",
+    "name": "Mens Wallet",
     "slug": "product_0528",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0528.png",
     "gallery": [
       "/products/product_0528.png"
     ],
-    "price": 0,
+    "price": 3600,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13264,22 +13283,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3600
       }
-    ]
+    ],
+    "subcategory": "Wallets",
+    "gender": "Men"
   },
   {
     "id": "85f4f938-4414-4767-a9e7-278d6f34d77d",
-    "name": "Product 0529",
+    "name": "Mens Wallet",
     "slug": "product_0529",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Wallet",
+    "category": "Accessories",
     "color": "Unknown",
     "image": "/products/product_0529.png",
     "gallery": [
       "/products/product_0529.png"
     ],
-    "price": 0,
+    "price": 3600,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13290,22 +13311,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 3600
       }
-    ]
+    ],
+    "subcategory": "Wallets",
+    "gender": "Men"
   },
   {
     "id": "bf4c1826-8da9-4a96-8459-092dd86bf8de",
-    "name": "Product 0530",
+    "name": "Mens Dress Shirt",
     "slug": "product_0530",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dress Shirt",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0530.png",
     "gallery": [
       "/products/product_0530.png"
     ],
-    "price": 0,
+    "price": 4500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13316,22 +13339,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 4500
       }
-    ]
+    ],
+    "subcategory": "Dresses",
+    "gender": "Men"
   },
   {
     "id": "16a0bf7b-7deb-44d5-af72-3f1833944608",
-    "name": "Product 0531",
+    "name": "Mens Dry Fit Trouser",
     "slug": "product_0531",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dry Fit Trouser",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0531.png",
     "gallery": [
       "/products/product_0531.png"
     ],
-    "price": 0,
+    "price": 5000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13342,22 +13367,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 5000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "47064971-528b-4598-b680-b6ed950837b9",
-    "name": "Product 0532",
+    "name": "Mens Dry Fit Trouser\t",
     "slug": "product_0532",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dry Fit Trouser\t",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0532.png",
     "gallery": [
       "/products/product_0532.png"
     ],
-    "price": 0,
+    "price": 5000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13368,22 +13395,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 5000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "d75feff9-dd6a-4691-a1f0-b5373be3bfb1",
-    "name": "Product 0533",
+    "name": "Mens Dry Fit Trouser",
     "slug": "product_0533",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dry Fit Trouser",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0533.png",
     "gallery": [
       "/products/product_0533.png"
     ],
-    "price": 0,
+    "price": 5000,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13394,22 +13423,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 5000
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "848cfa96-c447-4304-be5d-e4bb19f3a313",
-    "name": "Product 0534",
+    "name": "Mens Socks",
     "slug": "product_0534",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Socks",
+    "category": "Socks",
     "color": "Unknown",
     "image": "/products/product_0534.png",
     "gallery": [
       "/products/product_0534.png"
     ],
-    "price": 0,
+    "price": 150,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13420,22 +13451,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 150
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "62ab3f22-a2ef-4b5e-b0da-1bba3c36cd6e",
-    "name": "Product 0535",
+    "name": "Mens Sando",
     "slug": "product_0535",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0535.png",
     "gallery": [
       "/products/product_0535.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13446,22 +13479,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "93547767-2d99-484c-9836-7db038e1b338",
-    "name": "Product 0536",
+    "name": "Mens Sando",
     "slug": "product_0536",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0536.png",
     "gallery": [
       "/products/product_0536.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13472,22 +13507,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "9650f185-d030-482d-9971-fc511372d134",
-    "name": "Product 0537",
+    "name": "Mens Sando",
     "slug": "product_0537",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0537.png",
     "gallery": [
       "/products/product_0537.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13498,22 +13535,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "149503bc-ed7c-443d-a78d-1c1063f220d2",
-    "name": "Product 0538",
+    "name": "Mens Sando",
     "slug": "product_0538",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0538.png",
     "gallery": [
       "/products/product_0538.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13524,22 +13563,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "d04e31e9-6efc-4a2f-a374-d5824fedb7dd",
-    "name": "Product 0539",
+    "name": "Mens Sando",
     "slug": "product_0539",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0539.png",
     "gallery": [
       "/products/product_0539.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13550,22 +13591,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "gender": "Men",
+    "subcategory": "T-Shirts"
   },
   {
     "id": "01cf343c-f409-4a20-8689-4323ce70a1a5",
-    "name": "Product 0540",
+    "name": "Mens Sando",
     "slug": "product_0540",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0540.png",
     "gallery": [
       "/products/product_0540.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13576,22 +13619,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "c80d6b14-3f49-47f7-ac76-f5e31dcb2f97",
-    "name": "Product 0541",
+    "name": "Mens Dress Shirt ",
     "slug": "product_0541",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Dress Shirt ",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0541.png",
     "gallery": [
       "/products/product_0541.png"
     ],
-    "price": 0,
+    "price": 4500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13602,22 +13647,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 4500
       }
-    ]
+    ],
+    "subcategory": "Dresses",
+    "gender": "Men"
   },
   {
     "id": "f3e14be1-186a-44c9-babe-1e80370cd9fe",
-    "name": "Product 0542",
+    "name": "Mens Sando",
     "slug": "product_0542",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0542.png",
     "gallery": [
       "/products/product_0542.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13628,22 +13675,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "d76f605c-7406-4a08-9aac-16c855bc959a",
-    "name": "Product 0543",
+    "name": "Mens Sando",
     "slug": "product_0543",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0543.png",
     "gallery": [
       "/products/product_0543.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13654,22 +13703,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "2dbc92c3-2737-429d-82b1-5d1c5aaa7147",
-    "name": "Product 0544",
+    "name": "Mens Sando",
     "slug": "product_0544",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0544.png",
     "gallery": [
       "/products/product_0544.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13680,16 +13731,18 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "cd143e0a-36cf-426f-b624-a10b795db431",
     "name": "Mens Sando ",
     "slug": "product_0545",
     "description": "Mens Sando ",
-    "category": "Uncategorized",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0545.png",
     "gallery": [
@@ -13709,20 +13762,21 @@
         "price": 1500
       }
     ],
-    "gender": "Men"
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "4a8dd335-284c-4eb3-8b2a-07e1f168cf9c",
-    "name": "Product 0546",
+    "name": "Mens Sando",
     "slug": "product_0546",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0546.png",
     "gallery": [
       "/products/product_0546.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13733,22 +13787,24 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "9ee6b838-f300-4e70-b10c-27a43f173fca",
-    "name": "Product 0547",
+    "name": "Mens Sando",
     "slug": "product_0547",
-    "description": "",
-    "category": "Uncategorized",
+    "description": "Mens Sando",
+    "category": "Men",
     "color": "Unknown",
     "image": "/products/product_0547.png",
     "gallery": [
       "/products/product_0547.png"
     ],
-    "price": 0,
+    "price": 1500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13759,9 +13815,11 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 0
+        "price": 1500
       }
-    ]
+    ],
+    "subcategory": "T-Shirts",
+    "gender": "Men"
   },
   {
     "id": "a31fc975-7fcb-4fa1-8cc9-1dd8d3447a1e",
@@ -13914,7 +13972,7 @@
     "gallery": [
       "/products/product_0553.png"
     ],
-    "price": 3498,
+    "price": 3500,
     "featured": false,
     "trending": false,
     "newArrival": false,
@@ -13998,7 +14056,7 @@
     "gallery": [
       "/products/product_0556.png"
     ],
-    "price": 3498,
+    "price": 3500,
     "featured": false,
     "trending": false,
     "newArrival": true,
@@ -14009,7 +14067,7 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 3497
+        "price": 3498
       }
     ],
     "gender": "Men",
@@ -14080,7 +14138,7 @@
     "gallery": [
       "/products/product_0559.png"
     ],
-    "price": 3499,
+    "price": 3500,
     "featured": false,
     "trending": false,
     "newArrival": true,
@@ -14091,7 +14149,7 @@
         "size": "Default",
         "color": "Default",
         "stock": 0,
-        "price": 3501
+        "price": 3500
       }
     ],
     "gender": "Men",
@@ -14139,7 +14197,7 @@
     "price": 3500,
     "featured": false,
     "trending": false,
-    "newArrival": false,
+    "newArrival": true,
     "bestSeller": false,
     "variants": [
       {
@@ -14150,7 +14208,8 @@
         "price": 3500
       }
     ],
-    "gender": "Men"
+    "gender": "Men",
+    "subcategory": ""
   },
   {
     "id": "bdca9d23-6c3d-42b4-acb5-144854c597a2",
@@ -14163,7 +14222,7 @@
     "gallery": [
       "/products/product_0562.png"
     ],
-    "price": 3499,
+    "price": 3500,
     "featured": false,
     "trending": false,
     "newArrival": true,
