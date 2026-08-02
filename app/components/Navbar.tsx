@@ -203,6 +203,23 @@ Winter's Collection
 
           </nav>
 
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="
+              lg:hidden
+              w-11
+              h-11
+              rounded-full
+              bg-white
+              flex
+              items-center
+              justify-center
+              shadow-sm
+            "
+          >
+            {menuOpen ? <X size={22}/> : <Menu size={22}/>}
+          </button>
+
           <div className="
             flex
             items-center
@@ -373,6 +390,31 @@ Winter's Collection
         </div>
 
       </header>
+      {menuOpen && (
+        <div className="
+          lg:hidden
+          bg-white
+          border-b
+          px-6
+          py-5
+          space-y-4
+          text-black
+          z-40
+        ">
+          <Link href="/collections/men" onClick={()=>setMenuOpen(false)}>
+            Men's
+          </Link>
+
+          <Link href="/collections/accessories" onClick={()=>setMenuOpen(false)}>
+            Accessories
+          </Link>
+
+          <Link href="/collections/winter" onClick={()=>setMenuOpen(false)}>
+            Winter Collection
+          </Link>
+        </div>
+      )}
+
 
       {searchOpen && (
 
