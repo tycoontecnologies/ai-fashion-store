@@ -36,7 +36,7 @@ export default function ProductCard({ product }: any) {
             alt={product.name}
             width={800}
             height={1000}
-            className="w-full h-[360px] object-cover"
+            className="w-full h-[320px] sm:h-[360px] object-cover"
           />
 
         </Link>
