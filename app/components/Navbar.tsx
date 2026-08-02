@@ -98,7 +98,7 @@ const closeMega = ()=>{
         border-gray-200
         sticky
         top-0
-        z-50
+        z-[100]
       ">
 
         <div className="
@@ -152,7 +152,7 @@ const closeMega = ()=>{
             <div
 onMouseEnter={()=>openMega("men")}
 onMouseLeave={closeMega}
-className="relative h-full flex items-center"
+className="relative flex items-center py-8"
 >
 <Link href="/collections/men">
 Men's
@@ -171,7 +171,7 @@ onLeave={closeMega}
 <div
 onMouseEnter={()=>openMega("accessories")}
 onMouseLeave={closeMega}
-className="relative h-full flex items-center"
+className="relative flex items-center py-8"
 >
 <Link href="/collections/accessories">
 Accessories
